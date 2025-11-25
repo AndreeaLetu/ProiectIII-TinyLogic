@@ -1,0 +1,175 @@
+﻿@using TinyLogic_ok.Models.TestModels
+@model TestVM
+
+<div class="mx-auto mt-10 max-w-4xl">
+
+    <div class="mb-6 rounded-lg bg-white p-6 shadow">
+        <h1 class="mb-2 text-3xl font-bold text-indigo-600">@Model.ParsedContent.Title</h1>
+        <p class="mb-4 text-gray-600">@Model.ParsedContent.Instructions</p>
+
+        <div class="flex items-center justify-between rounded-lg bg-indigo-50 p-4">
+            <div>
+                <span class="font-semibold text-indigo-800">⏱️ Timp limită:</span>
+                <span class="ml-2 text-indigo-600">@Model.ParsedContent.TimeLimit minute</span>
+            </div>
+            <div>
+                <span class="font-semibold text-indigo-800">📊 Nota de trecere:</span>
+                <span class="ml-2 text-indigo-600">@Model.Test.PassingScore%</span>
+            </div>
+            <div>
+                <span class="font-semibold text-indigo-800">❓ Întrebări:</span>
+                <span class="ml-2 text-indigo-600">@Model.ParsedContent.Questions.Count</span>
+            </div>
+        </div>
+
+        @if (Model.IsCompleted)
+        {
+            <div class="mt-4 rounded-lg bg-green-100 p-4 text-green-700">
+                ✔️ Ai trecut deja acest test cu @Model.LastScore%. Poți să-l refaci pentru a-ți îmbunătăți scorul!
+            </div>
+        }
+    </div>
+
+
+    <form id="testForm">
+        @for (int i = 0; i < Model.ParsedContent.Questions.Count; i++)
+        {
+            var question = Model.ParsedContent.Questions[i];
+
+            <div class="mb-6 rounded-lg bg-white p-6 shadow">
+                <h3 class="mb-3 text-xl font-semibold text-gray-800">
+                    Întrebarea @question.QuestionNumber
+                    <span class="text-sm text-gray-500">(+@question.Points puncte)</span>
+                </h3>
+                <p class="mb-4 text-gray-700">@question.QuestionText</p>
+
+                @if (question.QuestionType == "MultipleChoice")
+                {
+                    <div class="space-y-2">
+                        @foreach (var option in question.Options)
+                        {
+                            <label class="flex cursor-pointer items-center rounded-lg border p-3 hover:bg-gray-50">
+                                <input type="radio"
+                                       name="question_@question.QuestionNumber"
+                                       value="@option"
+                                       class="mr-3 h-4 w-4 text-indigo-600"
+                                       required />
+                                <span>@option</span>
+                            </label>
+                        }
+                    </div>
+                }
+                else if (question.QuestionType == "Code")
+                {
+                    <textarea name="question_@question.QuestionNumber"
+                      rows="4"
+                      class="w-full rounded-lg border p-3 font-mono"
+                      placeholder="Scrie codul aici..."
+                      required></textarea>
+                }
+                else if (question.QuestionType == "TrueFalse")
+                {
+                    <div class="space-y-2">
+                        <label class="flex cursor-pointer items-center rounded-lg border p-3 hover:bg-gray-50">
+                            <input type="radio"
+                                   name="question_@question.QuestionNumber"
+                                   value="Adevărat"
+                                   class="mr-3 h-4 w-4 text-indigo-600"
+                                   required />
+                            <span>✔️ Adevărat</span>
+                        </label>
+                        <label class="flex cursor-pointer items-center rounded-lg border p-3 hover:bg-gray-50">
+                            <input type="radio"
+                                   name="question_@question.QuestionNumber"
+                                   value="Fals"
+                                   class="mr-3 h-4 w-4 text-indigo-600"
+                                   required />
+                            <span>❌ Fals</span>
+                        </label>
+                    </div>
+                }
+            </div>
+        }
+
+        <div class="sticky bottom-0 rounded-lg bg-white p-4 shadow-lg">
+            <button type="submit"
+                    class="w-full rounded-lg bg-green-600 py-4 text-lg font-semibold text-white hover:bg-green-700">
+                ✅ Trimite răspunsurile
+            </button>
+        </div>
+    </form>
+
+   
+    <div id="resultModal" class="fixed inset-0 hidden items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm">
+        <div class="max-w-md rounded-2xl bg-white p-8 shadow-xl">
+            <div id="resultContent" class="text-center">
+               
+            </div>
+            <button onclick="location.reload()"
+                    class="mt-6 w-full rounded-lg bg-indigo-600 py-3 font-semibold text-white hover:bg-indigo-700">
+                OK
+            </button>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    document.getElementById('testForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+
+        const formData = new FormData(this);
+        const answers = [];
+
+        @foreach (var question in Model.ParsedContent.Questions)
+        {
+                <text>
+                const answer@(question.QuestionNumber) = formData.get('question_@question.QuestionNumber');
+                if (answer@(question.QuestionNumber)) {
+                    answers.push({
+                        questionNumber: @question.QuestionNumber,
+                        answer: answer@(question.QuestionNumber)
+                    });
+                }
+                </text>
+        }
+
+        try {
+            const response = await fetch('/Tests/SubmitTest', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    testId: @Model.Test.IdTest,
+                    answers: answers
+                })
+            });
+
+            const data = await response.json();
+
+            if (data.success) {
+                const resultContent = document.getElementById('resultContent');
+
+                if (data.passed) {
+                    resultContent.innerHTML = `
+                        <div class="mb-4 text-6xl">🎉</div>
+                        <h2 class="mb-2 text-2xl font-bold text-green-600">Felicitări!</h2>
+                        <p class="mb-4 text-gray-700">${data.message}</p>
+                        <div class="text-5xl font-bold text-green-600">${data.score}%</div>
+                    `;
+                } else {
+                    resultContent.innerHTML = `
+                        <div class="mb-4 text-6xl">😔</div>
+                        <h2 class="mb-2 text-2xl font-bold text-red-600">Mai încearcă!</h2>
+                        <p class="mb-4 text-gray-700">${data.message}</p>
+                        <div class="text-5xl font-bold text-red-600">${data.score}%</div>
+                    `;
+                }
+
+                document.getElementById('resultModal').classList.remove('hidden');
+                document.getElementById('resultModal').classList.add('flex');
+            }
+        } catch (error) {
+            alert('Eroare la trimiterea testului: ' + error);
+        }
+    });
+</script>

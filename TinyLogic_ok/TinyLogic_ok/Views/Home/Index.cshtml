@@ -1,0 +1,175 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    
+}
+
+
+<section class="bg-white py-20 text-gray-800">
+    <div class="fade-in mx-auto max-w-6xl px-4 text-center">
+
+        <h2 class="mb-6 text-5xl font-bold md:text-6xl">
+            Învață să programezi! 🚀
+        </h2>
+
+        <p class="mb-8 text-xl text-gray-600 md:text-2xl">
+            Descoperă lumea magică a codului prin jocuri și aventuri
+        </p>
+
+        <a href="#cursuri"
+           class="pulse-animation rounded-full bg-indigo-600 px-10 py-4 text-lg font-semibold text-white transition-all hover:bg-indigo-700">
+            Începe Aventura! ✨
+        </a>
+
+    </div>
+</section>
+
+
+<section class="px-6 py-20">
+
+    <h2 class="mb-16 text-center text-4xl font-extrabold text-gray-800 drop-shadow-lg">
+        Ce poți face pe Tiny Logic
+    </h2>
+
+    <div class="grid w-full gap-10 md:grid-cols-2 lg:grid-cols-3">
+
+        <div class="card-hover rounded-3xl border border-blue-200 bg-gradient-to-br from-blue-50 to-indigo-100 p-8 shadow-md transition-all hover:shadow-xl">
+            <div class="mb-4 text-center text-6xl">📘</div>
+            <h5 class="mb-2 text-center text-2xl font-bold text-gray-800">Cursuri</h5>
+            <p class="mb-6 text-center text-gray-600">
+                Lecții interactive și exerciții pentru copii.
+            </p>
+            <div class="text-center">
+                <a href="#cursuri"
+                   class="rounded-xl bg-blue-500 px-5 py-2 font-semibold text-white transition hover:bg-blue-600">
+                    Mergi la Cursuri
+                </a>
+            </div>
+        </div>
+
+        <div class="card-hover rounded-3xl border border-purple-200 bg-gradient-to-br from-purple-50 to-pink-100 p-8 shadow-md transition-all hover:shadow-xl">
+            <div class="mb-4 text-center text-6xl">🧩</div>
+            <h5 class="mb-2 text-center text-2xl font-bold text-gray-800">Teste</h5>
+            <p class="mb-6 text-center text-gray-600">
+                Teste distractive cu blocuri drag & drop.
+            </p>
+            <div class="text-center">
+                <a href="#teste"
+                   class="rounded-xl bg-purple-500 px-5 py-2 font-semibold text-white transition hover:bg-purple-600">
+                    Mergi la Teste
+                </a>
+            </div>
+        </div>
+
+        <div class="card-hover rounded-3xl border border-yellow-200 bg-gradient-to-br from-yellow-50 to-orange-100 p-8 shadow-md transition-all hover:shadow-xl">
+            <div class="mb-4 text-center text-6xl">🎓</div>
+            <h5 class="mb-2 text-center text-2xl font-bold text-gray-800">Diplome</h5>
+            <p class="mb-6 text-center text-gray-600">
+                Primești diplome colorate pentru fiecare nivel.
+            </p>
+            <div class="text-center">
+                <a href="#diplome"
+                   class="rounded-xl bg-yellow-500 px-5 py-2 font-semibold text-white transition hover:bg-yellow-600">
+                    Vezi Diplomele
+                </a>
+            </div>
+        </div>
+
+        <div class="card-hover rounded-3xl border border-green-200 bg-gradient-to-br from-green-50 to-emerald-100 p-8 shadow-md transition-all hover:shadow-xl">
+            <div class="mb-4 text-center text-6xl">🤖</div>
+            <h5 class="mb-2 text-center text-2xl font-bold text-gray-800">Chatbot</h5>
+            <p class="mb-6 text-center text-gray-600">
+                Asistent AI pentru programare.
+            </p>
+            <div class="text-center">
+                <a href="/Chatbot"
+                   class="rounded-xl bg-green-500 px-5 py-2 font-semibold text-white transition hover:bg-green-600">
+                    Deschide Chatbot
+                </a>
+            </div>
+        </div>
+
+        <div class="card-hover rounded-3xl border border-red-200 bg-gradient-to-br from-red-50 to-pink-100 p-8 shadow-md transition-all hover:shadow-xl">
+            <div class="mb-4 text-center text-6xl">🖐️</div>
+            <h5 class="mb-2 text-center text-2xl font-bold text-gray-800">Control prin gesturi</h5>
+            <p class="mb-6 text-center text-gray-600">
+                Navigare prin mișcările mâinii.
+            </p>
+            <div class="text-center">
+                <button class="rounded-xl bg-red-500 px-5 py-2 font-semibold text-white transition hover:bg-red-600">
+                    Activează gesturile
+                </button>
+            </div>
+        </div>
+
+        <div class="card-hover rounded-3xl border border-indigo-200 bg-gradient-to-br from-indigo-50 to-blue-100 p-8 shadow-md transition-all hover:shadow-xl">
+            <div class="mb-4 text-center text-6xl">👤</div>
+            <h5 class="mb-2 text-center text-2xl font-bold text-gray-800">Profilul Meu</h5>
+            <p class="mb-6 text-center text-gray-600">
+                Vezi progresul și datele contului.
+            </p>
+            <div class="text-center">
+                <a href="/Identity/Account/Manage"
+                   class="rounded-xl bg-indigo-500 px-5 py-2 font-semibold text-white transition hover:bg-indigo-600">
+                    Deschide Profilul
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<section id="cursuri" class="px-6 py-20">
+
+    <h3 class="mb-14 text-center text-4xl font-extrabold text-gray-800 drop-shadow-xl">
+        Cursurile Noastre 📚
+    </h3>
+
+    <div class="grid w-full gap-10 md:grid-cols-2 lg:grid-cols-3">
+
+        <div class="card-hover cursor-pointer rounded-3xl border border-orange-200 bg-gradient-to-br from-orange-100 to-red-100 p-8 shadow-md transition-all hover:shadow-xl">
+            <div class="mb-4 text-center text-6xl">🐱</div>
+            <h4 class="mb-3 text-2xl font-bold text-gray-800">Scratch pentru Începători</h4>
+            <p class="text-gray-600">Creează jocuri și animații.</p>
+            <div class="mt-4 text-center">
+                <button type="button"
+                        class="w-full rounded-full bg-green-600 px-6 py-2 font-semibold text-white shadow-md transition duration-300 hover:bg-green-700">
+                    Vezi Nivelurile
+                </button>
+            </div>
+        </div>
+
+        <a href="/Courses/PythonCourse?courseId=1"
+           class="card-hover block cursor-pointer rounded-3xl border border-green-200 bg-gradient-to-br from-green-100 to-emerald-100 p-8 shadow-md transition-all hover:border-green-400 hover:shadow-xl">
+
+            <div class="mb-4 text-center text-6xl">🐍</div>
+            <h4 class="mb-3 text-2xl font-bold text-gray-800">Python pentru Copii</h4>
+            <p class="mb-6 text-gray-600">Primul limbaj real de programare.</p>
+
+            <div class="mt-4 text-center">
+                <button type="button"
+                        class="w-full rounded-full bg-green-600 px-6 py-2 font-semibold text-white shadow-md transition duration-300 hover:bg-green-700">
+                    Vezi Nivelurile
+                </button>
+            </div>
+
+        </a>
+
+        <div class="card-hover cursor-pointer rounded-3xl border border-blue-200 bg-gradient-to-br from-blue-100 to-purple-100 p-8 shadow-md transition-all hover:shadow-xl">
+            <div class="mb-4 text-center text-6xl">🌐</div>
+            <h4 class="mb-3 text-2xl font-bold text-gray-800">Dezvoltare Web</h4>
+            <p class="text-gray-600">Construiește site-uri moderne.</p>
+            <div class="mt-4 text-center">
+                <button type="button"
+                        class="w-full rounded-full bg-green-600 px-6 py-2 font-semibold text-white shadow-md transition duration-300 hover:bg-green-700">
+                    Vezi Nivelurile
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</section>

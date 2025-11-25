@@ -1,0 +1,64 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+/*
+======================================*/
+
+.instruction-block.block-start {
+    background-color: #FFBF00; /* Galben/Portocaliu */
+}
+
+/* Bloc de Mișcare/Acțiune (Putem schimba mișcarea cu o acțiune generică) */
+.instruction-block.block-action {
+    background-color: #4C97FF; /* Albastru */
+}
+
+/* Bloc de Afișare/Output */
+.instruction-block.block-output {
+    background-color: #00A381; /* Verde închis */
+}
+
+/* Bloc de Control (Așteptare/Buclă/Condiție) */
+.instruction-block.block-wait,
+.instruction-block.block-control {
+    background-color: #FF8000; /* Portocaliu puternic */
+}
+
+/* Stiluri de bază (rămân valabile) */
+.instruction-block {
+    display: inline-block;
+    min-width: 180px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 12px 18px;
+    font-size: 1.1rem;
+    font-weight: bold; /* Adăugat pentru claritate */
+}

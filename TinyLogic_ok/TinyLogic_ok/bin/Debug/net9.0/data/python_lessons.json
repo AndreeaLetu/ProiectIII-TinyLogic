@@ -1,0 +1,241 @@
+﻿[
+  {
+    "LessonName": "Lecția 1: Introducere în Python",
+    "OrderIndex": 1,
+    "ContentJson": {
+      "Title": "Lecția 1: Introducere în Python",
+      "Sections": [
+        {
+          "Heading": "Ce este Python?",
+          "Text": "Python este un limbaj de programare puternic, simplu și ușor de învățat, folosit în AI, automatizări, web și multe altele."
+        },
+        {
+          "Heading": "De ce este ușor de învățat?",
+          "Text": "Python are o sintaxă clară, apropiată de limba engleză, ceea ce îl face ideal pentru începători."
+        },
+        {
+          "Heading": "Primul program",
+          "Text": "Primul program clasic este: print(\"Salut lume!\")"
+        }
+      ],
+      "Exercise": {
+        "Description": "Afișează exact textul: \"Am terminat Lecția 1!\"",
+        "ExpectedOutput": "Am terminat Lecția 1!"
+      }
+    }
+  },
+
+  {
+    "LessonName": "Lecția 2: Numere în Python",
+    "OrderIndex": 2,
+    "ContentJson": {
+      "Title": "Lecția 2: Numere în Python – Operații și Tipuri",
+      "Sections": [
+        {
+          "Heading": "Tipuri de numere",
+          "Text": "Python are int (întregi), float (zecimale) și complex (numere complexe)."
+        },
+        {
+          "Heading": "Operații de bază",
+          "Text": "Python suportă +, -, *, /, //, %, **."
+        },
+        {
+          "Heading": "Ordinea operațiilor",
+          "Text": "Python folosește regula PEMDAS."
+        }
+      ],
+      "Exercise": {
+        "Description": "Calculează și afișează rezultatul expresiei: 3 + 4 * 2",
+        "ExpectedOutput": "11"
+      }
+    }
+  },
+
+  {
+    "LessonName": "Lecția 3: Variabile și Tipuri de date",
+    "OrderIndex": 3,
+    "ContentJson": {
+      "Title": "Lecția 3: Variabile în Python",
+      "Sections": [
+        {
+          "Heading": "Ce este o variabilă?",
+          "Text": "O variabilă este o cutie în memorie în care poți stoca valori."
+        },
+        {
+          "Heading": "Atribuire",
+          "Text": "x = 5, nume = \"Ana\", temperatura = 22.5"
+        },
+        {
+          "Heading": "Tipuri de bază",
+          "Text": "int, float, str, bool"
+        }
+      ],
+      "Exercise": {
+        "Description": "Creează o variabilă numită mesaj și afișează textul \"Python e simplu!\"",
+        "ExpectedOutput": "Python e simplu!"
+      }
+    }
+  },
+
+  {
+    "LessonName": "Lecția 4: String-uri",
+    "OrderIndex": 4,
+    "ContentJson": {
+      "Title": "Lecția 4: Lucrul cu string-uri",
+      "Sections": [
+        {
+          "Heading": "Ce este un string?",
+          "Text": "Un string este o secvență de caractere."
+        },
+        {
+          "Heading": "Concatenare",
+          "Text": "\"Salut\" + \" lume\""
+        },
+        {
+          "Heading": "Funcții utile",
+          "Text": "len(), upper(), lower(), replace()"
+        }
+      ],
+      "Exercise": {
+        "Description": "Afișează textul \"STRINGURI ÎN PYTHON\" folosind funcția upper().",
+        "ExpectedOutput": "STRINGURI ÎN PYTHON"
+      }
+    }
+  },
+
+  {
+    "LessonName": "Lecția 5: Listelor în Python",
+    "OrderIndex": 5,
+    "ContentJson": {
+      "Title": "Lecția 5: Liste",
+      "Sections": [
+        {
+          "Heading": "Ce este o listă?",
+          "Text": "O listă stochează mai multe valori într-o singură variabilă."
+        },
+        {
+          "Heading": "Indexare",
+          "Text": "fructe[0], fructe[1]"
+        },
+        {
+          "Heading": "Metode utile",
+          "Text": "append(), remove(), sort()"
+        }
+      ],
+      "Exercise": {
+        "Description": "Creează o listă cu 3 numere și afișează suma lor.",
+        "ExpectedOutput": "6"
+      }
+    }
+  },
+
+  {
+    "LessonName": "Lecția 6: If / Else",
+    "OrderIndex": 6,
+    "ContentJson": {
+      "Title": "Lecția 6: Structuri condiționale",
+      "Sections": [
+        {
+          "Heading": "if",
+          "Text": "if condiție: execută cod"
+        },
+        {
+          "Heading": "else",
+          "Text": "else se execută când if este fals"
+        },
+        {
+          "Heading": "elif",
+          "Text": "elif adaugă condiții suplimentare"
+        }
+      ],
+      "Exercise": {
+        "Description": "Dacă numărul x = 10, afișează „Număr mare”.",
+        "ExpectedOutput": "Număr mare"
+      }
+    }
+  },
+
+  {
+    "LessonName": "Lecția 7: For Loops",
+    "OrderIndex": 7,
+    "ContentJson": {
+      "Title": "Lecția 7: Bucla for",
+      "Sections": [
+        {
+          "Heading": "Iterare",
+          "Text": "for x in range(5): printează valorile de la 0 la 4."
+        },
+        {
+          "Heading": "Parcurgere listă",
+          "Text": "for fruct in fructe: print(fruct)"
+        }
+      ],
+      "Exercise": {
+        "Description": "Scrie doar linia care afișează numerele de la 1 la 5 folosind o buclă for.",
+        "ExpectedOutput": "1\n2\n3\n4\n5\n"
+      }
+    }
+  },
+
+  {
+    "LessonName": "Lecția 8: While Loops",
+    "OrderIndex": 8,
+    "ContentJson": {
+      "Title": "Lecția 8: Bucla while",
+      "Sections": [
+        {
+          "Heading": "while",
+          "Text": "Rulează cât timp condiția este adevărată."
+        },
+        {
+          "Heading": "Exemplu",
+          "Text": "i = 1; while i <= 3: print(i); i += 1"
+        }
+      ],
+      "Exercise": {
+        "Description": "Afișează de 3 ori textul „Python!”.",
+        "ExpectedOutput": "Python!\nPython!\nPython!"
+      }
+    }
+  },
+
+  {
+    "LessonName": "Lecția 9: Funcții",
+    "OrderIndex": 9,
+    "ContentJson": {
+      "Title": "Lecția 9: Funcții",
+      "Sections": [
+        {
+          "Heading": "Definire funcție",
+          "Text": "def salut(): print('Hello')"
+        },
+        {
+          "Heading": "Argumente",
+          "Text": "def adunare(a, b): return a + b"
+        }
+      ],
+      "Exercise": {
+        "Description": "Creează o funcție care întoarce numărul 100 și afișează rezultatul.",
+        "ExpectedOutput": "100"
+      }
+    }
+  },
+
+  {
+    "LessonName": "Lecția 10: Mini-Proiect",
+    "OrderIndex": 10,
+    "ContentJson": {
+      "Title": "Lecția 10: Mini-proiect final",
+      "Sections": [
+        {
+          "Heading": "Proiect",
+          "Text": "Scriem un program care folosește variabile, condiții și funcții."
+        }
+      ],
+      "Exercise": {
+        "Description": "Afișează exact textul: „Am terminat cursul Python!”",
+        "ExpectedOutput": "Am terminat cursul Python!"
+      }
+    }
+  }
+]

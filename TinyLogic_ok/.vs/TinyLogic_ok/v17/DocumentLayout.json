@@ -1,0 +1,648 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiect3_tinlylogic\\tinylogic_ok\\tinylogic_ok\\views\\tests\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\views\\tests\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiect3_tinlylogic\\tinylogic_ok\\tinylogic_ok\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiect3_tinlylogic\\tinylogic_ok\\tinylogic_ok\\views\\tests\\taketest.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\views\\tests\\taketest.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiect3_tinlylogic\\tinylogic_ok\\tinylogic_ok\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiect3_tinlylogic\\tinylogic_ok\\tinylogic_ok\\views\\courses\\pythoncourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\views\\courses\\pythoncourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiect3_tinlylogic\\tinylogic_ok\\tinylogic_ok\\views\\courses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\views\\courses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiect3_tinlylogic\\tinylogic_ok\\tinylogic_ok\\services\\pythonrunner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\services\\pythonrunner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiect3_tinlylogic\\tinylogic_ok\\tinylogic_ok\\services\\lessonprogressservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\services\\lessonprogressservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiect3_tinlylogic\\tinylogic_ok\\tinylogic_ok\\services\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\services\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiect3_tinlylogic\\tinylogic_ok\\tinylogic_ok\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiect3_tinlylogic\\tinylogic_ok\\tinylogic_ok\\models\\tinylogicdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\models\\tinylogicdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiect3_tinlylogic\\tinylogic_ok\\tinylogic_ok\\models\\testmodels\\testvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\models\\testmodels\\testvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiect3_tinlylogic\\tinylogic_ok\\tinylogic_ok\\models\\testmodels\\tests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\models\\testmodels\\tests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiect3_tinlylogic\\tinylogic_ok\\tinylogic_ok\\models\\testmodels\\testquestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\models\\testmodels\\testquestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiect3_tinlylogic\\tinylogic_ok\\tinylogic_ok\\models\\testmodels\\testprogress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\models\\testmodels\\testprogress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiect3_tinlylogic\\tinylogic_ok\\tinylogic_ok\\models\\testmodels\\testjsonmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\models\\testmodels\\testjsonmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiect3_tinlylogic\\tinylogic_ok\\tinylogic_ok\\models\\testmodels\\testcontent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\models\\testmodels\\testcontent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiect3_tinlylogic\\tinylogic_ok\\tinylogic_ok\\models\\lessonmodels\\userlessons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\models\\lessonmodels\\userlessons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiect3_tinlylogic\\tinylogic_ok\\tinylogic_ok\\models\\lessonmodels\\lessonsection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\models\\lessonmodels\\lessonsection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiect3_tinlylogic\\tinylogic_ok\\tinylogic_ok\\models\\lessonmodels\\lessons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\models\\lessonmodels\\lessons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiect3_tinlylogic\\tinylogic_ok\\tinylogic_ok\\models\\lessonmodels\\lessonjsonmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\models\\lessonmodels\\lessonjsonmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiect3_tinlylogic\\tinylogic_ok\\tinylogic_ok\\models\\lessonmodels\\lessonexercise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\models\\lessonmodels\\lessonexercise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiect3_tinlylogic\\tinylogic_ok\\tinylogic_ok\\models\\lessonmodels\\lessondetailsvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\models\\lessonmodels\\lessondetailsvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiect3_tinlylogic\\tinylogic_ok\\tinylogic_ok\\models\\lessonmodels\\lessoncontent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\models\\lessonmodels\\lessoncontent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiect3_tinlylogic\\tinylogic_ok\\tinylogic_ok\\models\\coursemodels\\pythoncoursevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\models\\coursemodels\\pythoncoursevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiect3_tinlylogic\\tinylogic_ok\\tinylogic_ok\\models\\coursemodels\\courses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\models\\coursemodels\\courses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiect3_tinlylogic\\tinylogic_ok\\tinylogic_ok\\data\\python_tests.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\data\\python_tests.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiect3_tinlylogic\\tinylogic_ok\\tinylogic_ok\\controllers\\testscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\controllers\\testscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiect3_tinlylogic\\tinylogic_ok\\tinylogic_ok\\controllers\\lessoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\controllers\\lessoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiect3_tinlylogic\\tinylogic_ok\\tinylogic_ok\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiect3_tinlylogic\\tinylogic_ok\\tinylogic_ok\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiect3_tinlylogic\\tinylogic_ok\\tinylogic_ok\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiect3_tinlylogic\\tinylogic_ok\\tinylogic_ok\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Migrations\\20251125124349_FixTestsRelation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TinyLogic_ok\\Migrations\\20251125124349_FixTestsRelation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Migrations\\20251125121507_Create.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TinyLogic_ok\\Migrations\\20251125121507_Create.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Migrations\\20251125120053_Tests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TinyLogic_ok\\Migrations\\20251125120053_Tests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiect3_tinlylogic\\tinylogic_ok\\tinylogic_ok\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Program.cs",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Program.cs",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Program.cs",
+              "RelativeToolTip": "TinyLogic_ok\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T12:58:32.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PythonRunner.cs",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Services\\PythonRunner.cs",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Services\\PythonRunner.cs",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Services\\PythonRunner.cs",
+              "RelativeToolTip": "TinyLogic_ok\\Services\\PythonRunner.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwBkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T12:57:10.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Tests.cs",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\TestModels\\Tests.cs",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Models\\TestModels\\Tests.cs",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\TestModels\\Tests.cs",
+              "RelativeToolTip": "TinyLogic_ok\\Models\\TestModels\\Tests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T10:42:46.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TestVM.cs",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\TestModels\\TestVM.cs",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Models\\TestModels\\TestVM.cs",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\TestModels\\TestVM.cs",
+              "RelativeToolTip": "TinyLogic_ok\\Models\\TestModels\\TestVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T10:42:50.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\User.cs",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\User.cs",
+              "RelativeToolTip": "TinyLogic_ok\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T11:05:10.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TinyLogicDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\TinyLogicDbContext.cs",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Models\\TinyLogicDbContext.cs",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\TinyLogicDbContext.cs",
+              "RelativeToolTip": "TinyLogic_ok\\Models\\TinyLogicDbContext.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAAwD4AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T11:05:28.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DataSeeder.cs",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Services\\DataSeeder.cs",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Services\\DataSeeder.cs",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Services\\DataSeeder.cs",
+              "RelativeToolTip": "TinyLogic_ok\\Services\\DataSeeder.cs",
+              "ViewState": "AgIAAKAAAAAAAAAAAAAcwAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T11:36:00.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Views\\Courses\\Index.cshtml",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Views\\Courses\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Views\\Courses\\Index.cshtml",
+              "RelativeToolTip": "TinyLogic_ok\\Views\\Courses\\Index.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-25T11:34:09.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PythonCourse.cshtml",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Views\\Courses\\PythonCourse.cshtml",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Views\\Courses\\PythonCourse.cshtml",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Views\\Courses\\PythonCourse.cshtml",
+              "RelativeToolTip": "TinyLogic_ok\\Views\\Courses\\PythonCourse.cshtml",
+              "ViewState": "AgIAAKsAAAAAAAAAAAAAAJEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-25T11:17:28.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "TinyLogic_ok\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAAAI0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-25T12:18:07.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Views\\Tests\\Index.cshtml",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Views\\Tests\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Views\\Tests\\Index.cshtml",
+              "RelativeToolTip": "TinyLogic_ok\\Views\\Tests\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-25T11:17:10.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TakeTest.cshtml",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Views\\Tests\\TakeTest.cshtml",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Views\\Tests\\TakeTest.cshtml",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Views\\Tests\\TakeTest.cshtml",
+              "RelativeToolTip": "TinyLogic_ok\\Views\\Tests\\TakeTest.cshtml",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAAAGkAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-25T11:16:58.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TestQuestion.cs",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\TestModels\\TestQuestion.cs",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Models\\TestModels\\TestQuestion.cs",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\TestModels\\TestQuestion.cs",
+              "RelativeToolTip": "TinyLogic_ok\\Models\\TestModels\\TestQuestion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T11:11:55.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TestProgress.cs",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\TestModels\\TestProgress.cs",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Models\\TestModels\\TestProgress.cs",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\TestModels\\TestProgress.cs",
+              "RelativeToolTip": "TinyLogic_ok\\Models\\TestModels\\TestProgress.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T11:11:48.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TestJsonModel.cs",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\TestModels\\TestJsonModel.cs",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Models\\TestModels\\TestJsonModel.cs",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\TestModels\\TestJsonModel.cs",
+              "RelativeToolTip": "TinyLogic_ok\\Models\\TestModels\\TestJsonModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T11:04:20.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TestContent.cs",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\TestModels\\TestContent.cs",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Models\\TestModels\\TestContent.cs",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\TestModels\\TestContent.cs",
+              "RelativeToolTip": "TinyLogic_ok\\Models\\TestModels\\TestContent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T11:04:15.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UserLessons.cs",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\LessonModels\\UserLessons.cs",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Models\\LessonModels\\UserLessons.cs",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\LessonModels\\UserLessons.cs",
+              "RelativeToolTip": "TinyLogic_ok\\Models\\LessonModels\\UserLessons.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T10:44:40.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LessonProgressService.cs",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Services\\LessonProgressService.cs",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Services\\LessonProgressService.cs",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Services\\LessonProgressService.cs",
+              "RelativeToolTip": "TinyLogic_ok\\Services\\LessonProgressService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T11:37:17.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "LessonSection.cs",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\LessonModels\\LessonSection.cs",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Models\\LessonModels\\LessonSection.cs",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\LessonModels\\LessonSection.cs",
+              "RelativeToolTip": "TinyLogic_ok\\Models\\LessonModels\\LessonSection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T10:44:17.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Lessons.cs",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\LessonModels\\Lessons.cs",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Models\\LessonModels\\Lessons.cs",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\LessonModels\\Lessons.cs",
+              "RelativeToolTip": "TinyLogic_ok\\Models\\LessonModels\\Lessons.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T10:51:54.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "LessonJsonModel.cs",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\LessonModels\\LessonJsonModel.cs",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Models\\LessonModels\\LessonJsonModel.cs",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\LessonModels\\LessonJsonModel.cs",
+              "RelativeToolTip": "TinyLogic_ok\\Models\\LessonModels\\LessonJsonModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T10:51:39.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "LessonExercise.cs",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\LessonModels\\LessonExercise.cs",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Models\\LessonModels\\LessonExercise.cs",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\LessonModels\\LessonExercise.cs",
+              "RelativeToolTip": "TinyLogic_ok\\Models\\LessonModels\\LessonExercise.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T10:51:34.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "LessonDetailsVM.cs",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\LessonModels\\LessonDetailsVM.cs",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Models\\LessonModels\\LessonDetailsVM.cs",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\LessonModels\\LessonDetailsVM.cs",
+              "RelativeToolTip": "TinyLogic_ok\\Models\\LessonModels\\LessonDetailsVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T10:51:30.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "LessonContent.cs",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\LessonModels\\LessonContent.cs",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Models\\LessonModels\\LessonContent.cs",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\LessonModels\\LessonContent.cs",
+              "RelativeToolTip": "TinyLogic_ok\\Models\\LessonModels\\LessonContent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T10:51:26.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "PythonCourseVM.cs",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\CourseModels\\PythonCourseVM.cs",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Models\\CourseModels\\PythonCourseVM.cs",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\CourseModels\\PythonCourseVM.cs",
+              "RelativeToolTip": "TinyLogic_ok\\Models\\CourseModels\\PythonCourseVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T10:46:27.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Courses.cs",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\CourseModels\\Courses.cs",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Models\\CourseModels\\Courses.cs",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\CourseModels\\Courses.cs",
+              "RelativeToolTip": "TinyLogic_ok\\Models\\CourseModels\\Courses.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAtwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T10:45:02.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "python_tests.json",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Data\\python_tests.json",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Data\\python_tests.json",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Data\\python_tests.json",
+              "RelativeToolTip": "TinyLogic_ok\\Data\\python_tests.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-25T12:28:24.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "TestsController.cs",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Controllers\\TestsController.cs",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Controllers\\TestsController.cs",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Controllers\\TestsController.cs",
+              "RelativeToolTip": "TinyLogic_ok\\Controllers\\TestsController.cs",
+              "ViewState": "AgIAALMAAAAAAAAAAAAIwIIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T11:41:41.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "LessonController.cs",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Controllers\\LessonController.cs",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Controllers\\LessonController.cs",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Controllers\\LessonController.cs",
+              "RelativeToolTip": "TinyLogic_ok\\Controllers\\LessonController.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAowF8AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T11:17:54.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CoursesController.cs",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Controllers\\CoursesController.cs",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Controllers\\CoursesController.cs",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Controllers\\CoursesController.cs",
+              "RelativeToolTip": "TinyLogic_ok\\Controllers\\CoursesController.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAowBUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T11:17:47.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "TinyLogic_ok\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T12:54:28.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "TinyLogic_ok\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAABMAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-25T12:54:15.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "TinyLogic_ok\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-25T12:54:08.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "20251125124349_FixTestsRelation.cs",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Migrations\\20251125124349_FixTestsRelation.cs",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Migrations\\20251125124349_FixTestsRelation.cs",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Migrations\\20251125124349_FixTestsRelation.cs",
+              "RelativeToolTip": "TinyLogic_ok\\Migrations\\20251125124349_FixTestsRelation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T12:43:49.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "20251125121507_Create.cs",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Migrations\\20251125121507_Create.cs",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Migrations\\20251125121507_Create.cs",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Migrations\\20251125121507_Create.cs",
+              "RelativeToolTip": "TinyLogic_ok\\Migrations\\20251125121507_Create.cs",
+              "ViewState": "AgIAAPcAAAAAAAAAAAAAAAoBAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T12:15:08.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "20251125120053_Tests.cs",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Migrations\\20251125120053_Tests.cs",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Migrations\\20251125120053_Tests.cs",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Migrations\\20251125120053_Tests.cs",
+              "RelativeToolTip": "TinyLogic_ok\\Migrations\\20251125120053_Tests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T12:00:54.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "TinyLogic_ok\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T11:27:26.749Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿[
+  {
+    "id": "python",
+    "title": "Curs Python Pentru Începători",
+    "description": "Învață bazele limbajului Python.",
+    "lessonsFile": "python_lessons.json"
+  },
+  {
+    "id": "scratch",
+    "title": "Curs Scratch",
+    "description": "Programare vizuală pentru copii.",
+    "lessonsFile": "scratch_lessons.json"
+  }
+]
+

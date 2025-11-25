@@ -1,0 +1,269 @@
+﻿[
+  {
+    "TestName": "Test Lecția 1 – Introducere în Python",
+    "Description": "Test despre print, variabile și tipuri de date.",
+    "PassingScore": 70,
+    "CourseName": "Python pentru copii",
+    "TestJson": {
+      "Title": "Test Python – Introducere",
+      "Instructions": "Răspunde la toate întrebările.",
+      "TimeLimit": 12,
+      "Questions": [
+        {
+          "QuestionNumber": 1,
+          "QuestionText": "Ce afișează instrucțiunea print(\"Salut!\")?",
+          "QuestionType": "MultipleChoice",
+          "Options": [ "Salut!", "Hello", "Python" ],
+          "CorrectAnswer": "Salut!",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 2,
+          "QuestionText": "Ce tip de valoare este 5 în Python?",
+          "QuestionType": "MultipleChoice",
+          "Options": [ "String", "Integer", "Float" ],
+          "CorrectAnswer": "Integer",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 3,
+          "QuestionText": "Cum declari o variabilă numită x cu valoarea 10?",
+          "QuestionType": "MultipleChoice",
+          "Options": [ "x = 10", "10 = x", "var x = 10" ],
+          "CorrectAnswer": "x = 10",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 4,
+          "QuestionText": "Instrucțiunea print afişează text pe ecran.",
+          "QuestionType": "TrueFalse",
+          "CorrectAnswer": "Adevărat",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 5,
+          "QuestionText": "Ce afișează print(2 + 3)?",
+          "QuestionType": "MultipleChoice",
+          "Options": [ "2 + 3", "23", "5" ],
+          "CorrectAnswer": "5",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 6,
+          "QuestionText": "Scrie codul care afișează “Python e fun!”.",
+          "QuestionType": "Code",
+          "CorrectAnswer": "print(\"Python e fun!\")",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 7,
+          "QuestionText": "Cum afișezi două valori pe același rând?",
+          "QuestionType": "MultipleChoice",
+          "Options": [ "print(a, b)", "show a b", "print(a + b + space)" ],
+          "CorrectAnswer": "print(a, b)",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 8,
+          "QuestionText": "Valoarea True este un tip Boolean.",
+          "QuestionType": "TrueFalse",
+          "CorrectAnswer": "Adevărat",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 9,
+          "QuestionText": "Ce tip de valoare este \"Salut\"?",
+          "QuestionType": "MultipleChoice",
+          "Options": [ "Integer", "String", "Boolean" ],
+          "CorrectAnswer": "String",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 10,
+          "QuestionText": "Scrie un cod simplu care salvează numele tău într-o variabilă name.",
+          "QuestionType": "Code",
+          "CorrectAnswer": "name = \"Numele meu\"",
+          "Points": 10
+        }
+      ]
+    }
+  },
+
+  {
+    "TestName": "Test Lecția 2 – Condiții",
+    "Description": "Test despre if, else și comparații.",
+    "PassingScore": 70,
+    "CourseName": "Python pentru copii",
+    "TestJson": {
+      "Title": "Test Python – Condiții",
+      "Instructions": "Rezolvă exercițiile atent.",
+      "TimeLimit": 15,
+      "Questions": [
+        {
+          "QuestionNumber": 1,
+          "QuestionText": "Ce cuvânt cheie introduce o condiție în Python?",
+          "QuestionType": "MultipleChoice",
+          "Options": [ "if", "when", "condition" ],
+          "CorrectAnswer": "if",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 2,
+          "QuestionText": "Instrucțiunea if verifică dacă o condiție este adevărată.",
+          "QuestionType": "TrueFalse",
+          "CorrectAnswer": "Adevărat",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 3,
+          "QuestionText": "Ce operator verifică egalitatea?",
+          "QuestionType": "MultipleChoice",
+          "Options": [ "=", "==", "===", "!=" ],
+          "CorrectAnswer": "==",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 4,
+          "QuestionText": "else se execută doar dacă if este adevărat.",
+          "QuestionType": "TrueFalse",
+          "CorrectAnswer": "Fals",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 5,
+          "QuestionText": "Care este rezultatul pentru: x = 10; if x < 5: print(\"Mic\") else: print(\"Mare\")",
+          "QuestionType": "MultipleChoice",
+          "Options": [ "Mic", "Mare", "Eroare" ],
+          "CorrectAnswer": "Mare",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 6,
+          "QuestionText": "Scrie o condiție care verifică dacă x este mai mare decât 20.",
+          "QuestionType": "Code",
+          "CorrectAnswer": "if x > 20:",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 7,
+          "QuestionText": "Ce operator verifică dacă două valori sunt diferite?",
+          "QuestionType": "MultipleChoice",
+          "Options": [ "!=", "==", "<>", "is not" ],
+          "CorrectAnswer": "!=",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 8,
+          "QuestionText": "Condiția (5 > 2 and 3 < 4) este adevărată.",
+          "QuestionType": "TrueFalse",
+          "CorrectAnswer": "Adevărat",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 9,
+          "QuestionText": "Ce afișează: x = 3; if x == 5: print(1) else: print(2)",
+          "QuestionType": "MultipleChoice",
+          "Options": [ "1", "2", "3" ],
+          "CorrectAnswer": "2",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 10,
+          "QuestionText": "Scrie codul complet care afișează \"OK\" dacă numărul este par.",
+          "QuestionType": "Code",
+          "CorrectAnswer": "if x % 2 == 0: print(\"OK\")",
+          "Points": 10
+        }
+      ]
+    }
+  },
+
+  {
+    "TestName": "Test Lecția 3 – Bucla while",
+    "Description": "Test despre while și iterare.",
+    "PassingScore": 70,
+    "CourseName": "Python pentru copii",
+    "TestJson": {
+      "Title": "Test Python – Bucla while",
+      "Instructions": "Rezolvă exercițiile.",
+      "TimeLimit": 15,
+      "Questions": [
+        {
+          "QuestionNumber": 1,
+          "QuestionText": "Ce face bucla while?",
+          "QuestionType": "MultipleChoice",
+          "Options": [ "Rulează o singură dată", "Rulează cât timp condiția e adevărată", "Rulează de un număr fix de ori" ],
+          "CorrectAnswer": "Rulează cât timp condiția e adevărată",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 2,
+          "QuestionText": "Scrie o buclă while care afișează numerele 1...3.",
+          "QuestionType": "Code",
+          "CorrectAnswer": "i = 1\nwhile i <= 3:\n    print(i)\n    i += 1",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 3,
+          "QuestionText": "O buclă while fără incrementare poate rula la infinit.",
+          "QuestionType": "TrueFalse",
+          "CorrectAnswer": "Adevărat",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 4,
+          "QuestionText": "Ce afișează: i = 0; while i < 3: print(i); i += 1",
+          "QuestionType": "MultipleChoice",
+          "Options": [ "1 2 3", "0 1 2", "2 3 4" ],
+          "CorrectAnswer": "0 1 2",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 5,
+          "QuestionText": "Într-o buclă while, condiția este verificată:",
+          "QuestionType": "MultipleChoice",
+          "Options": [ "La început", "La final", "La mijloc" ],
+          "CorrectAnswer": "La început",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 6,
+          "QuestionText": "Scrie o buclă while care afișează Python de 5 ori.",
+          "QuestionType": "Code",
+          "CorrectAnswer": "i = 1\nwhile i <= 5:\n    print(\"Python\")\n    i += 1",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 7,
+          "QuestionText": "Ce înseamnă i += 1?",
+          "QuestionType": "MultipleChoice",
+          "Options": [ "i = i - 1", "i = i + 1", "i = i * 1" ],
+          "CorrectAnswer": "i = i + 1",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 8,
+          "QuestionText": "while True: este o buclă infinită.",
+          "QuestionType": "TrueFalse",
+          "CorrectAnswer": "Adevărat",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 9,
+          "QuestionText": "Ce afișează: i = 5; while i > 0: print(i); i -= 2",
+          "QuestionType": "MultipleChoice",
+          "Options": [ "5 4 3 2 1", "5 3 1", "4 2 0" ],
+          "CorrectAnswer": "5 3 1",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 10,
+          "QuestionText": "Scrie codul care dublează valoarea lui i în fiecare iterare.",
+          "QuestionType": "Code",
+          "CorrectAnswer": "while i < ceva:\n    i *= 2",
+          "Points": 10
+        }
+      ]
+    }
+  }
+]

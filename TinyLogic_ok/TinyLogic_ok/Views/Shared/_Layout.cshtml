@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TinyLogic</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="~/TinyLogic_ok.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="fixed top-0 z-10 w-full bg-white shadow-xl">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="flex h-16 items-center justify-between">
+
+                    <div class="flex items-center">
+                        <a class="mr-6 text-xl font-bold tracking-wider text-gray-800" asp-area="" asp-controller="Home" asp-action="Index">
+                            TinyLogic
+                        </a>
+
+                        <div class="hidden items-baseline space-x-2 md:flex">
+                            <a class="rounded-md px-3 py-2 text-sm font-medium text-gray-600 hover:bg-gray-100 hover:text-gray-900" asp-area="" asp-controller="Home" asp-action="Index"><i class="fas fa-home mr-1"></i> Acasă</a>
+                            <a class="rounded-md px-3 py-2 text-sm font-medium text-gray-600 hover:bg-gray-100 hover:text-gray-900" asp-area="" asp-controller="Courses" asp-action="Index"><i class="fas fa-book-open mr-1"></i> Cursuri</a>
+                            <a class="rounded-md px-3 py-2 text-sm font-medium text-gray-600 hover:bg-gray-100 hover:text-gray-900" asp-area="" asp-controller="Tests" asp-action="Index"><i class="fas fa-edit mr-1"></i> Teste</a>
+                            <a class="rounded-md px-3 py-2 text-sm font-medium text-gray-600 hover:bg-gray-100 hover:text-gray-900" asp-area="" asp-controller="Diplomas" asp-action="Index"><i class="fas fa-graduation-cap mr-1"></i> Diplome</a>
+                            <a class="rounded-md px-3 py-2 text-sm font-medium text-gray-600 hover:bg-gray-100 hover:text-gray-900" asp-area="" asp-controller="Chatbot" asp-action="Index"><i class="fas fa-robot mr-1"></i> Chatbot</a>
+                        </div>
+                    </div>
+
+                    <div class="hidden items-center space-x-3 md:flex">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <a class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-medium text-white shadow-md transition duration-150 ease-in-out hover:bg-indigo-700"
+                               asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">
+                                <i class="fas fa-user-circle mr-1"></i> Profil
+                            </a>
+
+                            <partial name="_LoginPartial" view-data='new ViewDataDictionary(ViewData) { { "ButtonClass", "rounded-md px-3 py-2 text-sm font-medium text-gray-600 transition duration-150 ease-in-out hover:bg-gray-100 hover:text-gray-900" } }' />
+                        }
+                        else
+                        {
+                            <a class="rounded-md border border-transparent px-3 py-2 text-sm font-medium text-gray-600 transition duration-150 ease-in-out hover:border-gray-300 hover:text-gray-900"
+                               asp-area="Identity" asp-page="/Account/Login">
+                                <i class="fas fa-sign-in-alt mr-1"></i> Conectare
+                            </a>
+
+                            <a class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-medium text-white shadow-md transition duration-150 ease-in-out hover:bg-indigo-700"
+                               asp-area="Identity" asp-page="/Account/Register">
+                                <i class="fas fa-user-plus mr-1"></i> Crează Cont
+                            </a>
+                        }
+                    </div>
+
+                    <div class="-mr-2 flex md:hidden">
+                        <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center rounded-md p-2 text-gray-600 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-900" aria-controls="mobile-menu" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <i id="menu-open-icon" class="fas fa-bars h-6 w-6" aria-hidden="true"></i>
+                            <i id="menu-close-icon" class="fas fa-times hidden h-6 w-6" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hidden md:hidden" id="mobile-menu">
+                <div class="space-y-1 px-2 pb-3 pt-2 sm:px-3">
+                    <a class="block rounded-md px-3 py-2 text-base font-medium text-gray-600 hover:bg-gray-100 hover:text-gray-900" asp-area="" asp-controller="Home" asp-action="Index"><i class="fas fa-home mr-1"></i> Acasă</a>
+                    <a class="block rounded-md px-3 py-2 text-base font-medium text-gray-600 hover:bg-gray-100 hover:text-gray-900" asp-area="" asp-controller="Courses" asp-action="Index"><i class="fas fa-book-open mr-1"></i> Cursuri</a>
+                    <a class="block rounded-md px-3 py-2 text-base font-medium text-gray-600 hover:bg-gray-100 hover:text-gray-900" asp-area="" asp-controller="Tests" asp-action="Index"><i class="fas fa-edit mr-1"></i> Teste</a>
+                    <a class="block rounded-md px-3 py-2 text-base font-medium text-gray-600 hover:bg-gray-100 hover:text-gray-900" asp-area="" asp-controller="Diplomas" asp-action="Index"><i class="fas fa-graduation-cap mr-1"></i> Diplome</a>
+                    <a class="block rounded-md px-3 py-2 text-base font-medium text-gray-600 hover:bg-gray-100 hover:text-gray-900" asp-area="" asp-controller="Chatbot" asp-action="Index"><i class="fas fa-robot mr-1"></i> Chatbot</a>
+
+                    <div class="mt-2 space-y-1 border-t border-gray-200 pt-2">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <a class="block rounded-md px-3 py-2 text-base font-medium text-gray-600 hover:bg-gray-100 hover:text-gray-900" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">
+                                <i class="fas fa-user-circle mr-1"></i> Profil
+                            </a>
+
+                            <partial name="_LoginPartial" view-data='new ViewDataDictionary(ViewData) { { "ButtonClass", "block rounded-md px-3 py-2 text-base font-medium text-gray-600 hover:bg-gray-100 hover:text-gray-900" } }' />
+                        }
+                        else
+                        {
+                            <a class="block rounded-md px-3 py-2 text-base font-medium text-gray-600 hover:bg-gray-100 hover:text-gray-900" asp-area="Identity" asp-page="/Account/Login">
+                                <i class="fas fa-sign-in-alt mr-1"></i> Conectare
+                            </a>
+
+                            <a class="block rounded-md bg-indigo-600 px-3 py-2 text-base font-medium text-white hover:bg-indigo-700" asp-area="Identity" asp-page="/Account/Register">
+                                <i class="fas fa-user-plus mr-1"></i> Crează Cont
+                            </a>
+                        }
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="pt-16">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+
+   
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://unpkg.com/blockly/blockly.min.js"></script>
+    <script src="https://unpkg.com/@@blockly/block-shareable-files/blocks-compressed.js"></script>
+    <script src="https://unpkg.com/@@blockly/block-shareable-files/msg/en.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
