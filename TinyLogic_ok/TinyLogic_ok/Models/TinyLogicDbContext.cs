@@ -23,6 +23,7 @@ namespace TinyLogic_ok.Models
         public DbSet<Tests> Tests { get; set; }
         public DbSet<UserLessons> UserLessons { get; set; }
         public DbSet<TestProgress> TestProgresses { get; set; }
+        public DbSet<Certificate> Certificates { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

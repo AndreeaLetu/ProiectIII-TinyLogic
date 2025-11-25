@@ -85,10 +85,21 @@
                 }
             }
 
+
         </div>
     </div>
 
-    
+    @if (Model.IsCourseCompleted)
+    {
+        <div class="mt-10 text-center">
+            <a href="/Certificates/Generate?courseId=@Model.Course.CourseId"
+               class="rounded-xl bg-green-600 px-6 py-3 font-semibold text-white shadow-md hover:bg-green-700">
+                Descarcă Diploma 🎓
+            </a>
+        </div>
+    }
+
+
     @if (Model.SelectedLesson != null
         && Model.ParsedContent != null
         && !Model.IsSelectedLessonCompleted

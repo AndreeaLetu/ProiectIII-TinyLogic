@@ -74,6 +74,7 @@ namespace TinyLogic_ok.Controllers
 
             bool isCourseCompleted = completedLessonIds.Count == lessons.Count;
 
+
             var vm = new PythonCourseVM
             {
                 Course = course,

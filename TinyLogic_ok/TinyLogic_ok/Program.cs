@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using DinkToPdf;
+using DinkToPdf.Contracts;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 using TinyLogic_ok.Models;
@@ -21,6 +23,8 @@ builder.Services.AddTransient<DataSeeder>();
 builder.Services.AddSingleton<IPythonRunner, PythonRunner>();
 builder.Services.AddScoped<ILessonProgressService, LessonProgressService>();
 builder.Services.AddSingleton<IPythonRunner, PythonRunner>();
+builder.Services.AddSingleton(typeof(IConverter), new SynchronizedConverter(new PdfTools()));
+
 
 var app = builder.Build();
 

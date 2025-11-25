@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\TinyLogic_ok.csproj": {}
+    "C:\\Users\\Deea\\Documents\\GitHub\\ProiectIII-TinyLogic\\TinyLogic_ok\\TinyLogic_ok\\TinyLogic_ok.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\TinyLogic_ok.csproj": {
+    "C:\\Users\\Deea\\Documents\\GitHub\\ProiectIII-TinyLogic\\TinyLogic_ok\\TinyLogic_ok\\TinyLogic_ok.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\TinyLogic_ok.csproj",
+        "projectUniqueName": "C:\\Users\\Deea\\Documents\\GitHub\\ProiectIII-TinyLogic\\TinyLogic_ok\\TinyLogic_ok\\TinyLogic_ok.csproj",
         "projectName": "TinyLogic_ok",
-        "projectPath": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\TinyLogic_ok.csproj",
+        "projectPath": "C:\\Users\\Deea\\Documents\\GitHub\\ProiectIII-TinyLogic\\TinyLogic_ok\\TinyLogic_ok\\TinyLogic_ok.csproj",
         "packagesPath": "C:\\Users\\Deea\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Deea\\Documents\\GitHub\\Proiect3_TinlyLogic\\TinyLogic_ok\\TinyLogic_ok\\obj\\",
+        "outputPath": "C:\\Users\\Deea\\Documents\\GitHub\\ProiectIII-TinyLogic\\TinyLogic_ok\\TinyLogic_ok\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,6 +50,10 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "DinkToPdf": {
+              "target": "Package",
+              "version": "[1.0.8, )"
+            },
             "Microsoft.AspNet.Identity.Core": {
               "target": "Package",
               "version": "[2.2.4, )"
@@ -93,6 +97,10 @@
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[9.0.4, )"
+            },
+            "QuestPDF": {
+              "target": "Package",
+              "version": "[2025.7.4, )"
             }
           },
           "imports": [
