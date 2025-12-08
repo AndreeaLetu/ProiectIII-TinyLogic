@@ -32,7 +32,7 @@ public class LessonsController : Controller
         if (request.LessonId <= 0)
             return Json(new { success = false, message = "LessonId lipsă!" });
 
-       
+
         string output = "";
         try
         {
@@ -83,14 +83,14 @@ public class LessonsController : Controller
             });
         }
 
-       
+
         var userIdString = User.FindFirstValue(ClaimTypes.NameIdentifier);
         if (!int.TryParse(userIdString, out int userId))
             return Json(new { success = false, message = "User ID invalid!" });
 
         await _lessonProgressService.MarkLessonCompletedAsync(userId, request.LessonId);
 
-        
+
         int courseId = lesson.CourseId;
 
         int totalLessons = await _context.Lessons
@@ -104,7 +104,7 @@ public class LessonsController : Controller
 
         if (doneLessons == totalLessons)
         {
-           
+
             await GenerateCertificateIfNotExists(userId, courseId);
         }
 
@@ -115,7 +115,7 @@ public class LessonsController : Controller
         var exists = await _context.Certificates
             .AnyAsync(c => c.UserId == userId && c.CourseId == courseId);
 
-        if (exists) return; // există deja
+        if (exists) return; 
 
         var user = await _context.Users.FindAsync(userId);
         var course = await _context.Courses.FindAsync(courseId);
@@ -148,4 +148,26 @@ public class LessonsController : Controller
         public string Code { get; set; }
         public int LessonId { get; set; }
     }
+
+    [HttpGet]
+    public IActionResult DownloadPdf(int courseId)
+    {
+        var course = _context.Courses.FirstOrDefault(c => c.CourseId == courseId);
+        if (course == null) return NotFound();
+
+        var lessons = _context.Lessons
+            .Where(l => l.CourseId == courseId)
+            .OrderBy(l => l.OrderIndex)
+            .ToList();
+
+        var parsed = lessons
+            .Select(l => (l, LessonJsonParser.Parse(l.ContentJson)))
+            .ToList();
+
+        var document = new LessonPdfDocument(course.CourseName, parsed);
+        byte[] pdf = document.GeneratePdf();
+
+        return File(pdf, "application/pdf", $"{course.CourseName}_Complet.pdf");
+    }
+
 }

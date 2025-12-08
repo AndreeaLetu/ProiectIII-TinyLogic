@@ -1363,3 +1363,4 @@ C:\Users\Deea\Documents\GitHub\ProiectIII-TinyLogic\TinyLogic_ok\TinyLogic_ok\bi
 C:\Users\Deea\Documents\GitHub\ProiectIII-TinyLogic\TinyLogic_ok\TinyLogic_ok\bin\Debug\net9.0\runtimes\win-x86\native\libwinpthread-1.dll
 C:\Users\Deea\Documents\GitHub\ProiectIII-TinyLogic\TinyLogic_ok\TinyLogic_ok\bin\Debug\net9.0\runtimes\win-x86\native\qpdf.dll
 C:\Users\Deea\Documents\GitHub\ProiectIII-TinyLogic\TinyLogic_ok\TinyLogic_ok\bin\Debug\net9.0\runtimes\win-x86\native\zlib1.dll
+C:\Users\Deea\Documents\GitHub\ProiectIII-TinyLogic\TinyLogic_ok\TinyLogic_ok\obj\Debug\net9.0\compressed\j1itirzopt-8vfqhder35.gz

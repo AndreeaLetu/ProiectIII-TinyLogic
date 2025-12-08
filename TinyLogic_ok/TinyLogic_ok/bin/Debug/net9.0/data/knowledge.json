@@ -1,0 +1,177 @@
+﻿[
+  {
+    "id": 1,
+    "question": "Ce este Python?",
+    "answer": "Python este un limbaj de programare puternic, simplu și ușor de învățat, folosit în AI, automatizări, web și multe altele."
+  },
+  {
+    "id": 2,
+    "question": "De ce este Python ușor de învățat?",
+    "answer": "Python are o sintaxă clară, apropiată de limba engleză, ceea ce îl face ideal pentru începători."
+  },
+  {
+    "id": 3,
+    "question": "Care este primul program în Python?",
+    "answer": "print(\"Salut lume!\")"
+  },
+  {
+    "id": 4,
+    "question": "Care este exercițiul din lecția 1?",
+    "answer": "Afișează exact textul: \"Am terminat Lecția 1!\""
+  },
+  {
+    "id": 5,
+    "question": "Ce tipuri de numere există în Python?",
+    "answer": "int (întregi), float (zecimale) și complex (numere complexe)."
+  },
+  {
+    "id": 6,
+    "question": "Ce operații matematice suportă Python?",
+    "answer": "+, -, *, /, //, %, **"
+  },
+  {
+    "id": 7,
+    "question": "Ce regulă folosește Python pentru ordinea operațiilor?",
+    "answer": "Regula PEMDAS."
+  },
+  {
+    "id": 8,
+    "question": "Exercițiul lecției 2",
+    "answer": "Calculează și afișează rezultatul expresiei: 3 + 4 * 2 (răspuns: 11)."
+  },
+  {
+    "id": 9,
+    "question": "Ce este o variabilă în Python?",
+    "answer": "O variabilă este o cutie în memorie în care poți stoca valori."
+  },
+  {
+    "id": 10,
+    "question": "Cum atribui valori în Python?",
+    "answer": "x = 5, nume = \"Ana\", temperatura = 22.5"
+  },
+  {
+    "id": 11,
+    "question": "Ce tipuri de date de bază există în Python?",
+    "answer": "int, float, str, bool."
+  },
+  {
+    "id": 12,
+    "question": "Exercițiul lecției 3",
+    "answer": "Creează o variabilă 'mesaj' și afișează 'Python e simplu!'."
+  },
+  {
+    "id": 13,
+    "question": "Ce este un string în Python?",
+    "answer": "Un string este o secvență de caractere."
+  },
+  {
+    "id": 14,
+    "question": "Cum se face concatenarea stringurilor?",
+    "answer": "\"Salut\" + \" lume\""
+  },
+  {
+    "id": 15,
+    "question": "Ce funcții utile există pentru stringuri?",
+    "answer": "len(), upper(), lower(), replace()."
+  },
+  {
+    "id": 16,
+    "question": "Exercițiul lecției 4",
+    "answer": "Afișează textul 'STRINGURI ÎN PYTHON' folosind upper()."
+  },
+  {
+    "id": 17,
+    "question": "Ce este o listă în Python?",
+    "answer": "O listă stochează mai multe valori într-o singură variabilă."
+  },
+  {
+    "id": 18,
+    "question": "Cum se indexează listele?",
+    "answer": "fructe[0], fructe[1]."
+  },
+  {
+    "id": 19,
+    "question": "Ce metode utile au listele?",
+    "answer": "append(), remove(), sort()."
+  },
+  {
+    "id": 20,
+    "question": "Exercițiul lecției 5",
+    "answer": "Creează o listă cu 3 numere și afișează suma lor (6)."
+  },
+  {
+    "id": 21,
+    "question": "Cum funcționează o structură if în Python?",
+    "answer": "if condiție: execută codul."
+  },
+  {
+    "id": 22,
+    "question": "Ce face else?",
+    "answer": "Se execută când condiția din if este falsă."
+  },
+  {
+    "id": 23,
+    "question": "Ce face elif?",
+    "answer": "Adaugă condiții suplimentare."
+  },
+  {
+    "id": 24,
+    "question": "Exercițiul lecției 6",
+    "answer": "Dacă x = 10, afișează 'Număr mare'."
+  },
+  {
+    "id": 25,
+    "question": "Ce face bucla for în Python?",
+    "answer": "Iterează peste elemente sau range-uri."
+  },
+  {
+    "id": 26,
+    "question": "Cum parcurgi o listă cu for?",
+    "answer": "for fruct in fructe: print(fruct)"
+  },
+  {
+    "id": 27,
+    "question": "Exercițiul lecției 7",
+    "answer": "Afișează numerele de la 1 la 5 cu for."
+  },
+  {
+    "id": 28,
+    "question": "Ce este bucla while în Python?",
+    "answer": "Rulează cât timp condiția este adevărată."
+  },
+  {
+    "id": 29,
+    "question": "Exemplu de while",
+    "answer": "i = 1; while i <= 3: print(i); i += 1"
+  },
+  {
+    "id": 30,
+    "question": "Exercițiul lecției 8",
+    "answer": "Afișează de 3 ori textul 'Python!'."
+  },
+  {
+    "id": 31,
+    "question": "Ce este o funcție în Python?",
+    "answer": "O funcție este un bloc de cod reutilizabil, definit cu def."
+  },
+  {
+    "id": 32,
+    "question": "Cum se definesc argumentele?",
+    "answer": "def adunare(a, b): return a + b"
+  },
+  {
+    "id": 33,
+    "question": "Exercițiul lecției 9",
+    "answer": "Creează o funcție care întoarce 100."
+  },
+  {
+    "id": 34,
+    "question": "Ce conține mini-proiectul final?",
+    "answer": "Un program care folosește variabile, condiții și funcții."
+  },
+  {
+    "id": 35,
+    "question": "Exercițiul lecției 10",
+    "answer": "Afișează exact textul: „Am terminat cursul Python!”."
+  }
+]

@@ -1,5 +1,8 @@
+wwwroot\certificates\Diploma_Python pentru copii_Andreea_Letu.pdf
 wwwroot\css\site.css
+wwwroot\data\knowledge.json
 wwwroot\favicon.ico
+wwwroot\images\chat\boty.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
@@ -61,7 +64,6 @@ wwwroot\lib\jquery\dist\jquery.slim.js
 wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
-wwwroot\certificates\Diploma_Python pentru copii_Andreea_Letu.pdf
 C:\Users\Deea\Documents\GitHub\ProiectIII-TinyLogic\TinyLogic_ok\TinyLogic_ok\wwwroot\css\site.css
 C:\Users\Deea\Documents\GitHub\ProiectIII-TinyLogic\TinyLogic_ok\TinyLogic_ok\wwwroot\favicon.ico
 C:\Users\Deea\Documents\GitHub\ProiectIII-TinyLogic\TinyLogic_ok\TinyLogic_ok\wwwroot\js\site.js
@@ -124,3 +126,4 @@ C:\Users\Deea\Documents\GitHub\ProiectIII-TinyLogic\TinyLogic_ok\TinyLogic_ok\ww
 C:\Users\Deea\Documents\GitHub\ProiectIII-TinyLogic\TinyLogic_ok\TinyLogic_ok\wwwroot\lib\jquery\dist\jquery.slim.min.js
 C:\Users\Deea\Documents\GitHub\ProiectIII-TinyLogic\TinyLogic_ok\TinyLogic_ok\wwwroot\lib\jquery\dist\jquery.slim.min.map
 C:\Users\Deea\Documents\GitHub\ProiectIII-TinyLogic\TinyLogic_ok\TinyLogic_ok\wwwroot\lib\jquery\LICENSE.txt
+C:\Users\Deea\Documents\GitHub\ProiectIII-TinyLogic\TinyLogic_ok\TinyLogic_ok\wwwroot\data\knowledge.json

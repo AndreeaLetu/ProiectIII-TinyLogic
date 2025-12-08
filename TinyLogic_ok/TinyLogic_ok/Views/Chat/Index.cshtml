@@ -1,0 +1,307 @@
+﻿@{
+    ViewData["Title"] = "TinyLogic Chatbot";
+
+    var userAvatar = ViewBag.UserAvatarUrl ?? Url.Content("~/images/chat/user.png");
+    var botAvatar = Url.Content("~/images/chat/boty.png");   
+}
+
+
+<main class="chat-main">
+    <div class="chat-shell">
+        <section id="chatBox" class="chat-box">
+            <div class="msg-row bot">
+                <div class="msg-avatar">
+                    <img src="~/images/chat/boty.png" alt="Boty" />
+
+                </div>
+                <div class="msg-bubble">
+                    <div class="msg-author">Boty</div>
+                    <div class="msg-text">
+                        Salut! Sunt prietenul tău Boty! 🤖
+                        Întreabă-mă ceva despre lecțiile de Python sau programe simple!
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="chat-input-area">
+            <input id="msg"
+                   class="chat-input"
+                   placeholder="Scrie aici mesajul tău..."
+                   autocomplete="off" />
+
+            <button id="sendBtn"
+                    class="chat-send-btn"
+                    type="button"
+                    onclick="sendMessage()">
+                Trimite ➤
+            </button>
+        </section>
+    </div>
+</main>
+
+<style>
+    body {
+        margin: 0;
+        background: radial-gradient(circle at top left, #fdf2ff 0, #e0f2fe 40%, #fefce8 100%);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .chat-root {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .chat-main {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 16px 18px;
+    }
+
+    .chat-shell {
+        width: 100%;
+        max-width: 900px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .chat-box {
+        height: 55vh;
+        min-height: 260px;
+        background: rgba(255, 255, 255, 0.92);
+        border-radius: 16px;
+        padding: 12px 10px;
+        overflow-y: auto;
+        box-shadow: 0 10px 25px rgba(148, 163, 184, 0.35);
+        border: 1px solid rgba(148, 163, 184, 0.45);
+    }
+
+        .chat-box::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .chat-box::-webkit-scrollbar-thumb {
+            background: rgba(148, 163, 184, 0.9);
+            border-radius: 999px;
+        }
+
+    .msg-row {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 10px;
+        gap: 8px;
+    }
+
+        .msg-row.user {
+            justify-content: flex-end;
+        }
+
+        .msg-row.bot {
+            justify-content: flex-start;
+        }
+
+    .msg-avatar {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        overflow: hidden;
+        flex-shrink: 0;
+        box-shadow: 0 2px 6px rgba(15, 23, 42, 0.25);
+        background: #e5e7eb;
+    }
+
+        .msg-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+    .msg-bubble {
+        max-width: 85%;
+        padding: 8px 12px 9px;
+        border-radius: 18px;
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+
+    .msg-row.user .msg-bubble {
+        background: linear-gradient(135deg, #38bdf8, #6366f1);
+        color: #f9fafb;
+        border-bottom-right-radius: 6px;
+    }
+
+    .msg-row.bot .msg-bubble {
+        background: #eef2ff;
+        color: #111827;
+        border: 1px solid #c7d2fe;
+        border-bottom-left-radius: 6px;
+    }
+
+    .msg-author {
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        opacity: 0.8;
+        margin-bottom: 2px;
+    }
+
+    .msg-text {
+        white-space: pre-wrap;
+    }
+
+    .chat-input-area {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        margin-top: 4px;
+    }
+
+    .chat-input {
+        flex: 1;
+        border-radius: 999px;
+        border: 2px solid #a5b4fc;
+        padding: 10px 16px;
+        font-size: 0.95rem;
+        outline: none;
+        background: #ffffff;
+        color: #111827;
+    }
+
+        .chat-input:focus {
+            border-color: #6366f1;
+            box-shadow: 0 0 0 2px rgba(129, 140, 248, 0.4);
+        }
+
+    .chat-send-btn {
+        border-radius: 999px;
+        border: none;
+        padding: 10px 18px;
+        font-weight: 600;
+        font-size: 0.95rem;
+        background: linear-gradient(135deg, #22c55e, #16a34a);
+        color: #f9fafb;
+        cursor: pointer;
+        box-shadow: 0 6px 14px rgba(22, 163, 74, 0.45);
+        transition: transform 0.08s ease, box-shadow 0.08s ease, filter 0.08s ease;
+    }
+
+        .chat-send-btn:hover {
+            filter: brightness(1.03);
+            transform: translateY(-1px);
+            box-shadow: 0 8px 18px rgba(22, 163, 74, 0.55);
+        }
+
+        .chat-send-btn:active {
+            transform: translateY(0);
+            box-shadow: 0 4px 10px rgba(22, 163, 74, 0.4);
+        }
+
+        .chat-send-btn:disabled {
+            opacity: 0.6;
+            cursor: default;
+            box-shadow: none;
+            transform: none;
+        }
+
+    @@media (max-width: 768px) {
+        .chat-main
+
+    {
+        align-items: stretch;
+    }
+
+    .chat-box {
+        height: 50vh;
+    }
+
+    }
+</style>
+
+<script>
+    const chatBox = document.getElementById("chatBox");
+    const input = document.getElementById("msg");
+    const sendBtn = document.getElementById("sendBtn");
+
+
+    const userAvatarUrl = '@userAvatar';
+    const botAvatarUrl = '@botAvatar';
+
+    function appendMessage(text, sender) {
+        const row = document.createElement("div");
+        row.className = "msg-row " + sender;
+
+        const avatarWrapper = document.createElement("div");
+        avatarWrapper.className = "msg-avatar";
+
+        const avatarImg = document.createElement("img");
+        avatarImg.src = sender === "user" ? userAvatarUrl : botAvatarUrl;
+        avatarImg.alt = sender === "user" ? "Tu" : "Boty";
+
+        avatarWrapper.appendChild(avatarImg);
+
+        const bubble = document.createElement("div");
+        bubble.className = "msg-bubble";
+
+        const author = document.createElement("div");
+        author.className = "msg-author";
+        author.textContent = sender === "user" ? "Tu" : "Boty";
+
+        const msgText = document.createElement("div");
+        msgText.className = "msg-text";
+        msgText.textContent = text;
+
+        bubble.appendChild(author);
+        bubble.appendChild(msgText);
+
+        if (sender === "user") {
+            
+            row.appendChild(bubble);
+            row.appendChild(avatarWrapper);
+        } else {
+           
+            row.appendChild(avatarWrapper);
+            row.appendChild(bubble);
+        }
+
+        chatBox.appendChild(row);
+        chatBox.scrollTop = chatBox.scrollHeight;
+    }
+
+    function sendMessage() {
+        const text = input.value.trim();
+        if (!text) return;
+
+        appendMessage(text, "user");
+        input.value = "";
+        input.focus();
+        sendBtn.disabled = true;
+
+        fetch("/Chat/Send", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: "message=" + encodeURIComponent(text)
+        })
+        .then(r => r.json())
+        .then(d => {
+            appendMessage(d.reply, "bot");
+        })
+        .catch(() => {
+            appendMessage("Ups, a apărut o eroare. Încearcă din nou 😊", "bot");
+        })
+        .finally(() => {
+            sendBtn.disabled = false;
+        });
+    }
+
+    input.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" && !e.shiftKey) {
+            e.preventDefault();
+            sendMessage();
+        }
+    });
+</script>

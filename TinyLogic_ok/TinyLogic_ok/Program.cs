@@ -5,8 +5,11 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 using TinyLogic_ok.Models;
 using TinyLogic_ok.Services;
+using QuestPDF.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
+QuestPDF.Settings.License = LicenseType.Community;
+
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
@@ -24,6 +27,12 @@ builder.Services.AddSingleton<IPythonRunner, PythonRunner>();
 builder.Services.AddScoped<ILessonProgressService, LessonProgressService>();
 builder.Services.AddSingleton<IPythonRunner, PythonRunner>();
 builder.Services.AddSingleton(typeof(IConverter), new SynchronizedConverter(new PdfTools()));
+
+builder.Services.AddScoped<IAiService, AiService>();
+builder.Services.AddScoped<IRagService, RagService>();
+
+
+
 
 
 var app = builder.Build();
