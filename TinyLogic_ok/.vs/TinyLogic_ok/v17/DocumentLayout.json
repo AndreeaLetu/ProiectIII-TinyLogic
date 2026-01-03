@@ -64,7 +64,7 @@
               "RelativeDocumentMoniker": "TinyLogic_ok\\Data\\courses.json",
               "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\ProiectIII-TinyLogic\\TinyLogic_ok\\TinyLogic_ok\\Data\\courses.json",
               "RelativeToolTip": "TinyLogic_ok\\Data\\courses.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-12-08T13:07:22.564Z",
               "EditorCaption": ""
@@ -79,8 +79,7 @@
               "RelativeToolTip": "TinyLogic_ok\\Data\\python_lessons.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-08T13:07:18.113Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-08T13:07:18.113Z"
             },
             {
               "$type": "Document",
@@ -92,8 +91,7 @@
               "RelativeToolTip": "TinyLogic_ok\\Controllers\\LessonController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAHUAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T13:05:51.703Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-08T13:05:51.703Z"
             },
             {
               "$type": "Document",
@@ -105,8 +103,7 @@
               "RelativeToolTip": "TinyLogic_ok\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAADYAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-04T10:55:11.072Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T10:55:11.072Z"
             },
             {
               "$type": "Document",
@@ -118,8 +115,7 @@
               "RelativeToolTip": "TinyLogic_ok\\Controllers\\ChatController.cs",
               "ViewState": "AgIAACYAAAAAAAAAAAAwwBcAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T10:16:43.763Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T10:16:43.763Z"
             },
             {
               "$type": "Document",
@@ -131,8 +127,7 @@
               "RelativeToolTip": "TinyLogic_ok\\Services\\AiService.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAgwBEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T10:15:39.403Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T10:15:39.403Z"
             },
             {
               "$type": "Document",
@@ -144,8 +139,7 @@
               "RelativeToolTip": "TinyLogic_ok\\Services\\IAiService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T10:15:07.493Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T10:15:07.493Z"
             },
             {
               "$type": "Document",
@@ -157,8 +151,7 @@
               "RelativeToolTip": "TinyLogic_ok\\wwwroot\\data\\knowledge.json",
               "ViewState": "AgIAAGAAAAAAAAAAAAAAAHsAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-04T09:29:56.115Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T09:29:56.115Z"
             },
             {
               "$type": "Document",
@@ -182,8 +175,7 @@
               "RelativeToolTip": "TinyLogic_ok\\Services\\RagService.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAA8wEQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T09:22:42.078Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T09:22:42.078Z"
             },
             {
               "$type": "Document",
@@ -195,8 +187,7 @@
               "RelativeToolTip": "TinyLogic_ok\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T08:08:17.921Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T08:08:17.921Z"
             }
           ]
         }
