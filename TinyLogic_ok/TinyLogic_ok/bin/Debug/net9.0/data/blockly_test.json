@@ -1,0 +1,58 @@
+﻿[
+  {
+    "TestName": "Test Lecția 1 – Programare Vizuală",
+    "Description": "Test despre blocurile Blockly de bază.",
+    "PassingScore": 50,
+    "CourseName": "Programare Vizuală",
+    "TestJson": {
+      "Title": "Test Blockly – Introducere",
+      "Instructions": "Răspunde la întrebările despre blocurile Blockly.",
+      "TimeLimit": 15,
+      "Questions": [
+        {
+          "QuestionNumber": 1,
+          "QuestionText": "Care este rolul blocului „Când apeși pe 🚀”?",
+          "QuestionType": "MultipleChoice",
+          "Options": [
+            "Pornește programul",
+            "Mută personajul",
+            "Repetă instrucțiuni"
+          ],
+          "CorrectAnswer": "Pornește programul",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 2,
+          "QuestionText": "Blocul MOVE poate funcționa fără blocul START.",
+          "QuestionType": "TrueFalse",
+          "CorrectAnswer": "Fals",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 3,
+          "QuestionText": "Ce face blocul REPEAT?",
+          "QuestionType": "MultipleChoice",
+          "Options": [
+            "Execută o singură dată",
+            "Execută blocuri de mai multe ori",
+            "Pornește programul"
+          ],
+          "CorrectAnswer": "Execută blocuri de mai multe ori",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 4,
+          "QuestionText": "Ce cod generează MOVE 10 urmat de MOVE 10?",
+          "QuestionType": "MultipleChoice",
+          "Options": [
+            "move:20",
+            "move:10;move:10",
+            "repeat:2{move:10}"
+          ],
+          "CorrectAnswer": "move:10;move:10",
+          "Points": 10
+        }
+      ]
+    }
+  }
+]

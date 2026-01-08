@@ -3,7 +3,7 @@
 
 
 using System.ComponentModel.DataAnnotations;
-using TinyLogic_ok.Models.LessonModels;  // <--- OBLIGATORIU
+using TinyLogic_ok.Models.LessonModels; 
 using TinyLogic_ok.Models.TestModels;
 
 namespace TinyLogic_ok.Models.CourseModels
@@ -12,6 +12,8 @@ namespace TinyLogic_ok.Models.CourseModels
     {
         [Key] public int CourseId { get; set; }
         public string CourseName { get; set; }
+
+        public string Language { get; set; }
 
         public string Description { get; set; }
         public string Difficulty { get; set; }

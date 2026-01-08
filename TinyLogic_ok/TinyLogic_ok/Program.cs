@@ -24,6 +24,8 @@ builder.Services.AddIdentity<User, IdentityRole<int>>()
 builder.Services.AddTransient<IEmailSender, EmailSender>();
 builder.Services.AddTransient<DataSeeder>();
 builder.Services.AddSingleton<IPythonRunner, PythonRunner>();
+builder.Services.AddScoped<ICRunner, CRunner>();
+
 builder.Services.AddScoped<ILessonProgressService, LessonProgressService>();
 builder.Services.AddSingleton<IPythonRunner, PythonRunner>();
 builder.Services.AddSingleton(typeof(IConverter), new SynchronizedConverter(new PdfTools()));

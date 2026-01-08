@@ -1,0 +1,269 @@
+﻿[
+  {
+    "TestName": "Test Lecția 1 – Introducere în C",
+    "Description": "Test despre printf, tipuri de date și structura programului C.",
+    "PassingScore": 70,
+    "CourseName": "C pentru începători",
+    "TestJson": {
+      "Title": "Test C – Introducere",
+      "Instructions": "Răspunde la toate întrebările.",
+      "TimeLimit": 12,
+      "Questions": [
+        {
+          "QuestionNumber": 1,
+          "QuestionText": "Ce funcție este folosită pentru afișare în C?",
+          "QuestionType": "MultipleChoice",
+          "Options": [ "print()", "printf()", "cout" ],
+          "CorrectAnswer": "printf()",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 2,
+          "QuestionText": "Ce tip de date reprezintă numere întregi în C?",
+          "QuestionType": "MultipleChoice",
+          "Options": [ "float", "int", "char" ],
+          "CorrectAnswer": "int",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 3,
+          "QuestionText": "Funcția principală a unui program C se numește main.",
+          "QuestionType": "TrueFalse",
+          "CorrectAnswer": "Adevărat",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 4,
+          "QuestionText": "Ce simbol încheie o instrucțiune în C?",
+          "QuestionType": "MultipleChoice",
+          "Options": [ ".", ",", ";" ],
+          "CorrectAnswer": ";",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 5,
+          "QuestionText": "Ce afișează: printf(\"Salut!\");",
+          "QuestionType": "MultipleChoice",
+          "Options": [ "Salut!", "printf", "Eroare" ],
+          "CorrectAnswer": "Salut!",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 6,
+          "QuestionText": "Scrie linia de cod care afișează textul \"C este cool!\"",
+          "QuestionType": "Code",
+          "CorrectAnswer": "printf(\"C este cool!\");",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 7,
+          "QuestionText": "Ce bibliotecă este necesară pentru printf?",
+          "QuestionType": "MultipleChoice",
+          "Options": [ "stdlib.h", "stdio.h", "math.h" ],
+          "CorrectAnswer": "stdio.h",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 8,
+          "QuestionText": "Tipul char este folosit pentru caractere.",
+          "QuestionType": "TrueFalse",
+          "CorrectAnswer": "Adevărat",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 9,
+          "QuestionText": "Cum declari o variabilă întreagă x cu valoarea 10?",
+          "QuestionType": "MultipleChoice",
+          "Options": [ "int x = 10;", "x = int 10;", "integer x = 10;" ],
+          "CorrectAnswer": "int x = 10;",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 10,
+          "QuestionText": "Scrie structura minimă a funcției main.",
+          "QuestionType": "Code",
+          "CorrectAnswer": "int main() {\n    return 0;\n}",
+          "Points": 10
+        }
+      ]
+    }
+  },
+
+  {
+    "TestName": "Test Lecția 2 – Condiții în C",
+    "Description": "Test despre if, else și operatori de comparație.",
+    "PassingScore": 70,
+    "CourseName": "C pentru începători",
+    "TestJson": {
+      "Title": "Test C – Condiții",
+      "Instructions": "Răspunde corect la întrebări.",
+      "TimeLimit": 15,
+      "Questions": [
+        {
+          "QuestionNumber": 1,
+          "QuestionText": "Ce instrucțiune verifică o condiție în C?",
+          "QuestionType": "MultipleChoice",
+          "Options": [ "if", "when", "check" ],
+          "CorrectAnswer": "if",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 2,
+          "QuestionText": "Operatorul == verifică egalitatea.",
+          "QuestionType": "TrueFalse",
+          "CorrectAnswer": "Adevărat",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 3,
+          "QuestionText": "Ce operator verifică dacă două valori sunt diferite?",
+          "QuestionType": "MultipleChoice",
+          "Options": [ "!=", "==", "<=" ],
+          "CorrectAnswer": "!=",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 4,
+          "QuestionText": "else se execută dacă if este fals.",
+          "QuestionType": "TrueFalse",
+          "CorrectAnswer": "Adevărat",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 5,
+          "QuestionText": "Ce afișează: if (5 > 3) printf(\"OK\");",
+          "QuestionType": "MultipleChoice",
+          "Options": [ "OK", "Nimic", "Eroare" ],
+          "CorrectAnswer": "OK",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 6,
+          "QuestionText": "Scrie o condiție care verifică dacă x este mai mare decât 10.",
+          "QuestionType": "Code",
+          "CorrectAnswer": "if (x > 10)",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 7,
+          "QuestionText": "Operatorul < verifică dacă o valoare este mai mică.",
+          "QuestionType": "TrueFalse",
+          "CorrectAnswer": "Adevărat",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 8,
+          "QuestionText": "Ce afișează: if (0) printf(\"A\"); else printf(\"B\");",
+          "QuestionType": "MultipleChoice",
+          "Options": [ "A", "B", "Nimic" ],
+          "CorrectAnswer": "B",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 9,
+          "QuestionText": "Care este condiția corectă pentru număr par?",
+          "QuestionType": "MultipleChoice",
+          "Options": [ "x % 2 == 0", "x / 2 == 0", "x == 2" ],
+          "CorrectAnswer": "x % 2 == 0",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 10,
+          "QuestionText": "Scrie un if care afișează \"Par\" dacă numărul este par.",
+          "QuestionType": "Code",
+          "CorrectAnswer": "if (x % 2 == 0) printf(\"Par\");",
+          "Points": 10
+        }
+      ]
+    }
+  },
+
+  {
+    "TestName": "Test Lecția 3 – Bucle în C",
+    "Description": "Test despre while și for.",
+    "PassingScore": 70,
+    "CourseName": "C pentru începători",
+    "TestJson": {
+      "Title": "Test C – Bucle",
+      "Instructions": "Rezolvă exercițiile.",
+      "TimeLimit": 15,
+      "Questions": [
+        {
+          "QuestionNumber": 1,
+          "QuestionText": "Ce face bucla while?",
+          "QuestionType": "MultipleChoice",
+          "Options": [ "Rulează o dată", "Rulează cât timp condiția e adevărată", "Rulează de 10 ori" ],
+          "CorrectAnswer": "Rulează cât timp condiția e adevărată",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 2,
+          "QuestionText": "O buclă while fără modificarea condiției poate fi infinită.",
+          "QuestionType": "TrueFalse",
+          "CorrectAnswer": "Adevărat",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 3,
+          "QuestionText": "Ce buclă este folosită pentru iterații cu număr cunoscut?",
+          "QuestionType": "MultipleChoice",
+          "Options": [ "while", "for", "do-while" ],
+          "CorrectAnswer": "for",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 4,
+          "QuestionText": "Ce afișează: for(int i=1;i<=3;i++) printf(\"%d\", i);",
+          "QuestionType": "MultipleChoice",
+          "Options": [ "123", "012", "321" ],
+          "CorrectAnswer": "123",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 5,
+          "QuestionText": "Bucla for are inițializare, condiție și incrementare.",
+          "QuestionType": "TrueFalse",
+          "CorrectAnswer": "Adevărat",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 6,
+          "QuestionText": "Scrie o buclă while care afișează numerele 1...3.",
+          "QuestionType": "Code",
+          "CorrectAnswer": "int i = 1;\nwhile (i <= 3) {\n    printf(\"%d\", i);\n    i++;\n}",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 7,
+          "QuestionText": "Ce face i++?",
+          "QuestionType": "MultipleChoice",
+          "Options": [ "Scade i", "Crește i cu 1", "Înmulțește i" ],
+          "CorrectAnswer": "Crește i cu 1",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 8,
+          "QuestionText": "while(1) este o buclă infinită.",
+          "QuestionType": "TrueFalse",
+          "CorrectAnswer": "Adevărat",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 9,
+          "QuestionText": "Ce afișează: int i=5; while(i>0){ printf(\"%d\", i); i-=2; }",
+          "QuestionType": "MultipleChoice",
+          "Options": [ "531", "54321", "420" ],
+          "CorrectAnswer": "531",
+          "Points": 10
+        },
+        {
+          "QuestionNumber": 10,
+          "QuestionText": "Scrie o buclă for care afișează C de 5 ori.",
+          "QuestionType": "Code",
+          "CorrectAnswer": "for(int i=0;i<5;i++) printf(\"C\");",
+          "Points": 10
+        }
+      ]
+    }
+  }
+]

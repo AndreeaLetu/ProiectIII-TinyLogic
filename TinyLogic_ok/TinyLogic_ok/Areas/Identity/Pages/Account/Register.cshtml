@@ -4,79 +4,169 @@
     ViewData["Title"] = "Înregistrare";
 }
 
-<div class="container mt-5">
-    <div class="row justify-content-center">
-        <div class="col-lg-6 col-md-8">
+<div class="min-h-screen bg-gradient-to-b from-indigo-50 via-white to-white pb-10 pt-24">
+    <div class="mx-auto w-full max-w-6xl px-4">
 
-            <div class="card rounded-4 border-0 shadow-lg">
-                <div class="card-body p-4">
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
 
-                    <h2 class="text-primary fw-bold mb-4 text-center">Creați un cont nou</h2>
+            <!-- LEFT: info card / branding -->
+            <div class="hidden lg:block">
+                <div class="rounded-3xl border border-indigo-100 bg-white p-10 shadow-xl">
+                    <div class="flex items-center gap-3">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-indigo-600 text-white shadow">
+                            <i class="fa-solid fa-brain text-xl"></i>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-extrabold text-gray-900">TinyLogic</div>
+                            <div class="text-sm text-gray-500">Învață programare pas cu pas</div>
+                        </div>
+                    </div>
 
-                    <form id="registerForm" enctype="multipart/form-data" method="post">
-
-                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-
-                     
-                        <div class="mb-3 text-center">
-                            <img id="previewImage" src="/images/default-profile.png"
-                                 class="rounded-circle border shadow"
-                                 style="width:120px; height:120px; object-fit:cover;">
+                    <div class="mt-8 space-y-4 text-gray-700">
+                        <div class="flex items-start gap-3">
+                            <div class="mt-1 text-indigo-600"><i class="fa-solid fa-check"></i></div>
+                            <div>
+                                <div class="font-semibold">Cursuri interactive</div>
+                                <div class="text-sm text-gray-500">Python, C și Programare vizuală (Blocks).</div>
+                            </div>
                         </div>
 
-                        <div class="mb-3">
-                            <label class="form-label fw-bold">Poză de profil</label>
-                            <input asp-for="Input.PhotoFile" type="file" class="form-control"
-                                   accept="image/*" onchange="previewFile(event)">
-                            <span asp-validation-for="Input.PhotoFile" class="text-danger"></span>
+                        <div class="flex items-start gap-3">
+                            <div class="mt-1 text-indigo-600"><i class="fa-solid fa-check"></i></div>
+                            <div>
+                                <div class="font-semibold">Diplome automate</div>
+                                <div class="text-sm text-gray-500">Primești diplomă la finalizarea cursului.</div>
+                            </div>
                         </div>
 
-                        <div class="form-floating mb-3">
-                            <input asp-for="Input.FirstName" class="form-control" placeholder="Prenume">
-                            <label asp-for="Input.FirstName"></label>
+                        <div class="flex items-start gap-3">
+                            <div class="mt-1 text-indigo-600"><i class="fa-solid fa-check"></i></div>
+                            <div>
+                                <div class="font-semibold">Badge-uri</div>
+                                <div class="text-sm text-gray-500">Deblochezi insigne când termini cursuri.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-10 rounded-2xl border border-indigo-100 bg-indigo-50 p-6">
+                        <div class="text-sm font-semibold text-indigo-800">Rol implicit</div>
+                        <div class="mt-1 text-sm text-indigo-700">
+                            Toate conturile noi sunt create ca <b>Student</b>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT: register form -->
+            <div>
+                <div class="rounded-3xl border border-indigo-100 bg-white p-8 shadow-xl">
+                    <div class="text-center">
+                        <h1 class="text-3xl font-extrabold text-indigo-700">@ViewData["Title"]</h1>
+                        <p class="mt-2 text-sm text-gray-500">Creează contul și începe să înveți 🎯</p>
+                    </div>
+
+                    <hr class="my-6" />
+
+                    <form id="registerForm" enctype="multipart/form-data" method="post" class="space-y-4">
+                        <div asp-validation-summary="ModelOnly" class="rounded-xl border border-red-100 bg-red-50 p-4 text-sm text-red-700"></div>
+
+                        <!-- ✅ Rol preset (NU apare în UI, dar se trimite la server) -->
+                        <input asp-for="Input.Role" type="hidden" value="Student" />
+
+                        <!-- Avatar preview -->
+                        <div class="flex flex-col items-center gap-3">
+                            <img id="previewImage"
+                                 src="/images/default-profile.png"
+                                 class="h-28 w-28 rounded-full border-4 border-indigo-500 object-cover shadow" />
+                            <div class="text-xs text-gray-500">Poză de profil (opțional)</div>
                         </div>
 
-                        <div class="form-floating mb-3">
-                            <input asp-for="Input.LastName" class="form-control" placeholder="Nume">
-                            <label asp-for="Input.LastName"></label>
+                        <!-- Upload -->
+                        <div>
+                            <label class="mb-1 block text-sm font-medium text-gray-700">Poză de profil</label>
+                            <input asp-for="Input.PhotoFile" type="file" accept="image/*"
+                                   class="block w-full rounded-xl border border-gray-300 bg-white px-3 py-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                                   onchange="previewFile(event)" />
+                            <span asp-validation-for="Input.PhotoFile" class="text-sm text-red-600"></span>
                         </div>
 
-                        <div class="form-floating mb-3">
-                            <input asp-for="Input.PhoneNumber" class="form-control" placeholder="07xxxxxxx">
-                            <label asp-for="Input.PhoneNumber"></label>
+                        <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+                            <div>
+                                <label class="mb-1 block text-sm font-medium text-gray-700">Prenume</label>
+                                <input asp-for="Input.FirstName"
+                                       class="block w-full rounded-xl border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                                       placeholder="Prenume" />
+                                <span asp-validation-for="Input.FirstName" class="text-sm text-red-600"></span>
+                            </div>
+                            <div>
+                                <label class="mb-1 block text-sm font-medium text-gray-700">Nume</label>
+                                <input asp-for="Input.LastName"
+                                       class="block w-full rounded-xl border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                                       placeholder="Nume" />
+                                <span asp-validation-for="Input.LastName" class="text-sm text-red-600"></span>
+                            </div>
                         </div>
 
-                        <div class="form-floating mb-3">
-                            <input asp-for="Input.Role" class="form-control" placeholder="Ex: Student / Profesor">
-                            <label asp-for="Input.Role"></label>
+                        <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+                            <div>
+                                <label class="mb-1 block text-sm font-medium text-gray-700">Telefon</label>
+                                <input asp-for="Input.PhoneNumber"
+                                       class="block w-full rounded-xl border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                                       placeholder="07xxxxxxx" />
+                                <span asp-validation-for="Input.PhoneNumber" class="text-sm text-red-600"></span>
+                            </div>
+                            <div>
+                                <label class="mb-1 block text-sm font-medium text-gray-700">Data nașterii</label>
+                                <input asp-for="Input.BirthDate" type="date"
+                                       class="block w-full rounded-xl border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" />
+                                <span asp-validation-for="Input.BirthDate" class="text-sm text-red-600"></span>
+                            </div>
                         </div>
 
-                        <div class="form-floating mb-3">
-                            <input asp-for="Input.BirthDate" type="date" class="form-control">
-                            <label asp-for="Input.BirthDate"></label>
+                        <!-- Rol afișat (read-only, doar informativ) -->
+                        <div class="rounded-2xl border border-indigo-100 bg-indigo-50 p-4">
+                            <div class="text-sm font-semibold text-indigo-800">
+                                Rol: <span class="font-extrabold">Student</span>
+                            </div>
+                            <div class="mt-1 text-xs text-indigo-700">
+                                Rolul este setat automat pentru conturile noi.
+                            </div>
                         </div>
 
-                        <div class="form-floating mb-3">
-                            <input asp-for="Input.Email" class="form-control" placeholder="email">
-                            <label asp-for="Input.Email"></label>
+                        <div>
+                            <label class="mb-1 block text-sm font-medium text-gray-700">Email</label>
+                            <input asp-for="Input.Email"
+                                   class="block w-full rounded-xl border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                                   placeholder="name@example.com" autocomplete="username" />
+                            <span asp-validation-for="Input.Email" class="text-sm text-red-600"></span>
                         </div>
 
-                        <div class="form-floating mb-3">
-                            <input asp-for="Input.Password" class="form-control" placeholder="Parolă">
-                            <label asp-for="Input.Password"></label>
+                        <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+                            <div>
+                                <label class="mb-1 block text-sm font-medium text-gray-700">Parolă</label>
+                                <input asp-for="Input.Password" type="password"
+                                       class="block w-full rounded-xl border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                                       placeholder="Parolă" autocomplete="new-password" />
+                                <span asp-validation-for="Input.Password" class="text-sm text-red-600"></span>
+                            </div>
+                            <div>
+                                <label class="mb-1 block text-sm font-medium text-gray-700">Confirmare parolă</label>
+                                <input asp-for="Input.ConfirmPassword" type="password"
+                                       class="block w-full rounded-xl border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                                       placeholder="Confirmare" autocomplete="new-password" />
+                                <span asp-validation-for="Input.ConfirmPassword" class="text-sm text-red-600"></span>
+                            </div>
                         </div>
 
-                        <div class="form-floating mb-3">
-                            <input asp-for="Input.ConfirmPassword" class="form-control" placeholder="Confirmare parolă">
-                            <label asp-for="Input.ConfirmPassword"></label>
-                        </div>
-
-                        <button class="btn btn-primary w-100 fw-bold rounded-3 mt-3 py-2">
-                            Înregistrare
+                        <button class="w-full rounded-xl bg-indigo-600 py-3 font-semibold text-white shadow-lg transition hover:bg-indigo-700 hover:shadow-xl">
+                            <i class="fa-solid fa-user-plus mr-2"></i> Creează cont
                         </button>
 
+                        <div class="text-center text-sm text-gray-500">
+                            Ai deja cont?
+                            <a asp-page="./Login" class="font-semibold text-indigo-700 hover:text-indigo-800">Autentifică-te</a>
+                        </div>
                     </form>
-
                 </div>
             </div>
 
@@ -84,13 +174,15 @@
     </div>
 </div>
 
-@section Scripts{
-    <partial name="_ValidationScriptsPartial"/>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
 
     <script>
         function previewFile(event) {
             const output = document.getElementById('previewImage');
-            output.src = URL.createObjectURL(event.target.files[0]);
+            if (event.target.files && event.target.files[0]) {
+                output.src = URL.createObjectURL(event.target.files[0]);
+            }
         }
     </script>
 }

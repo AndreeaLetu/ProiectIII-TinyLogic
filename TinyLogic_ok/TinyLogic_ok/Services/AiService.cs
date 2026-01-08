@@ -6,7 +6,7 @@ namespace TinyLogic_ok.Services
     public class AiService : IAiService
     {
         private readonly HttpClient _client;
-        private readonly string _apiKey = "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";
+        private readonly string _apiKey = "******************************************************";
 
         public AiService()
         {
@@ -20,7 +20,7 @@ namespace TinyLogic_ok.Services
         {
             var requestBody = new
             {
-                model = "amazon/nova-2-lite-v1:free",
+                model = "nvidia/nemotron-3-nano-30b-a3b:free",
                 messages = new[]
                 {
                     new { role = "user", content = prompt }

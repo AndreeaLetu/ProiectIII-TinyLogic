@@ -70,7 +70,7 @@ public class LessonPdfDocument : IDocument
                             .FontSize(12).Italic();
                     }
 
-                    col.Item().PageBreak(); // separă lecțiile pe pagini
+                    col.Item().PageBreak(); 
                 }
             });
 

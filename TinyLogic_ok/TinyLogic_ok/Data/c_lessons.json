@@ -1,0 +1,238 @@
+﻿[
+  {
+    "LessonName": "Lecția 1: Introducere în limbajul C",
+    "OrderIndex": 1,
+    "ContentJson": {
+      "Title": "Lecția 1: Introducere în limbajul C",
+      "Sections": [
+        {
+          "Heading": "Ce este limbajul C?",
+          "Text": "C este un limbaj de programare compilat, rapid și eficient, folosit frecvent pentru sisteme de operare, aplicații embedded și programe de nivel jos."
+        },
+        {
+          "Heading": "De ce învățăm C?",
+          "Text": "Limbajul C ajută la înțelegerea modului în care funcționează memoria, procesoarele și programele la nivel de sistem."
+        },
+        {
+          "Heading": "Primul program în C",
+          "Text": "Un program C începe cu funcția main și folosește printf pentru afișare."
+        }
+      ],
+      "Exercise": {
+        "Description": "Scrie un program care afișează exact textul: Salut din C!",
+        "ExpectedOutput": "Salut din C!"
+      }
+    }
+  },
+
+  {
+    "LessonName": "Lecția 2: Structura unui program C",
+    "OrderIndex": 2,
+    "ContentJson": {
+      "Title": "Lecția 2: Structura unui program C",
+      "Sections": [
+        {
+          "Heading": "Fișiere header",
+          "Text": "În C folosim fișiere header precum stdio.h pentru funcții de intrare și ieșire."
+        },
+        {
+          "Heading": "Funcția main",
+          "Text": "Funcția main este punctul de start al oricărui program C."
+        },
+        {
+          "Heading": "Instrucțiuni și punct și virgulă",
+          "Text": "Fiecare instrucțiune în C se termină cu punct și virgulă."
+        }
+      ],
+      "Exercise": {
+        "Description": "Scrie structura minimă a unui program C care afișează un mesaj.",
+        "ExpectedOutput": "Mesaj"
+      }
+    }
+  },
+
+  {
+    "LessonName": "Lecția 3: Variabile și tipuri de date",
+    "OrderIndex": 3,
+    "ContentJson": {
+      "Title": "Lecția 3: Variabile și tipuri de date",
+      "Sections": [
+        {
+          "Heading": "Ce este o variabilă?",
+          "Text": "O variabilă este un spațiu din memorie în care stocăm date."
+        },
+        {
+          "Heading": "Tipuri de date de bază",
+          "Text": "În C există tipuri precum int, float, double și char."
+        },
+        {
+          "Heading": "Declararea variabilelor",
+          "Text": "Variabilele trebuie declarate înainte de utilizare."
+        }
+      ],
+      "Exercise": {
+        "Description": "Declară o variabilă de tip int cu valoarea 10 și afișeaz-o.",
+        "ExpectedOutput": "10"
+      }
+    }
+  },
+
+  {
+    "LessonName": "Lecția 4: Operații și expresii",
+    "OrderIndex": 4,
+    "ContentJson": {
+      "Title": "Lecția 4: Operații în C",
+      "Sections": [
+        {
+          "Heading": "Operatori aritmetici",
+          "Text": "C suportă operatori precum +, -, *, / și %."
+        },
+        {
+          "Heading": "Ordinea operațiilor",
+          "Text": "C respectă ordinea matematică a operațiilor."
+        },
+        {
+          "Heading": "Expresii",
+          "Text": "O expresie combină operatori și operanzi."
+        }
+      ],
+      "Exercise": {
+        "Description": "Calculează și afișează rezultatul expresiei: 5 + 3 * 2",
+        "ExpectedOutput": "11"
+      }
+    }
+  },
+
+  {
+    "LessonName": "Lecția 5: Instrucțiuni condiționale",
+    "OrderIndex": 5,
+    "ContentJson": {
+      "Title": "Lecția 5: if și else",
+      "Sections": [
+        {
+          "Heading": "Instrucțiunea if",
+          "Text": "Instrucțiunea if execută cod doar dacă o condiție este adevărată."
+        },
+        {
+          "Heading": "Instrucțiunea else",
+          "Text": "else se execută atunci când condiția if este falsă."
+        },
+        {
+          "Heading": "Operatori de comparație",
+          "Text": "Operatori precum ==, !=, <, > sunt folosiți în condiții."
+        }
+      ],
+      "Exercise": {
+        "Description": "Dacă numărul este mai mare decât 10, afișează textul Mare.",
+        "ExpectedOutput": "Mare"
+      }
+    }
+  },
+
+  {
+    "LessonName": "Lecția 6: Bucla while",
+    "OrderIndex": 6,
+    "ContentJson": {
+      "Title": "Lecția 6: Bucla while",
+      "Sections": [
+        {
+          "Heading": "Ce este while?",
+          "Text": "Bucla while repetă codul cât timp condiția este adevărată."
+        },
+        {
+          "Heading": "Incrementare",
+          "Text": "În bucle este important să modificăm variabila de control."
+        }
+      ],
+      "Exercise": {
+        "Description": "Afișează numerele de la 1 la 3 folosind while.",
+        "ExpectedOutput": "1\n2\n3"
+      }
+    }
+  },
+
+  {
+    "LessonName": "Lecția 7: Bucla for",
+    "OrderIndex": 7,
+    "ContentJson": {
+      "Title": "Lecția 7: Bucla for",
+      "Sections": [
+        {
+          "Heading": "Structura for",
+          "Text": "Bucla for conține inițializare, condiție și incrementare."
+        },
+        {
+          "Heading": "Utilizare",
+          "Text": "for este folosită pentru iterații cu număr cunoscut de pași."
+        }
+      ],
+      "Exercise": {
+        "Description": "Afișează numerele de la 1 la 5 folosind for.",
+        "ExpectedOutput": "1\n2\n3\n4\n5"
+      }
+    }
+  },
+
+  {
+    "LessonName": "Lecția 8: Funcții",
+    "OrderIndex": 8,
+    "ContentJson": {
+      "Title": "Lecția 8: Funcții în C",
+      "Sections": [
+        {
+          "Heading": "Ce este o funcție?",
+          "Text": "O funcție este un bloc de cod reutilizabil."
+        },
+        {
+          "Heading": "Parametri",
+          "Text": "Funcțiile pot primi parametri pentru a lucra cu date."
+        }
+      ],
+      "Exercise": {
+        "Description": "Scrie o funcție care întoarce numărul 5 și afișează rezultatul.",
+        "ExpectedOutput": "5"
+      }
+    }
+  },
+
+  {
+    "LessonName": "Lecția 9: Lucrul cu input",
+    "OrderIndex": 9,
+    "ContentJson": {
+      "Title": "Lecția 9: Citirea datelor",
+      "Sections": [
+        {
+          "Heading": "Funcția scanf",
+          "Text": "scanf este folosită pentru a citi date de la tastatură."
+        },
+        {
+          "Heading": "Formate",
+          "Text": "Folosim %d, %f, %c pentru tipuri diferite."
+        }
+      ],
+      "Exercise": {
+        "Description": "Declară o variabilă de tip int cu valoarea 7 și afișeaz-o folosind printf.",
+        "ExpectedOutput": "7"
+      }
+
+    }
+  },
+
+  {
+    "LessonName": "Lecția 10: Mini-proiect final",
+    "OrderIndex": 10,
+    "ContentJson": {
+      "Title": "Lecția 10: Mini-proiect C",
+      "Sections": [
+        {
+          "Heading": "Proiect final",
+          "Text": "Vom crea un program care folosește variabile, condiții și bucle."
+        }
+      ],
+      "Exercise": {
+        "Description": "Afișează exact textul: Am terminat cursul de C!",
+        "ExpectedOutput": "Am terminat cursul de C!"
+      }
+    }
+  }
+]

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TinyLogic_ok")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+74b4cfb88f98fa4bb5e820e41a9dd8cf52d247e5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5aa78ba8716635310a146df038926682472d0a66")]
 [assembly: System.Reflection.AssemblyProductAttribute("TinyLogic_ok")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TinyLogic_ok")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

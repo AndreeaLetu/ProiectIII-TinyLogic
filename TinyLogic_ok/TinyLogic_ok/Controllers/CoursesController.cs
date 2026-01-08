@@ -19,8 +19,8 @@ namespace TinyLogic_ok.Controllers
             _userManager = userManager;
         }
 
-        
-        public async Task<IActionResult> PythonCourse(int courseId, int? lessonId)
+
+        public async Task<IActionResult> Course(int courseId, int? lessonId)
         {
             var course = await _context.Courses
                 .Include(c => c.Lessons)
@@ -39,7 +39,7 @@ namespace TinyLogic_ok.Controllers
 
             if (selectedLesson == null)
             {
-                return View(new PythonCourseVM
+                return View(new CourseVM
                 {
                     Course = course,
                     Lessons = lessons,
@@ -54,15 +54,12 @@ namespace TinyLogic_ok.Controllers
 
             var parsed = JsonConvert.DeserializeObject<LessonContent>(selectedLesson.ContentJson);
 
-         
             int intUserId = int.Parse(_userManager.GetUserId(User));
 
-
             var completedLessonIds = await _context.UserLessons
-                 .Where(lp => lp.UserId == intUserId && lp.IsCompleted)
-                 .Select(lp => lp.LessonId)
-                 .ToListAsync();
-
+                .Where(lp => lp.UserId == intUserId && lp.IsCompleted)
+                .Select(lp => lp.LessonId)
+                .ToListAsync();
 
             bool isLessonCompleted = completedLessonIds.Contains(selectedLesson.IdLesson);
 
@@ -74,8 +71,7 @@ namespace TinyLogic_ok.Controllers
 
             bool isCourseCompleted = completedLessonIds.Count == lessons.Count;
 
-
-            var vm = new PythonCourseVM
+            var vm = new CourseVM
             {
                 Course = course,
                 Lessons = lessons,
@@ -87,7 +83,7 @@ namespace TinyLogic_ok.Controllers
                 HighestCompletedOrder = highestCompletedOrder
             };
 
-            return View(vm);
+            return View("Course", vm);
         }
 
 

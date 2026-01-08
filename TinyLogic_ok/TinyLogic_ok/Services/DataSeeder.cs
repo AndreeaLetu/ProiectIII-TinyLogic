@@ -22,7 +22,7 @@ namespace TinyLogic_ok.Services
 
         public async Task SeedAsync()
         {
-            Console.WriteLine("=== START SEED ===");
+            Console.WriteLine(" START SEED ");
 
             await SeedCoursesAsync();
             await SeedLessonsAsync();
@@ -40,18 +40,39 @@ namespace TinyLogic_ok.Services
                 return;
             }
 
-            var pythonCourse = new Courses
-            {
-                CourseName = "Python pentru copii",
-                Description = "Curs Python interactiv pentru începători",
-                Difficulty = "Ușor"
-            };
+            var courses = new List<Courses>
+    {
+        new Courses
+        {
+            CourseName = "Python pentru copii",
+            Description = "Curs Python interactiv pentru începători",
+            Difficulty = "Ușor",
+            Language = "python"
+        },
+        new Courses
+        {
+            CourseName = "C pentru începători",
+            Description = "Bazele limbajului C, pas cu pas",
+            Difficulty = "Mediu",
+            Language = "c"
+        },
 
-            _context.Courses.Add(pythonCourse);
+        new Courses
+        {
+            CourseName = "Programare Vizuală",
+            Description = "Învață programarea prin blocuri vizuale",
+            Difficulty = "Ușor",
+            Language = "blocks"
+        }
+    };
+
+            _context.Courses.AddRange(courses);
             await _context.SaveChangesAsync();
 
-            Console.WriteLine($"Creat cursul cu ID = {pythonCourse.CourseId}");
+            foreach (var c in courses)
+                Console.WriteLine($"Creat curs: {c.CourseName} (ID={c.CourseId})");
         }
+
 
         private async Task SeedLessonsAsync()
         {
@@ -61,124 +82,122 @@ namespace TinyLogic_ok.Services
                 return;
             }
 
-            var course = await _context.Courses
-                .FirstOrDefaultAsync(c => c.CourseName == "Python pentru copii");
+            var courses = await _context.Courses.ToListAsync();
 
-            if (course == null)
+            foreach (var course in courses)
             {
-                Console.WriteLine("NU există cursul Python – nu pot importa lecțiile.");
-                return;
-            }
-
-            string jsonPath = Path.Combine(_env.ContentRootPath, "Data/python_lessons.json");
-            Console.WriteLine("Caut json la: " + jsonPath);
-
-            if (!File.Exists(jsonPath))
-            {
-                Console.WriteLine("!!! JSON-ul pentru lecții NU există.");
-                return;
-            }
-
-            string json = await File.ReadAllTextAsync(jsonPath);
-
-            List<LessonJsonModel>? lessons;
-
-            try
-            {
-                lessons = JsonSerializer.Deserialize<List<LessonJsonModel>>(json);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Eroare la parsarea JSON: " + ex.Message);
-                return;
-            }
-
-            if (lessons == null)
-            {
-                Console.WriteLine("JSON-ul este gol.");
-                return;
-            }
-
-            foreach (var item in lessons)
-            {
-                var lessonEntity = new Lessons
+                string fileName = course.Language switch
                 {
-                    LessonName = item.LessonName,
-                    OrderIndex = item.OrderIndex,
-                    Description = item.ContentJson.Title,
-                    CourseId = course.CourseId,
-                    ContentJson = JsonSerializer.Serialize(item.ContentJson)
+                    "python" => "python_lessons.json",
+                    "c" => "c_lessons.json",
+                    "blocks" => "blocks_lessons.json",
+                    _ => null
                 };
 
-                _context.Lessons.Add(lessonEntity);
-                Console.WriteLine($"Adaug lecția: {item.LessonName}");
+                if (fileName == null)
+                {
+                    Console.WriteLine($"Skip curs necunoscut: {course.Language}");
+                    continue;
+                }
+
+
+                string jsonPath = Path.Combine(_env.ContentRootPath, "Data", fileName);
+
+                if (!File.Exists(jsonPath))
+                {
+                    Console.WriteLine($"Nu exista {fileName}");
+                    continue;
+                }
+
+                string json = await File.ReadAllTextAsync(jsonPath);
+                var lessons = JsonSerializer.Deserialize<List<LessonJsonModel>>(json);
+
+                foreach (var item in lessons)
+                {
+                    _context.Lessons.Add(new Lessons
+                    {
+                        LessonName = item.LessonName,
+                        OrderIndex = item.OrderIndex,
+                        Description = item.ContentJson.Title,
+                        CourseId = course.CourseId,
+                        ContentJson = JsonSerializer.Serialize(item.ContentJson)
+                    });
+                }
+
+                Console.WriteLine($"Lectii adaugate pentru {course.CourseName}");
             }
 
             await _context.SaveChangesAsync();
         }
+
         private async Task SeedTestsAsync()
         {
             if (await _context.Tests.AnyAsync())
             {
-                Console.WriteLine("Testele există deja – skip.");
+                Console.WriteLine("Testele exista deja – skip.");
                 return;
             }
 
-            string jsonPath = Path.Combine(_env.ContentRootPath, "Data/python_tests.json");
-            Console.WriteLine("Caut json de teste la: " + jsonPath);
-
-            if (!File.Exists(jsonPath))
+            var testFiles = new[]
             {
-                Console.WriteLine("!!! JSON-ul pentru teste NU există.");
-                return;
-            }
+        "python_tests.json",
+        "c_tests.json",
+        "blockly_test.json"
+    };
 
-            string json = await File.ReadAllTextAsync(jsonPath);
-
-            List<TestJsonModel>? tests;
-
-            try
+            foreach (var file in testFiles)
             {
-                tests = JsonSerializer.Deserialize<List<TestJsonModel>>(json);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Eroare la parsare JSON TESTE: " + ex.Message);
-                return;
-            }
+                string jsonPath = Path.Combine(_env.ContentRootPath, "Data", file);
+                Console.WriteLine($"Caut json teste: {jsonPath}");
 
-            if (tests == null)
-            {
-                Console.WriteLine("JSON-ul pentru teste este gol.");
-                return;
-            }
-
-            foreach (var item in tests)
-            {
-                var course = await _context.Courses
-                    .FirstOrDefaultAsync(c => c.CourseName == item.CourseName);
-
-                if (course == null)
+                if (!File.Exists(jsonPath))
                 {
-                    Console.WriteLine($"!!! NU există cursul {item.CourseName} – skip test.");
+                    Console.WriteLine($"{file} nu exista.");
                     continue;
                 }
 
-                var testEntity = new Tests
-                {
-                    TestName = item.TestName,
-                    Description = item.Description,
-                    PassingScore = item.PassingScore,
-                    CourseId = course.CourseId,
-                    TestJson = JsonSerializer.Serialize(item.TestJson)
-                };
+                string json = await File.ReadAllTextAsync(jsonPath);
 
-                _context.Tests.Add(testEntity);
-                Console.WriteLine($"Adaug testul: {item.TestName}");
+                List<TestJsonModel>? tests;
+                try
+                {
+                    tests = JsonSerializer.Deserialize<List<TestJsonModel>>(json);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Eroare parsare {file}: {ex.Message}");
+                    continue;
+                }
+
+                if (tests == null) continue;
+
+                foreach (var item in tests)
+                {
+                    var course = await _context.Courses
+                        .FirstOrDefaultAsync(c => c.CourseName == item.CourseName);
+
+                    if (course == null)
+                    {
+                        Console.WriteLine($" NU exista cursul {item.CourseName} – skip test.");
+                        continue;
+                    }
+
+                    _context.Tests.Add(new Tests
+                    {
+                        TestName = item.TestName,
+                        Description = item.Description,
+                        PassingScore = item.PassingScore,
+                        CourseId = course.CourseId,
+                        TestJson = JsonSerializer.Serialize(item.TestJson)
+                    });
+
+                    Console.WriteLine($"Adaug test: {item.TestName}");
+                }
             }
 
             await _context.SaveChangesAsync();
         }
+
 
     }
 }

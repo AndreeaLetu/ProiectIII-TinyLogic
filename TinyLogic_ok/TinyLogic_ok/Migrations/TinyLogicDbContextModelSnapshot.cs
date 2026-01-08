@@ -208,6 +208,10 @@ namespace TinyLogic_ok.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<string>("Language")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.HasKey("CourseId");
 
                     b.ToTable("Courses");

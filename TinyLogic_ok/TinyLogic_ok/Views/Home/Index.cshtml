@@ -53,7 +53,7 @@
                 Teste distractive cu blocuri drag & drop.
             </p>
             <div class="text-center">
-                <a href="#teste"
+                <a href="\Tests"
                    class="rounded-xl bg-purple-500 px-5 py-2 font-semibold text-white transition hover:bg-purple-600">
                     Mergi la Teste
                 </a>
@@ -67,7 +67,7 @@
                 Primești diplome colorate pentru fiecare nivel.
             </p>
             <div class="text-center">
-                <a href="#diplome"
+                <a href="\Certificates"
                    class="rounded-xl bg-yellow-500 px-5 py-2 font-semibold text-white transition hover:bg-yellow-600">
                     Vezi Diplomele
                 </a>
@@ -95,9 +95,13 @@
                 Navigare prin mișcările mâinii.
             </p>
             <div class="text-center">
-                <button class="rounded-xl bg-red-500 px-5 py-2 font-semibold text-white transition hover:bg-red-600">
+                <button onclick="activateGestures()"
+                        class="rounded-xl bg-red-500 px-5 py-2 text-white">
                     Activează gesturile
                 </button>
+
+
+
             </div>
         </div>
 
@@ -127,19 +131,32 @@
 
     <div class="grid w-full gap-10 md:grid-cols-2 lg:grid-cols-3">
 
-        <div class="card-hover cursor-pointer rounded-3xl border border-orange-200 bg-gradient-to-br from-orange-100 to-red-100 p-8 shadow-md transition-all hover:shadow-xl">
-            <div class="mb-4 text-center text-6xl">🐱</div>
-            <h4 class="mb-3 text-2xl font-bold text-gray-800">Scratch pentru Începători</h4>
-            <p class="text-gray-600">Creează jocuri și animații.</p>
-            <div class="mt-4 text-center">
-                <button type="button"
-                        class="w-full rounded-full bg-green-600 px-6 py-2 font-semibold text-white shadow-md transition duration-300 hover:bg-green-700">
-                    Vezi Nivelurile
-                </button>
-            </div>
-        </div>
+        <a href="/Courses/Course?courseId=3"
+           class="card-hover block cursor-pointer rounded-3xl border border-orange-200
+          bg-gradient-to-br from-orange-100 to-red-100 p-8 shadow-md
+          transition-all hover:shadow-xl">
 
-        <a href="/Courses/PythonCourse?courseId=1"
+            <div class="mb-4 text-center text-6xl">🐱</div>
+
+            <h4 class="mb-3 text-2xl font-bold text-gray-800">
+                Scratch pentru Începători
+            </h4>
+
+            <p class="text-gray-600">
+                Creează jocuri și animații cu blocuri vizuale.
+            </p>
+
+            <div class="mt-4 text-center">
+                <span class="block w-full rounded-full bg-green-600 px-6 py-2
+                   font-semibold text-white shadow-md transition duration-300
+                   hover:bg-green-700">
+                    Vezi Nivelurile
+                </span>
+            </div>
+
+        </a>
+
+        <a href="/Courses/Course?courseId=1"
            class="card-hover block cursor-pointer rounded-3xl border border-green-200 bg-gradient-to-br from-green-100 to-emerald-100 p-8 shadow-md transition-all hover:border-green-400 hover:shadow-xl">
 
             <div class="mb-4 text-center text-6xl">🐍</div>
@@ -154,19 +171,29 @@
             </div>
 
         </a>
-
         <div class="card-hover cursor-pointer rounded-3xl border border-blue-200 bg-gradient-to-br from-blue-100 to-purple-100 p-8 shadow-md transition-all hover:shadow-xl">
-            <div class="mb-4 text-center text-6xl">🌐</div>
-            <h4 class="mb-3 text-2xl font-bold text-gray-800">Dezvoltare Web</h4>
-            <p class="text-gray-600">Construiește site-uri moderne.</p>
+
+            <div class="mb-4 text-center text-6xl">💻</div>
+
+            <h4 class="mb-3 text-2xl font-bold text-gray-800">
+                Programare în C
+            </h4>
+
+            <p class="text-gray-600">
+                Învață bazele programării in C : variabile, condiții, bucle și funcții .
+            </p>
+
             <div class="mt-4 text-center">
-                <button type="button"
-                        class="w-full rounded-full bg-green-600 px-6 py-2 font-semibold text-white shadow-md transition duration-300 hover:bg-green-700">
-                    Vezi Nivelurile
-                </button>
+                <a asp-controller="Courses"
+                   asp-action="Course"
+                   asp-route-courseId="2"
+                   class="block w-full rounded-full bg-blue-600 px-6 py-2 text-center font-semibold text-white shadow-md transition duration-300 hover:bg-blue-700">
+                    Începe cursul C
+                </a>
             </div>
 
         </div>
+
 
     </div>
 

@@ -2,7 +2,7 @@
 
 namespace TinyLogic_ok.Models.CourseModels
 {
-    public class PythonCourseVM
+    public class CourseVM
     {
         public Courses? Course { get; set; }
         public List<Lessons>? Lessons { get; set; }

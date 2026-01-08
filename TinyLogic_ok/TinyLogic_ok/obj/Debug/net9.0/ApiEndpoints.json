@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "ContainingType": "TinyLogic_ck.Controllers.GestureController",
+    "Method": "SetGesture",
+    "RelativePath": "api/gesture",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "TinyLogic_ck.Controllers.GestureDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TinyLogic_ck.Controllers.GestureController",
+    "Method": "GetGesture",
+    "RelativePath": "api/gesture",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TinyLogic_ck.Controllers.GestureController",
+    "Method": "StartGestures",
+    "RelativePath": "api/gesture/start",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

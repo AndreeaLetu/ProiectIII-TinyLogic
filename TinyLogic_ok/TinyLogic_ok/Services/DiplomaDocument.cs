@@ -46,7 +46,7 @@ public class DiplomaDocument : IDocument
                     col.Item().AlignCenter().Text("Se acordă elevului:")
                         .FontSize(22);
 
-                    // Nume elev
+                   
                     col.Item().AlignCenter().Text($"{_user.FirstName} {_user.LastName}")
                         .FontSize(36)
                         .Bold()

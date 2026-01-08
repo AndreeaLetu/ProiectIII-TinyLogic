@@ -3,100 +3,122 @@
 
 <div class="mx-auto mt-10 max-w-6xl">
 
-    <h1 class="mb-6 text-4xl font-bold text-indigo-600">Teste de Evaluare</h1>
-    <p style="color:red;">@($"Număr teste încărcate: {Model?.Count()}")</p>
+    <h1 class="mb-6 text-4xl font-bold text-indigo-600">
+        Teste de Evaluare
+    </h1>
+
+    <p class="mb-6 text-sm text-gray-500">
+        Număr teste încărcate: @Model?.Count()
+    </p>
 
     @if (TempData["Error"] != null)
     {
-        <div class="mb-4 rounded-lg bg-red-100 p-4 text-red-700">
+        <div class="mb-6 rounded-lg bg-red-100 p-4 text-red-700">
             @TempData["Error"]
         </div>
     }
 
-    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+    @foreach (var courseGroup in Model
+        .OrderBy(t => t.Test.IdTest)
+        .GroupBy(t => t.RequiredCourse))
+    {
+        var language = courseGroup.Key.Language?.ToLower();
 
-        @foreach (var item in Model)
+        string icon = language switch
         {
-            <div class="rounded-lg bg-white p-6 shadow-lg transition-transform hover:scale-105">
+            "python" => "🐍",
+            "c" => "💻",
+            _ => "📘"
+        };
 
-              
-                <div class="mb-4 flex items-center justify-between">
-                    <h2 class="text-2xl font-bold text-gray-800">@item.Test.TestName</h2>
+        <div class="mt-12">
 
-                    @if (item.IsCompleted)
-                    {
-                        <span class="rounded-full bg-green-100 px-3 py-1 text-sm font-semibold text-green-700">
-                            ✔ Trecut
-                        </span>
-                    }
-                    else if (item.IsLocked)
-                    {
-                        <i class="fa-solid fa-lock text-2xl text-gray-400"></i>
-                    }
-                    else
-                    {
-                        <span class="rounded-full bg-yellow-100 px-3 py-1 text-sm font-semibold text-yellow-700">
-                            Disponibil
-                        </span>
-                    }
-                </div>
+            <h2 class="mb-6 text-3xl font-bold text-gray-800">
+                @icon @courseGroup.Key.CourseName
+            </h2>
 
-             
-                <p class="mb-4 text-gray-600">@item.Test.Description</p>
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
 
-                
-                <div class="mb-4 rounded-lg bg-indigo-50 p-3">
-                    <p class="text-sm font-semibold text-indigo-800">
-                        📚 Curs necesar: @item.RequiredCourse.CourseName
-                    </p>
-                    <div class="mt-2">
-                        <div class="h-2 w-full rounded-full bg-gray-200">
-                            <div class="h-2 rounded-full bg-indigo-600 transition-all"
-                                 style="width: @((item.CompletedLessons * 100 / item.TotalLessons))%">
-                            </div>
+                @foreach (var item in courseGroup)
+                {
+                    <div class="rounded-lg bg-white p-6 shadow-lg transition-transform hover:scale-105">
+
+                        <div class="mb-4 flex items-center justify-between">
+                            <h3 class="text-xl font-bold text-gray-800">
+                                @item.Test.TestName
+                            </h3>
+
+                            @if (item.IsCompleted)
+                            {
+                                <span class="rounded-full bg-green-100 px-3 py-1 text-sm font-semibold text-green-700">
+                                    ✔ Trecut
+                                </span>
+                            }
+                            else if (item.IsLocked)
+                            {
+                                <i class="fa-solid fa-lock text-2xl text-gray-400"></i>
+                            }
+                            else
+                            {
+                                <span class="rounded-full bg-yellow-100 px-3 py-1 text-sm font-semibold text-yellow-700">
+                                    Disponibil
+                                </span>
+                            }
                         </div>
-                        <p class="mt-1 text-xs text-gray-600">
-                            @item.CompletedLessons / @item.TotalLessons lecții finalizate
-                        </p>
-                    </div>
-                </div>
 
-                @if (item.LastScore.HasValue)
-                {
-                    <div class="mb-4 text-center">
-                        <p class="text-sm text-gray-600">Ultimul scor:</p>
-                        <p class="text-3xl font-bold @(item.LastScore >= item.Test.PassingScore ? "text-green-600" : "text-red-600")">
-                            @item.LastScore%
+                        <p class="mb-4 text-gray-600">
+                            @item.Test.Description
                         </p>
-                    </div>
-                }
 
-             
-                @if (item.IsLocked)
-                {
-                    <button disabled
-                            class="w-full cursor-not-allowed rounded-lg bg-gray-300 py-3 font-semibold text-gray-500">
-                        🔒 Finalizează cursul pentru a debloca
-                    </button>
-                }
-                else if (item.IsCompleted)
-                {
-                    <a href="/Tests/TakeTest?testId=@item.Test.IdTest"
-                       class="block w-full rounded-lg bg-blue-600 py-3 text-center font-semibold text-white hover:bg-blue-700">
-                        🔄 Refă testul
-                    </a>
-                }
-                else
-                {
-                    <a href="/Tests/TakeTest?testId=@item.Test.IdTest"
-                       class="block w-full rounded-lg bg-green-600 py-3 text-center font-semibold text-white hover:bg-green-700">
-                        ▶️ Începe testul
-                    </a>
+                        <div class="mb-4 rounded-lg bg-indigo-50 p-3">
+                            <div class="h-2 w-full rounded-full bg-gray-200">
+                                <div class="h-2 rounded-full bg-indigo-600 transition-all"
+                                     style="width: @((item.CompletedLessons * 100) / item.TotalLessons)%">
+                                </div>
+                            </div>
+                            <p class="mt-1 text-xs text-gray-600">
+                                @item.CompletedLessons / @item.TotalLessons lecții finalizate
+                            </p>
+                        </div>
+
+     
+                        @if (item.LastScore.HasValue)
+                        {
+                            <div class="mb-4 text-center">
+                                <p class="text-sm text-gray-600">Ultimul scor</p>
+                                <p class="text-3xl font-bold @(item.LastScore >= item.Test.PassingScore ? "text-green-600" : "text-red-600")">
+                                    @item.LastScore%
+                                </p>
+                            </div>
+                        }
+
+                   
+                        @if (item.IsLocked)
+                        {
+                            <button disabled
+                                    class="w-full cursor-not-allowed rounded-lg bg-gray-300 py-3 font-semibold text-gray-500">
+                                🔒 Finalizează cursul
+                            </button>
+                        }
+                        else if (item.IsCompleted)
+                        {
+                            <a href="/Tests/TakeTest?testId=@item.Test.IdTest"
+                               class="block w-full rounded-lg bg-blue-600 py-3 text-center font-semibold text-white hover:bg-blue-700">
+                                🔄 Refă testul
+                            </a>
+                        }
+                        else
+                        {
+                            <a href="/Tests/TakeTest?testId=@item.Test.IdTest"
+                               class="block w-full rounded-lg bg-green-600 py-3 text-center font-semibold text-white hover:bg-green-700">
+                                ▶️ Începe testul
+                            </a>
+                        }
+
+                    </div>
                 }
 
             </div>
-        }
-
-    </div>
-
+        </div>
+    }
 </div>

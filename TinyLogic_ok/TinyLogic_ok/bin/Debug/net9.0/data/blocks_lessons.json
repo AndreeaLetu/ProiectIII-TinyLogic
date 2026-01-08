@@ -1,0 +1,246 @@
+﻿[
+  {
+    "LessonName": "Lecția 1: Mișcă personajul",
+    "OrderIndex": 1,
+    "ContentJson": {
+      "Title": "Mișcarea (pași)",
+      "Sections": [
+        {
+          "Heading": "Ce înseamnă un „bloc”?",
+          "Text": "În programarea vizuală, tu „construiești” programul din blocuri ca niște piese LEGO. Le tragi cu mouse-ul și le conectezi."
+        },
+        {
+          "Heading": "Blocul de mișcare",
+          "Text": "Blocul MOVE mută personajul înainte cu un număr de pași. Dacă pui 10 pași, personajul se mută puțin înainte."
+        },
+        {
+          "Heading": "Ordinea blocurilor contează",
+          "Text": "Blocurile se execută de sus în jos. Dacă ai două blocuri MOVE, personajul se mișcă de două ori."
+        }
+      ],
+      "Exercise": {
+        "Description": "Mută personajul cu 10 pași (o singură mișcare).",
+        "ExpectedOutput": "move:10",
+        "ExpectedBlocks": [ "tl_move" ],
+        "Toolbox": {
+          "categories": [
+            {
+              "name": "Mișcare",
+              "blocks": [ "tl_move" ]
+            },
+            {
+              "name": "Numere",
+              "blocks": [ "math_number" ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "LessonName": "Lecția 2: Întoarce și mergi",
+    "OrderIndex": 2,
+    "ContentJson": {
+      "Title": "Direcția (stânga/dreapta)",
+      "Sections": [
+        {
+          "Heading": "Direcția personajului",
+          "Text": "Personajul are mereu o direcție: înainte, în stânga sau în dreapta. Când îl întorci, următoarea mișcare se va face în noua direcție."
+        },
+        {
+          "Heading": "Blocul de rotire",
+          "Text": "Blocul TURN rotește personajul cu un număr de grade. 90° înseamnă un „colț” ca într-un pătrat."
+        },
+        {
+          "Heading": "Mișcare + rotire",
+          "Text": "Dacă pui MOVE apoi TURN, personajul merge și abia apoi se întoarce. Dacă pui TURN apoi MOVE, se întoarce și merge în direcția nouă."
+        }
+      ],
+      "Exercise": {
+        "Description": "Fă un „L”: mergi 10 pași, întoarce la dreapta 90°, apoi mergi încă 10 pași.",
+        "ExpectedOutput": "move:10;turn:right:90;move:10",
+        "ExpectedBlocks": [ "tl_move", "tl_turn_right" ],
+        "Toolbox": {
+          "categories": [
+            {
+              "name": "Mișcare",
+              "blocks": [ "tl_move", "tl_turn_right" ]
+            },
+            {
+              "name": "Numere",
+              "blocks": [ "math_number" ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "LessonName": "Lecția 3: Repetă (buclă)",
+    "OrderIndex": 3,
+    "ContentJson": {
+      "Title": "Repetare (de mai multe ori)",
+      "Sections": [
+        {
+          "Heading": "De ce repetăm?",
+          "Text": "Uneori vrei să faci aceeași acțiune de mai multe ori (de exemplu, să mergi de 4 ori și să faci un pătrat). În loc să pui 4 blocuri identice, folosești REPEAT."
+        },
+        {
+          "Heading": "Blocul REPEAT",
+          "Text": "REPEAT rulează blocurile din interior de un număr de ori. Dacă pui REPEAT 4 și în interior MOVE 10, personajul merge de 4 ori."
+        },
+        {
+          "Heading": "Greșeală comună",
+          "Text": "Ai grijă să pui blocurile în interiorul REPEAT. Dacă sunt în afară, nu se repetă."
+        }
+      ],
+      "Exercise": {
+        "Description": "Folosește REPEAT ca să muți personajul de 3 ori cu câte 10 pași (fără să pui 3 blocuri MOVE separate).",
+        "ExpectedOutput": "repeat:3{move:10}",
+        "ExpectedBlocks": [ "controls_repeat_ext", "tl_move" ],
+        "Toolbox": {
+          "categories": [
+            {
+              "name": "Control",
+              "blocks": [ "controls_repeat_ext" ]
+            },
+            {
+              "name": "Mișcare",
+              "blocks": [ "tl_move" ]
+            },
+            {
+              "name": "Numere",
+              "blocks": [ "math_number" ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "LessonName": "Lecția 4: Desenează un pătrat",
+    "OrderIndex": 4,
+    "ContentJson": {
+      "Title": "Forme (pătrat din mișcări)",
+      "Sections": [
+        {
+          "Heading": "Cum faci un pătrat?",
+          "Text": "Un pătrat are 4 laturi egale și 4 colțuri de 90°. Asta înseamnă: MOVE, TURN 90°, MOVE, TURN 90°... de 4 ori."
+        },
+        {
+          "Heading": "Trucul cu REPEAT",
+          "Text": "Cel mai simplu: REPEAT 4 și în interior pui MOVE 10 + TURN 90°. Așa obții pătratul cu puține blocuri."
+        },
+        {
+          "Heading": "Test rapid",
+          "Text": "Dacă schimbăm 4 cu 3, obținem un triunghi (dar atenție: un triunghi are colțuri diferite)."
+        }
+      ],
+      "Exercise": {
+        "Description": "Construiește un pătrat: repetă de 4 ori (MOVE 10 + TURN dreapta 90°).",
+        "ExpectedOutput": "repeat:4{move:10;turn:right:90}",
+        "ExpectedBlocks": [ "controls_repeat_ext", "tl_move", "tl_turn_right" ],
+        "Toolbox": {
+          "categories": [
+            {
+              "name": "Control",
+              "blocks": [ "controls_repeat_ext" ]
+            },
+            {
+              "name": "Mișcare",
+              "blocks": [ "tl_move", "tl_turn_right" ]
+            },
+            {
+              "name": "Numere",
+              "blocks": [ "math_number" ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "LessonName": "Lecția 5: Variabile (scor)",
+    "OrderIndex": 5,
+    "ContentJson": {
+      "Title": "Scor și variabile",
+      "Sections": [
+        {
+          "Heading": "Ce este o variabilă?",
+          "Text": "O variabilă este o cutie cu un nume în care poți păstra o valoare (ex: scor = 0)."
+        },
+        {
+          "Heading": "Set și schimbă",
+          "Text": "Blocul SET pune o valoare în variabilă. Blocul CHANGE crește sau scade variabila (ex: schimbă scor cu +1)."
+        },
+        {
+          "Heading": "De ce e util scorul?",
+          "Text": "În jocuri, scorul crește când faci ceva corect. Aici îl folosim ca să învățăm ideea de „număr care se schimbă”."
+        }
+      ],
+      "Exercise": {
+        "Description": "Creează variabila „scor”, seteaz-o la 0, apoi crește scorul cu 1 de 5 ori folosind REPEAT.",
+        "ExpectedOutput": "set:scor:0;repeat:5{change:scor:+1}",
+        "ExpectedBlocks": [ "variables_set", "math_number", "controls_repeat_ext", "math_arithmetic", "variables_get", "variables_set" ],
+        "Toolbox": {
+          "categories": [
+            {
+              "name": "Variabile",
+              "blocks": [ "variables_set", "variables_get" ]
+            },
+            {
+              "name": "Control",
+              "blocks": [ "controls_repeat_ext" ]
+            },
+            {
+              "name": "Matematică",
+              "blocks": [ "math_number", "math_arithmetic" ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "LessonName": "Lecția 6: Mini-joc – rezolvă traseul",
+    "OrderIndex": 6,
+    "ContentJson": {
+      "Title": "Traseu simplu (nivel 1)",
+      "Sections": [
+        {
+          "Heading": "Regula mini-jocului",
+          "Text": "Ai un traseu cu 3 pași înainte, apoi un colț la dreapta, apoi încă 2 pași înainte. Scopul este să ajungi la „finish”."
+        },
+        {
+          "Heading": "Plan înainte să construiești",
+          "Text": "Înainte să tragi blocuri, spune-ți în minte pașii: înainte, înainte, înainte, dreapta, înainte, înainte."
+        },
+        {
+          "Heading": "Fără blocuri inutile",
+          "Text": "Încearcă să folosești cât mai puține blocuri. Dacă poți folosi REPEAT, folosește-l!"
+        }
+      ],
+      "Exercise": {
+        "Description": "Rezolvă traseul: mergi 3x10 pași, întoarce dreapta 90°, apoi mergi 2x10 pași. (Folosește REPEAT unde poți.)",
+        "ExpectedOutput": "repeat:3{move:10};turn:right:90;repeat:2{move:10}",
+        "ExpectedBlocks": [ "controls_repeat_ext", "tl_move", "tl_turn_right" ],
+        "Toolbox": {
+          "categories": [
+            {
+              "name": "Control",
+              "blocks": [ "controls_repeat_ext" ]
+            },
+            {
+              "name": "Mișcare",
+              "blocks": [ "tl_move", "tl_turn_right" ]
+            },
+            {
+              "name": "Numere",
+              "blocks": [ "math_number" ]
+            }
+          ]
+        }
+      }
+    }
+  }
+]

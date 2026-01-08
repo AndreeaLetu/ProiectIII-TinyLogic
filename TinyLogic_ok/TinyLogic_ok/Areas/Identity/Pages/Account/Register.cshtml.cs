@@ -70,6 +70,7 @@ namespace TinyLogic_ok.Areas.Identity.Pages.Account
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
             returnUrl ??= Url.Content("~/");
+            Input.Role = "Student";
 
             if (ModelState.IsValid)
             {

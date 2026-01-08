@@ -7,15 +7,23 @@
       "Sections": [
         {
           "Heading": "Ce este Python?",
-          "Text": "Python este un limbaj de programare puternic, simplu și ușor de învățat, folosit în AI, automatizări, web și multe altele."
+          "Text": "Python este un limbaj de programare modern, foarte popular și ușor de învățat. Este folosit pentru a crea programe simple, aplicații web, jocuri, aplicații de inteligență artificială și multe altele. Python este un limbaj interpretat, ceea ce înseamnă că programul este rulat direct, fără a fi nevoie de compilare, economisind timp în procesul de dezvoltare."
+        },
+        {
+          "Heading": "La ce se folosește Python?",
+          "Text": "Python este folosit într-o gamă foarte largă de domenii. Este utilizat în dezvoltarea aplicațiilor web, automatizarea sarcinilor repetitive, analiza și prelucrarea datelor, inteligența artificială, machine learning, robotică și educație. Datorită simplității sale, Python este unul dintre cele mai recomandate limbaje pentru începători."
         },
         {
           "Heading": "De ce este ușor de învățat?",
-          "Text": "Python are o sintaxă clară, apropiată de limba engleză, ceea ce îl face ideal pentru începători."
+          "Text": "Python are o sintaxă clară și apropiată de limba engleză. Codul este ușor de citit și de înțeles, chiar și pentru cei care nu au mai programat până acum. De asemenea, Python elimină multe detalii tehnice complicate, permițându-i programatorului să se concentreze pe rezolvarea problemei."
         },
         {
-          "Heading": "Primul program",
-          "Text": "Primul program clasic este: print(\"Salut lume!\")"
+          "Heading": "Primul program în Python",
+          "Text": "Primul program pe care îl învață majoritatea programatorilor afișează un mesaj pe ecran. În Python, acest lucru se face folosind funcția print. De exemplu: print(\"Salut lume!\"). Acest program afișează textul Salut lume! pe ecran."
+        },
+        {
+          "Heading": "Cum rulează un program Python?",
+          "Text": "Un program Python este scris într-un fișier cu extensia .py. Acesta poate fi rulat folosind un editor de cod sau din linia de comandă. Python execută instrucțiunile pas cu pas, de sus în jos."
         }
       ],
       "Exercise": {
@@ -25,6 +33,7 @@
     }
   },
 
+
   {
     "LessonName": "Lecția 2: Numere în Python",
     "OrderIndex": 2,
@@ -32,16 +41,28 @@
       "Title": "Lecția 2: Numere în Python – Operații și Tipuri",
       "Sections": [
         {
-          "Heading": "Tipuri de numere",
-          "Text": "Python are int (întregi), float (zecimale) și complex (numere complexe)."
+          "Heading": "Ce sunt numerele în Python?",
+          "Text": "Numerele sunt folosite pentru a efectua calcule matematice în programele Python. Ele pot reprezenta cantități, rezultate ale unor calcule sau valori introduse de utilizator."
         },
         {
-          "Heading": "Operații de bază",
-          "Text": "Python suportă +, -, *, /, //, %, **."
+          "Heading": "Tipuri de numere",
+          "Text": "Python oferă mai multe tipuri de numere. Tipul int este folosit pentru numere întregi, cum ar fi 1, 10 sau -5. Tipul float este folosit pentru numere zecimale, cum ar fi 3.14 sau 2.5. Tipul complex este folosit mai rar și reprezintă numere complexe."
+        },
+        {
+          "Heading": "Operații matematice de bază",
+          "Text": "În Python putem face calcule matematice folosind operatori. Operatorul plus adună, minus scade, înmulțirea se face cu *, iar împărțirea cu /. Operatorul // realizează împărțirea întreagă, % calculează restul împărțirii, iar ** este folosit pentru ridicarea la putere."
+        },
+        {
+          "Heading": "Exemple de calcule",
+          "Text": "De exemplu, 5 + 3 calculează suma, 10 - 4 calculează diferența, 6 * 2 calculează produsul, iar 8 / 2 calculează rezultatul împărțirii."
         },
         {
           "Heading": "Ordinea operațiilor",
-          "Text": "Python folosește regula PEMDAS."
+          "Text": "Python respectă ordinea operațiilor matematice, cunoscută sub numele de regula PEMDAS. Aceasta înseamnă că mai întâi se rezolvă parantezele, apoi puterile, apoi înmulțirile și împărțirile, iar la final adunările și scăderile."
+        },
+        {
+          "Heading": "De ce este importantă ordinea operațiilor?",
+          "Text": "Ordinea operațiilor este importantă pentru a obține rezultate corecte. De exemplu, într-o expresie cu mai multe operații, Python va calcula mai întâi înmulțirea și abia apoi adunarea."
         }
       ],
       "Exercise": {
@@ -51,6 +72,7 @@
     }
   },
 
+
   {
     "LessonName": "Lecția 3: Variabile și Tipuri de date",
     "OrderIndex": 3,
@@ -59,15 +81,31 @@
       "Sections": [
         {
           "Heading": "Ce este o variabilă?",
-          "Text": "O variabilă este o cutie în memorie în care poți stoca valori."
+          "Text": "O variabilă este un spațiu din memorie în care putem stoca informații. Ne putem imagina variabila ca pe o cutie care are un nume și în care putem pune o valoare. Această valoare poate fi schimbată pe parcursul programului."
         },
         {
-          "Heading": "Atribuire",
-          "Text": "x = 5, nume = \"Ana\", temperatura = 22.5"
+          "Heading": "De ce folosim variabile?",
+          "Text": "Variabilele ne ajută să memorăm date și să le refolosim în program. În loc să scriem mereu aceeași valoare, o salvăm într-o variabilă și o folosim ori de câte ori avem nevoie."
         },
         {
-          "Heading": "Tipuri de bază",
-          "Text": "int, float, str, bool"
+          "Heading": "Atribuirea valorilor",
+          "Text": "În Python, atribuirea unei valori se face folosind semnul egal. De exemplu, putem salva numărul 5 într-o variabilă numită x sau un nume într-o variabilă numită nume."
+        },
+        {
+          "Heading": "Exemple de variabile",
+          "Text": "Exemple de variabile sunt x = 5, nume = \"Ana\" sau temperatura = 22.5. Python își dă seama automat ce tip de date are fiecare variabilă."
+        },
+        {
+          "Heading": "Tipuri de date de bază",
+          "Text": "Python folosește mai multe tipuri de date de bază. Tipul int este folosit pentru numere întregi, float pentru numere zecimale, str pentru texte și bool pentru valori de tip adevărat sau fals."
+        },
+        {
+          "Heading": "Tipuri dinamice",
+          "Text": "Python este un limbaj cu tipuri dinamice, ceea ce înseamnă că nu trebuie să specificăm tipul unei variabile. Acesta este stabilit automat în funcție de valoarea atribuită."
+        },
+        {
+          "Heading": "Reguli pentru numele variabilelor",
+          "Text": "Numele unei variabile trebuie să înceapă cu o literă sau cu underscore și nu poate conține spații. Este recomandat să folosim nume clare și sugestive."
         }
       ],
       "Exercise": {
@@ -85,15 +123,31 @@
       "Sections": [
         {
           "Heading": "Ce este un string?",
-          "Text": "Un string este o secvență de caractere."
+          "Text": "Un string este o secvență de caractere folosită pentru a reprezenta texte. Un string poate conține litere, cifre, spații sau simboluri și este scris între ghilimele."
         },
         {
-          "Heading": "Concatenare",
-          "Text": "\"Salut\" + \" lume\""
+          "Heading": "Crearea string-urilor",
+          "Text": "În Python, un string se creează folosind ghilimele duble sau simple. De exemplu, putem salva un text într-o variabilă pentru a-l folosi mai târziu."
         },
         {
-          "Heading": "Funcții utile",
-          "Text": "len(), upper(), lower(), replace()"
+          "Heading": "Concatenarea string-urilor",
+          "Text": "Concatenarea înseamnă unirea a două sau mai multe string-uri. În Python, acest lucru se face folosind operatorul plus. De exemplu, putem uni cuvintele Salut și lume pentru a forma un mesaj complet."
+        },
+        {
+          "Heading": "Lungimea unui string",
+          "Text": "Pentru a afla câte caractere are un string, folosim funcția len. Aceasta numără toate caracterele, inclusiv spațiile."
+        },
+        {
+          "Heading": "Transformarea literelor",
+          "Text": "Python oferă funcții utile pentru modificarea textului. Funcția upper transformă toate literele în majuscule, iar lower transformă toate literele în minuscule."
+        },
+        {
+          "Heading": "Înlocuirea textului",
+          "Text": "Funcția replace permite înlocuirea unei părți dintr-un string cu alt text. Este foarte utilă atunci când vrem să corectăm sau să modificăm mesaje."
+        },
+        {
+          "Heading": "De ce sunt importante string-urile?",
+          "Text": "String-urile sunt folosite foarte des în programe pentru afișarea mesajelor, citirea datelor introduse de utilizator și lucrul cu texte. De aceea, este important să știm cum să le folosim corect."
         }
       ],
       "Exercise": {
@@ -102,32 +156,49 @@
       }
     }
   },
-
   {
-    "LessonName": "Lecția 5: Listelor în Python",
+    "LessonName": "Lecția 5: Liste în Python",
     "OrderIndex": 5,
     "ContentJson": {
       "Title": "Lecția 5: Liste",
       "Sections": [
         {
           "Heading": "Ce este o listă?",
-          "Text": "O listă stochează mai multe valori într-o singură variabilă."
+          "Text": "O listă este o colecție de valori stocate într-o singură variabilă. Lista poate conține mai multe elemente, cum ar fi numere, texte sau alte tipuri de date, și este foarte utilă atunci când vrem să lucrăm cu mai multe valori de același tip."
         },
         {
-          "Heading": "Indexare",
-          "Text": "fructe[0], fructe[1]"
+          "Heading": "Crearea unei liste",
+          "Text": "În Python, o listă se creează folosind paranteze drepte. De exemplu, putem crea o listă cu fructe sau o listă cu numere. Elementele din listă sunt separate prin virgulă."
         },
         {
-          "Heading": "Metode utile",
-          "Text": "append(), remove(), sort()"
+          "Heading": "Indexarea elementelor",
+          "Text": "Fiecare element dintr-o listă are o poziție numită index. Indexarea începe de la 0, ceea ce înseamnă că primul element are indexul 0, al doilea are indexul 1 și așa mai departe."
+        },
+        {
+          "Heading": "Accesarea elementelor",
+          "Text": "Pentru a accesa un element din listă, folosim numele listei urmat de indexul elementului între paranteze drepte. De exemplu, putem accesa primul sau al doilea element dintr-o listă."
+        },
+        {
+          "Heading": "Modificarea unei liste",
+          "Text": "Listele pot fi modificate. Putem adăuga elemente noi, elimina elemente existente sau schimba ordinea elementelor din listă."
+        },
+        {
+          "Heading": "Metode utile pentru liste",
+          "Text": "Python oferă metode utile pentru lucrul cu liste. Metoda append adaugă un element la finalul listei, remove elimină un element specific, iar sort ordonează elementele din listă."
+        },
+        {
+          "Heading": "De ce sunt importante listele?",
+          "Text": "Listele sunt foarte folosite în programare deoarece permit lucrul cu mai multe valori în același timp. Ele sunt utilizate în bucle, în calcule și în multe alte situații practice."
         }
       ],
       "Exercise": {
-        "Description": "Creează o listă cu 3 numere și afișează suma lor.",
+        "Description": "Creează o listă cu numerele 1 , 2 , 3 și afișează suma lor.",
         "ExpectedOutput": "6"
       }
     }
   },
+
+
 
   {
     "LessonName": "Lecția 6: If / Else",
@@ -136,16 +207,28 @@
       "Title": "Lecția 6: Structuri condiționale",
       "Sections": [
         {
-          "Heading": "if",
-          "Text": "if condiție: execută cod"
+          "Heading": "Ce sunt structurile condiționale?",
+          "Text": "Structurile condiționale sunt folosite pentru a lua decizii în programe. Ele permit executarea unor instrucțiuni doar dacă o anumită condiție este adevărată."
         },
         {
-          "Heading": "else",
-          "Text": "else se execută când if este fals"
+          "Heading": "Instrucțiunea if",
+          "Text": "Instrucțiunea if verifică o condiție. Dacă această condiție este adevărată, codul din interiorul ei este executat."
         },
         {
-          "Heading": "elif",
-          "Text": "elif adaugă condiții suplimentare"
+          "Heading": "Instrucțiunea else",
+          "Text": "Instrucțiunea else este folosită împreună cu if și se execută atunci când condiția din if este falsă."
+        },
+        {
+          "Heading": "Instrucțiunea elif",
+          "Text": "Instrucțiunea elif permite verificarea mai multor condiții. Dacă prima condiție este falsă, Python verifică următoarele condiții scrise cu elif."
+        },
+        {
+          "Heading": "Cum funcționează condițiile?",
+          "Text": "O condiție compară valori folosind operatori precum mai mare, mai mic sau egal. Rezultatul unei condiții poate fi adevărat sau fals."
+        },
+        {
+          "Heading": "De ce sunt importante structurile condiționale?",
+          "Text": "Structurile condiționale permit programelor să reacționeze diferit în funcție de date. Ele sunt esențiale în jocuri, aplicații și orice program care trebuie să ia decizii."
         }
       ],
       "Exercise": {
@@ -162,12 +245,24 @@
       "Title": "Lecția 7: Bucla for",
       "Sections": [
         {
-          "Heading": "Iterare",
-          "Text": "for x in range(5): printează valorile de la 0 la 4."
+          "Heading": "Ce este bucla for?",
+          "Text": "Bucla for este folosită pentru a repeta o acțiune de mai multe ori. Ea parcurge pe rând o serie de valori și execută același cod pentru fiecare valoare."
         },
         {
-          "Heading": "Parcurgere listă",
-          "Text": "for fruct in fructe: print(fruct)"
+          "Heading": "Iterarea cu range",
+          "Text": "Funcția range generează o serie de numere. De exemplu, folosind range(5), Python va produce numerele de la 0 la 4, iar bucla for va parcurge fiecare dintre ele."
+        },
+        {
+          "Heading": "Exemplu de iterare",
+          "Text": "Putem folosi bucla for pentru a afișa numere sau pentru a repeta o acțiune de mai multe ori, cum ar fi afișarea unui mesaj."
+        },
+        {
+          "Heading": "Parcurgerea unei liste",
+          "Text": "Bucla for este foarte utilă pentru parcurgerea listelor. Fiecare element din listă este luat pe rând și poate fi afișat sau prelucrat."
+        },
+        {
+          "Heading": "De ce este utilă bucla for?",
+          "Text": "Bucla for reduce cantitatea de cod scris și face programele mai clare. Este folosită frecvent pentru lucrul cu liste, numere și date repetabile."
         }
       ],
       "Exercise": {
@@ -177,6 +272,7 @@
     }
   },
 
+
   {
     "LessonName": "Lecția 8: While Loops",
     "OrderIndex": 8,
@@ -184,12 +280,28 @@
       "Title": "Lecția 8: Bucla while",
       "Sections": [
         {
-          "Heading": "while",
-          "Text": "Rulează cât timp condiția este adevărată."
+          "Heading": "Ce este bucla while?",
+          "Text": "Bucla while este folosită pentru a repeta o acțiune atâta timp cât o condiție este adevărată. Programul verifică condiția înainte de fiecare repetare."
         },
         {
-          "Heading": "Exemplu",
-          "Text": "i = 1; while i <= 3: print(i); i += 1"
+          "Heading": "Cum funcționează bucla while?",
+          "Text": "Atunci când condiția este adevărată, codul din interiorul buclei se execută. Când condiția devine falsă, bucla se oprește și programul continuă mai departe."
+        },
+        {
+          "Heading": "Exemplu de utilizare",
+          "Text": "Un exemplu simplu este repetarea afișării unui număr. De fiecare dată când bucla se execută, valoarea unei variabile se modifică pentru a evita o buclă infinită."
+        },
+        {
+          "Heading": "Bucla infinită",
+          "Text": "Dacă variabila folosită în condiție nu se modifică, bucla while poate rula la infinit. De aceea, este important să actualizăm variabilele din interiorul buclei."
+        },
+        {
+          "Heading": "Diferența dintre for și while",
+          "Text": "Bucla for este folosită atunci când știm de câte ori vrem să repetăm o acțiune, iar bucla while este folosită atunci când nu știm exact numărul de repetări."
+        },
+        {
+          "Heading": "De ce este utilă bucla while?",
+          "Text": "Bucla while este foarte utilă în situații în care repetarea depinde de o condiție, cum ar fi citirea datelor până la o anumită valoare sau rularea unui joc până la final."
         }
       ],
       "Exercise": {
@@ -206,12 +318,28 @@
       "Title": "Lecția 9: Funcții",
       "Sections": [
         {
-          "Heading": "Definire funcție",
-          "Text": "def salut(): print('Hello')"
+          "Heading": "Ce este o funcție?",
+          "Text": "O funcție este un bloc de cod care îndeplinește o anumită sarcină. Funcțiile ne ajută să organizăm codul și să îl refolosim fără a-l scrie de mai multe ori."
         },
         {
-          "Heading": "Argumente",
-          "Text": "def adunare(a, b): return a + b"
+          "Heading": "Definirea unei funcții",
+          "Text": "În Python, o funcție se definește folosind cuvântul cheie def, urmat de numele funcției și de paranteze. Codul funcției este scris sub aceasta."
+        },
+        {
+          "Heading": "Apelarea unei funcții",
+          "Text": "Pentru a folosi o funcție, trebuie să o apelăm folosind numele ei urmat de paranteze. La apel, codul din interiorul funcției este executat."
+        },
+        {
+          "Heading": "Argumente ale funcțiilor",
+          "Text": "Funcțiile pot primi argumente, adică valori care sunt trimise funcției pentru a fi folosite în interiorul ei. Argumentele permit funcțiilor să fie mai flexibile."
+        },
+        {
+          "Heading": "Returnarea unei valori",
+          "Text": "O funcție poate întoarce o valoare folosind cuvântul return. Această valoare poate fi folosită mai departe în program."
+        },
+        {
+          "Heading": "De ce sunt utile funcțiile?",
+          "Text": "Funcțiile fac codul mai organizat, mai ușor de citit și mai ușor de întreținut. Ele sunt folosite în toate programele Python, de la cele simple până la aplicații complexe."
         }
       ],
       "Exercise": {
@@ -221,6 +349,7 @@
     }
   },
 
+
   {
     "LessonName": "Lecția 10: Mini-Proiect",
     "OrderIndex": 10,
@@ -228,8 +357,20 @@
       "Title": "Lecția 10: Mini-proiect final",
       "Sections": [
         {
-          "Heading": "Proiect",
-          "Text": "Scriem un program care folosește variabile, condiții și funcții."
+          "Heading": "Ce este mini-proiectul final?",
+          "Text": "Mini-proiectul final este o activitate care te ajută să folosești toate conceptele învățate până acum. Scopul lui este să îți arate cum se combină variabilele, condițiile, buclele și funcțiile într-un singur program."
+        },
+        {
+          "Heading": "Ce trebuie să conțină programul?",
+          "Text": "Programul trebuie să folosească cel puțin o variabilă, o structură condițională și o funcție. Aceste elemente te ajută să creezi un program organizat și ușor de înțeles."
+        },
+        {
+          "Heading": "Cum abordăm mini-proiectul?",
+          "Text": "Pentru a rezolva mini-proiectul, este recomandat să gândești pașii pe rând. Mai întâi stabilești ce trebuie să facă programul, apoi creezi variabilele necesare, iar la final organizezi codul în funcții."
+        },
+        {
+          "Heading": "De ce este important mini-proiectul?",
+          "Text": "Mini-proiectul te ajută să îți consolidezi cunoștințele și să capeți încredere în scrierea programelor Python. Este un pas important înainte de a crea programe mai complexe."
         }
       ],
       "Exercise": {
@@ -238,4 +379,5 @@
       }
     }
   }
+
 ]

@@ -38,15 +38,29 @@ public class ChatController : Controller
     {
         var rag = await _rag.SearchAsync(message);
 
-        string finalPrompt = rag.Similarity > 0.5
-    ? $"Întrebare utilizator: {message}\nContext RAG: {rag.BestMatchAnswer}\nRăspunde clar și pe scurt, în română, folosind DOAR text simplu (fără Markdown: fără #, *, liste sau ```)."
-    : $"Întrebare utilizator: {message}\nNu există context RAG.\nRăspunde clar și pe scurt, în română, folosind DOAR text simplu (fără Markdown: fără #, *, liste sau ```).";
+        string finalPrompt;
 
+        if (rag != null && rag.Similarity >= 0.5)
+        {
+            finalPrompt =
+                $"Întrebare utilizator: {message}\n" +
+                $"Context din curs: {rag.BestMatchAnswer}\n" +
+                "Răspunde clar și pe scurt, în română, folosind DOAR text simplu (fără Markdown ). " +
+                "Dacă utilizatorul cere un exercițiu dintr-o lecție, oferă exact enunțul exercițiului și apoi rezolvarea  sub formă de pseudocod structurat (tip algoritmic), folosind doar instrucțiuni precum START, DECLARĂ, CITEȘTE, CALCULEAZĂ, DACĂ, REPETĂ, AFIȘEAZĂ, STOP. NU explica pseudocodul în text. Specifică clar că soluția este oferită intenționat în pseudocod pentru ca utilizatorul să poată implementa singur codul în limbajul cerut.";
+        }
+        else
+        {
+            finalPrompt =
+                $"Întrebare utilizator: {message}\n" +
+                "Răspunde clar și pe scurt, în română, folosind DOAR text simplu. " +
+                "Dacă este o întrebare despre Python de bază, explică pe înțelesul unui începător.";
+        }
 
         var ai = await _ai.GenerateAsync(finalPrompt);
 
         return Json(new { message = message, reply = ai });
     }
+
 
     [Authorize]
     public async Task<IActionResult> Avatar()

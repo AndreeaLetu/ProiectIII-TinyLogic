@@ -1,83 +1,200 @@
 ﻿@page
 @model LoginModel
-
 @{
-    ViewData["Title"] = "Log in";
+    ViewData["Title"] = "Conectare";
 }
 
-<h1>@ViewData["Title"]</h1>
-<div class="row">
-    <div class="col-md-4">
-        <section>
-            <form id="account" method="post">
-                <h2>Use a local account to log in.</h2>
-                <hr />
-                <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
-                <div class="form-floating mb-3">
-                    <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
-                    <label asp-for="Input.Email" class="form-label">Email</label>
-                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+<div class="min-h-screen bg-gradient-to-b from-indigo-50 via-white to-white pb-10 pt-24">
+    <div class="mx-auto max-w-6xl px-4">
+
+        <div class="mx-auto max-w-4xl overflow-hidden rounded-3xl bg-white shadow-2xl ring-1 ring-indigo-100">
+            <div class="grid grid-cols-1 lg:grid-cols-2">
+
+                <!-- LEFT / HERO -->
+                <div class="relative hidden overflow-hidden bg-gradient-to-br from-indigo-600 via-indigo-700 to-violet-700 p-10 text-white lg:block">
+                    <div class="absolute -left-24 -top-24 h-72 w-72 rounded-full bg-white/10 blur-2xl"></div>
+                    <div class="absolute -bottom-24 -right-24 h-72 w-72 rounded-full bg-white/10 blur-2xl"></div>
+
+                    <div class="relative">
+                        <div class="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm font-semibold">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            TinyLogic
+                        </div>
+
+                        <h1 class="mt-6 text-4xl font-extrabold leading-tight">
+                            Bine ai revenit! 👋
+                        </h1>
+
+                        <p class="mt-4 text-white/90">
+                            Conectează-te ca să continui lecțiile, testele și să-ți vezi diplomele și badge-urile.
+                        </p>
+
+                        <div class="mt-8 space-y-3 text-sm text-white/90">
+                            <div class="flex items-center gap-2">
+                                <span class="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-white/10">
+                                    <i class="fa-solid fa-book"></i>
+                                </span>
+                                <span>Progres salvat pe cursuri</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-white/10">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </span>
+                                <span>Diplome generate automat</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-white/10">
+                                    <i class="fa-solid fa-award"></i>
+                                </span>
+                                <span>Badge-uri pentru realizări</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-floating mb-3">
-                    <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" placeholder="password" />
-                    <label asp-for="Input.Password" class="form-label">Password</label>
-                    <span asp-validation-for="Input.Password" class="text-danger"></span>
-                </div>
-                <div class="checkbox mb-3">
-                    <label asp-for="Input.RememberMe" class="form-label">
-                        <input class="form-check-input" asp-for="Input.RememberMe" />
-                        @Html.DisplayNameFor(m => m.Input.RememberMe)
-                    </label>
-                </div>
-                <div>
-                    <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">Log in</button>
-                </div>
-                <div>
-                    <p>
-                        <a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
-                    </p>
-                    <p>
-                        <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
-                    </p>
-                    <p>
-                        <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a>
-                    </p>
-                </div>
-            </form>
-        </section>
-    </div>
-    <div class="col-md-6 col-md-offset-2">
-        <section>
-            <h3>Use another service to log in.</h3>
-            <hr />
-            @{
-                if ((Model.ExternalLogins?.Count ?? 0) == 0)
-                {
-                    <div>
-                        <p>
-                            There are no external authentication services configured. See this <a href="https://go.microsoft.com/fwlink/?LinkID=532715">article
-                            about setting up this ASP.NET application to support logging in via external services</a>.
+
+                <!-- RIGHT / FORM -->
+                <div class="p-8 sm:p-10">
+                    <div class="mb-6">
+                        <h2 class="text-3xl font-extrabold text-gray-900">Conectare</h2>
+                        <p class="mt-2 text-sm text-gray-600">
+                            Folosește contul tău TinyLogic ca să intri în platformă.
                         </p>
                     </div>
-                }
-                else
-                {
-                    <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
+
+                    <form id="account" method="post" class="space-y-4">
+                        <div asp-validation-summary="ModelOnly"
+                             class="rounded-xl border border-red-200 bg-red-50 p-3 text-sm text-red-700"
+                             role="alert"></div>
+
+                        <!-- Email -->
                         <div>
-                            <p>
-                                @foreach (var provider in Model.ExternalLogins!)
-                                {
-                                    <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
-                                }
-                            </p>
+                            <label asp-for="Input.Email" class="mb-1 block text-sm font-semibold text-gray-700">Email</label>
+                            <div class="relative">
+                                <span class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </span>
+                                <input asp-for="Input.Email"
+                                       class="w-full rounded-xl border border-gray-300 bg-white py-3 pl-10 pr-3 text-sm shadow-sm outline-none transition focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100"
+                                       autocomplete="username"
+                                       aria-required="true"
+                                       placeholder="name@example.com" />
+                            </div>
+                            <span asp-validation-for="Input.Email" class="mt-1 block text-sm text-red-600"></span>
+                        </div>
+
+                        <!-- Password -->
+                        <div>
+                            <label asp-for="Input.Password" class="mb-1 block text-sm font-semibold text-gray-700">Parolă</label>
+                            <div class="relative">
+                                <span class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400">
+                                    <i class="fa-solid fa-lock"></i>
+                                </span>
+                                <input asp-for="Input.Password"
+                                       type="password"
+                                       class="w-full rounded-xl border border-gray-300 bg-white py-3 pl-10 pr-10 text-sm shadow-sm outline-none transition focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100"
+                                       autocomplete="current-password"
+                                       aria-required="true"
+                                       placeholder="••••••••" />
+                                <button type="button"
+                                        id="togglePass"
+                                        class="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-400 hover:text-gray-600"
+                                        aria-label="Afișează parola">
+                                    <i class="fa-solid fa-eye"></i>
+                                </button>
+                            </div>
+                            <span asp-validation-for="Input.Password" class="mt-1 block text-sm text-red-600"></span>
+                        </div>
+
+                        <!-- Remember -->
+                        <div class="flex items-center justify-between">
+                            <label class="flex items-center gap-2 text-sm text-gray-700">
+                                <input class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                                       asp-for="Input.RememberMe" />
+                                Ține-mă minte
+                            </label>
+
+                            <a id="forgot-password"
+                               asp-page="./ForgotPassword"
+                               class="text-sm font-semibold text-indigo-600 hover:text-indigo-700 hover:underline">
+                                Ai uitat parola?
+                            </a>
+                        </div>
+
+                        <!-- Submit -->
+                        <button id="login-submit"
+                                type="submit"
+                                class="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-indigo-600 px-4 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-indigo-700 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-indigo-200">
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                            Conectează-te
+                        </button>
+
+                        <!-- Links -->
+                        <div class="pt-2 text-center text-sm text-gray-600">
+                            Nu ai cont?
+                            <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl"
+                               class="font-semibold text-indigo-600 hover:text-indigo-700 hover:underline">
+                                Creează unul
+                            </a>
+                        </div>
+
+                        <div class="text-center">
+                            <a id="resend-confirmation" asp-page="./ResendEmailConfirmation"
+                               class="text-sm text-gray-500 hover:text-gray-700 hover:underline">
+                                Retrimite confirmarea emailului
+                            </a>
                         </div>
                     </form>
-                }
-            }
-        </section>
+
+                    <!-- EXTERNAL LOGINS -->
+                    @if ((Model.ExternalLogins?.Count ?? 0) > 0)
+                    {
+                        <div class="mt-8">
+                            <div class="flex items-center gap-3">
+                                <div class="h-px w-full bg-gray-200"></div>
+                                <div class="text-xs font-semibold uppercase tracking-wider text-gray-400">sau</div>
+                                <div class="h-px w-full bg-gray-200"></div>
+                            </div>
+
+                            <form id="external-account"
+                                  asp-page="./ExternalLogin"
+                                  asp-route-returnUrl="@Model.ReturnUrl"
+                                  method="post"
+                                  class="mt-5 space-y-3">
+                                @foreach (var provider in Model.ExternalLogins!)
+                                {
+                                    <button type="submit"
+                                            class="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm font-semibold text-gray-700 shadow-sm transition hover:bg-gray-50 hover:shadow"
+                                            name="provider"
+                                            value="@provider.Name"
+                                            title="Log in using your @provider.DisplayName account">
+                                        <i class="fa-brands fa-google"></i>
+                                        Continuă cu @provider.DisplayName
+                                    </button>
+                                }
+                            </form>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
+    <script>
+        // show/hide password
+        const btn = document.getElementById('togglePass');
+        const pass = document.getElementById('Input_Password');
+        if (btn && pass) {
+            btn.addEventListener('click', () => {
+                const isPass = pass.getAttribute('type') === 'password';
+                pass.setAttribute('type', isPass ? 'text' : 'password');
+                btn.innerHTML = isPass
+                    ? '<i class="fa-solid fa-eye-slash"></i>'
+                    : '<i class="fa-solid fa-eye"></i>';
+            });
+        }
+    </script>
 }

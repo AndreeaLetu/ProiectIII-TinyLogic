@@ -3,100 +3,235 @@
 @{
     ViewData["Title"] = "Profilul meu";
     ViewData["ActivePage"] = ManageNavPages.Index;
+    ViewData["FullWidth"] = true;
 }
 
-<h2 class="mb-8 text-center text-4xl font-extrabold text-indigo-700">@ViewData["Title"]</h2>
+<div class="min-h-screen w-full bg-gradient-to-b from-indigo-50 via-white to-white py-10">
+    <!-- FULL WIDTH WRAPPER (fără max-w + fără mx-auto) -->
+    <div class="w-full px-4 md:px-8 lg:px-12">
 
-<partial name="_StatusMessage" for="StatusMessage" />
+        <h2 class="mb-8 text-center text-4xl font-extrabold text-indigo-700">@ViewData["Title"]</h2>
+        <partial name="_StatusMessage" for="StatusMessage" />
 
-<div class="mx-auto max-w-3xl rounded-2xl bg-white p-8 shadow-xl">
+        <!-- TOP GRID -->
+        <div class="grid w-full grid-cols-1 gap-6 lg:grid-cols-3">
 
-    <!-- POZA + NUMELE -->
-    <div class="mb-8 flex flex-col items-center">
-        <div class="relative">
+            <!-- LEFT: CARD PROFIL -->
+            <div class="rounded-2xl bg-white p-8 shadow-xl lg:col-span-1">
+                <div class="mb-8 flex flex-col items-center">
+                    <div class="relative">
+                        <img src="@(Model.PhotoBase64 ?? "/images/default-profile.png")"
+                             alt="Photo"
+                             class="h-32 w-32 rounded-full border-4 border-indigo-500 object-cover shadow-lg" />
+                    </div>
 
-            <!-- Imaginea de profil -->
-            <img src="@(Model.PhotoBase64 ?? "/images/default-profile.png")"
-                 alt="Photo"
-                 class="h-32 w-32 rounded-full border-4 border-indigo-500 object-cover shadow-lg" />
+                    <h3 class="mt-4 text-2xl font-semibold text-gray-900">
+                        @Model.Input.FirstName @Model.Input.LastName
+                    </h3>
 
+                    <div class="mt-2 flex flex-wrap items-center justify-center gap-2">
+                        <span class="rounded-full bg-indigo-50 px-3 py-1 text-sm font-semibold text-indigo-700">
+                            @Model.Username
+                        </span>
+
+                        <span class="rounded-full bg-gray-100 px-3 py-1 text-sm font-semibold text-gray-700">
+                            Rol: @(string.IsNullOrWhiteSpace(Model.Input.Role) ? "Student" : Model.Input.Role)
+                        </span>
+                    </div>
+                </div>
+
+                <!-- STATS -->
+                <div class="grid grid-cols-3 gap-3">
+                    <div class="rounded-xl border bg-white p-3 text-center">
+                        <div class="text-2xl font-extrabold text-indigo-700">@Model.TotalCoursesCompleted</div>
+                        <div class="text-xs text-gray-500">Cursuri</div>
+                    </div>
+                    <div class="rounded-xl border bg-white p-3 text-center">
+                        <div class="text-2xl font-extrabold text-indigo-700">@Model.TotalLessonsCompleted</div>
+                        <div class="text-xs text-gray-500">Lecții</div>
+                    </div>
+                    <div class="rounded-xl border bg-white p-3 text-center">
+                        <div class="text-2xl font-extrabold text-indigo-700">@Model.TotalCertificates</div>
+                        <div class="text-xs text-gray-500">Diplome</div>
+                    </div>
+                </div>
+
+                <hr class="my-6" />
+
+                <!-- FORM -->
+                <form id="profile-form" method="post" enctype="multipart/form-data" class="space-y-4">
+                    <div asp-validation-summary="ModelOnly" class="text-sm text-red-600" role="alert"></div>
+
+                    <div>
+                        <label class="mb-1 block text-sm font-medium text-gray-700">Schimbă poza de profil</label>
+                        <input asp-for="Input.PhotoFile" type="file" accept="image/*"
+                               class="block w-full rounded-md border border-gray-300 bg-white px-3 py-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" />
+                    </div>
+
+                    <div>
+                        <label asp-for="Username" class="mb-1 block text-sm font-medium text-gray-700">Email</label>
+                        <input asp-for="Username" disabled
+                               class="block w-full cursor-not-allowed rounded-md border border-gray-300 bg-gray-100 px-3 py-2 shadow-sm sm:text-sm" />
+                    </div>
+
+                    <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+                        <div>
+                            <label asp-for="Input.FirstName" class="mb-1 block text-sm font-medium text-gray-700">Prenume</label>
+                            <input asp-for="Input.FirstName"
+                                   class="block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 sm:text-sm" />
+                        </div>
+                        <div>
+                            <label asp-for="Input.LastName" class="mb-1 block text-sm font-medium text-gray-700">Nume</label>
+                            <input asp-for="Input.LastName"
+                                   class="block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 sm:text-sm" />
+                        </div>
+                    </div>
+
+                    <div>
+                        <label asp-for="Input.PhoneNumber" class="mb-1 block text-sm font-medium text-gray-700">Număr de telefon</label>
+                        <input asp-for="Input.PhoneNumber"
+                               class="block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 sm:text-sm" />
+                    </div>
+
+                    <div>
+                        <label asp-for="Input.BirthDate" class="mb-1 block text-sm font-medium text-gray-700">Data nașterii</label>
+                        <input asp-for="Input.BirthDate" type="date"
+                               class="block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 sm:text-sm" />
+                    </div>
+
+                    <button id="update-profile-button" type="submit"
+                            class="inline-flex w-full justify-center rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-lg hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-300">
+                        Salvează modificările
+                    </button>
+                </form>
+            </div>
+
+            <!-- RIGHT: PROGRES + DIPLOME + BADGES -->
+            <div class="space-y-6 lg:col-span-2">
+
+                <!-- PROGRES CURSURI -->
+                <div class="rounded-2xl bg-white p-8 shadow-xl">
+                    <div class="mb-6 flex items-center justify-between">
+                        <h3 class="text-2xl font-extrabold text-gray-900">📈 Progres cursuri</h3>
+                        <span class="rounded-full bg-indigo-50 px-3 py-1 text-sm font-semibold text-indigo-700">
+                            @Model.TotalCoursesCompleted finalizate
+                        </span>
+                    </div>
+
+                    <div class="space-y-4">
+                        @foreach (var c in Model.CourseProgress.OrderByDescending(x => x.IsCompleted).ThenBy(x => x.CourseName))
+                        {
+                            <div class="rounded-xl border p-4">
+                                <div class="flex items-center justify-between gap-3">
+                                    <div>
+                                        <div class="text-lg font-bold text-gray-900">@c.CourseName</div>
+                                        <div class="text-sm text-gray-500">
+                                            @c.CompletedLessons / @c.TotalLessons lecții
+                                            @if (!string.IsNullOrWhiteSpace(c.Language))
+                                            {
+                                                <span> • @c.Language</span>
+                                            }
+                                        </div>
+                                    </div>
+
+                                    @if (c.IsCompleted)
+                                    {
+                                        <span class="rounded-full bg-green-100 px-3 py-1 text-sm font-bold text-green-700">
+                                            ✔ Finalizat
+                                        </span>
+                                    }
+                                    else
+                                    {
+                                        <span class="rounded-full bg-yellow-100 px-3 py-1 text-sm font-bold text-yellow-700">
+                                            ⏳ @c.Percent%
+                                        </span>
+                                    }
+                                </div>
+
+                                <div class="mt-3 h-2 w-full rounded-full bg-gray-200">
+                                    <div class="h-2 rounded-full bg-indigo-600" style="width:@c.Percent%"></div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+
+                <!-- DIPLOME -->
+                <div class="rounded-2xl bg-white p-8 shadow-xl">
+                    <div class="mb-6 flex items-center justify-between">
+                        <h3 class="text-2xl font-extrabold text-gray-900">🎓 Diplome</h3>
+                        <span class="rounded-full bg-gray-100 px-3 py-1 text-sm font-semibold text-gray-700">
+                            @Model.MyCertificates.Count
+                        </span>
+                    </div>
+
+                    @if (!Model.MyCertificates.Any())
+                    {
+                        <div class="rounded-xl bg-gray-50 p-5 text-gray-600">
+                            Nu ai obținut nicio diplomă încă.
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+                            @foreach (var cert in Model.MyCertificates)
+                            {
+                                <div class="rounded-xl border p-5">
+                                    <div class="text-lg font-bold text-gray-900">@cert.CourseName</div>
+                                    <div class="mt-1 text-sm text-gray-500">
+                                        Generată: @cert.DateGenerated.ToString("dd MMM yyyy")
+                                    </div>
+
+                                    <div class="mt-3 text-sm text-gray-700">
+                                        Cod:
+                                        <span class="rounded bg-gray-100 px-2 py-1 font-mono text-indigo-700">@cert.CertificateCode</span>
+                                    </div>
+
+                                    <a href="@cert.PdfPath"
+                                       class="mt-4 inline-flex w-full items-center justify-center rounded-lg bg-indigo-600 py-2 font-semibold text-white hover:bg-indigo-700">
+                                        Descarcă diploma 📄
+                                    </a>
+                                </div>
+                            }
+                        </div>
+                    }
+                </div>
+
+                <!-- BADGES -->
+                <div class="rounded-2xl bg-white p-8 shadow-xl">
+                    <div class="mb-6 flex items-center justify-between">
+                        <h3 class="text-2xl font-extrabold text-gray-900">🏅 Badge-uri</h3>
+                        <span class="rounded-full bg-gray-100 px-3 py-1 text-sm font-semibold text-gray-700">
+                            @Model.Badges.Count
+                        </span>
+                    </div>
+
+                    @if (!Model.Badges.Any())
+                    {
+                        <div class="rounded-xl bg-gray-50 p-5 text-gray-600">
+                            Completează un curs ca să primești primul badge.
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="flex flex-wrap gap-3">
+                            @foreach (var b in Model.Badges)
+                            {
+                                <div class="flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-semibold @b.StyleClass">
+                                    <span class="text-lg">@b.Icon</span>
+                                    <div class="leading-tight">
+                                        <div>@b.Title</div>
+                                        <div class="text-xs opacity-80">@b.Subtitle</div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    }
+                </div>
+
+            </div>
         </div>
-
-        <!-- Nume complet -->
-        <h3 class="mt-4 text-2xl font-semibold text-gray-900">
-            @Model.Input.FirstName @Model.Input.LastName
-        </h3>
-
-        <!-- Rolul utilizatorului -->
-        <p class="mt-1 text-sm text-gray-600">
-            Rol: <span class="font-medium">@Model.Input.Role</span>
-        </p>
     </div>
-
-    <form id="profile-form" method="post" enctype="multipart/form-data">
-
-        <div asp-validation-summary="ModelOnly" class="mb-4 text-red-600" role="alert"></div>
-
-        <!-- Upload poză -->
-        <div class="mb-6">
-            <label class="mb-1 block text-sm font-medium text-gray-700">Schimbă poza de profil</label>
-            <input asp-for="Input.PhotoFile"
-                   type="file"
-                   accept="image/*"
-                   class="block w-full rounded-md border border-gray-300 bg-white px-3 py-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" />
-        </div>
-
-        <!-- Email (read-only) -->
-        <div class="mb-4">
-            <label asp-for="Username" class="mb-1 block text-sm font-medium text-gray-700">Email</label>
-            <input asp-for="Username"
-                   class="mt-1 block w-full cursor-not-allowed rounded-md border border-gray-300 bg-gray-100 px-3 py-2 shadow-sm sm:text-sm"
-                   disabled />
-        </div>
-
-        <!-- Nume + Prenume -->
-        <div class="mb-4 grid grid-cols-1 gap-4 md:grid-cols-2">
-            <div>
-                <label asp-for="Input.FirstName" class="mb-1 block text-sm font-medium text-gray-700">Prenume</label>
-                <input asp-for="Input.FirstName"
-                       class="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 sm:text-sm" />
-            </div>
-            <div>
-                <label asp-for="Input.LastName" class="mb-1 block text-sm font-medium text-gray-700">Nume</label>
-                <input asp-for="Input.LastName"
-                       class="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 sm:text-sm" />
-            </div>
-        </div>
-
-        <!-- Telefon -->
-        <div class="mb-4">
-            <label asp-for="Input.PhoneNumber" class="mb-1 block text-sm font-medium text-gray-700">Număr de telefon</label>
-            <input asp-for="Input.PhoneNumber"
-                   class="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 sm:text-sm" />
-        </div>
-
-        <!-- Rol -->
-        <div class="mb-4">
-            <label asp-for="Input.Role" class="mb-1 block text-sm font-medium text-gray-700">Rol</label>
-            <input asp-for="Input.Role"
-                   class="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 sm:text-sm" />
-        </div>
-
-        <!-- Data nașterii -->
-        <div class="mb-6">
-            <label asp-for="Input.BirthDate" class="mb-1 block text-sm font-medium text-gray-700">Data nașterii</label>
-            <input asp-for="Input.BirthDate"
-                   type="date"
-                   class="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 sm:text-sm" />
-        </div>
-
-        <!-- Buton Salvare -->
-        <button id="update-profile-button"
-                type="submit"
-                class="inline-flex w-full justify-center rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-lg hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-300">
-            Salvează modificările
-        </button>
-    </form>
 </div>
 
 @section Scripts {

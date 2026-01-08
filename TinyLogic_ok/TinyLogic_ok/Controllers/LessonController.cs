@@ -12,15 +12,105 @@ public class LessonsController : Controller
     private readonly TinyLogicDbContext _context;
     private readonly IPythonRunner _pythonRunner;
     private readonly ILessonProgressService _lessonProgressService;
+    private readonly ICRunner _cRunner;
+
 
     public LessonsController(
-        TinyLogicDbContext context,
-        IPythonRunner pythonRunner,
-        ILessonProgressService lessonProgressService)
+         TinyLogicDbContext context,
+         IPythonRunner pythonRunner,
+         ICRunner cRunner,
+         ILessonProgressService lessonProgressService)
     {
         _context = context;
         _pythonRunner = pythonRunner;
+        _cRunner = cRunner;
         _lessonProgressService = lessonProgressService;
+    }
+    [HttpPost]
+    public async Task<IActionResult> CheckC([FromBody] CodeRequest request)
+    {
+         if (request == null)
+            return Json(new { success = false, message = "Request lipsă!" });
+
+        if (request.LessonId <= 0)
+            return Json(new { success = false, message = "LessonId lipsă!" });
+
+        string output = "";
+        try
+        {
+            output = _cRunner.Run(request.Code)?.Trim() ?? "";
+        }
+        catch (Exception ex)
+        {
+            return Json(new { success = false, message = "Eroare la rularea codului C!", details = ex.Message });
+        }
+
+        var lesson = await _context.Lessons
+            .Include(l => l.Course)
+            .FirstOrDefaultAsync(l => l.IdLesson == request.LessonId);
+
+        if (lesson == null)
+            return Json(new { success = false, message = "Lecția nu există în baza de date!" });
+
+        LessonContent content;
+        try
+        {
+            content = JsonConvert.DeserializeObject<LessonContent>(lesson.ContentJson);
+        }
+        catch
+        {
+            return Json(new { success = false, message = "Eroare la citirea JSON-ului!" });
+        }
+
+        if (content?.Exercise == null)
+            return Json(new { success = false, message = "Exercițiul nu este definit în JSON!" });
+
+        string expected = content.Exercise.ExpectedOutput?.Trim() ?? "";
+        output = string.Join("\n", output.Split('\n').Select(line => line.Trim()));
+
+        string Normalize(string s) =>
+            (s ?? "")
+            .ToLower()
+            .Replace("ă", "a").Replace("â", "a").Replace("î", "i")
+            .Replace("ș", "s").Replace("ş", "s")
+            .Replace("ț", "t").Replace("ţ", "t")
+            .Trim();
+
+        if (Normalize(output) != Normalize(expected))
+        {
+            return Json(new
+            {
+                success = false,
+                message = $"Expected: '{expected}', dar ai produs: '{output}'."
+            });
+        }
+
+
+        var userIdString = User.FindFirstValue(ClaimTypes.NameIdentifier);
+        if (!int.TryParse(userIdString, out int userId))
+            return Json(new { success = false, message = "User ID invalid!" });
+
+        await _lessonProgressService.MarkLessonCompletedAsync(userId, request.LessonId);
+
+
+        int courseId = lesson.CourseId;
+
+        int totalLessons = await _context.Lessons
+            .CountAsync(l => l.CourseId == courseId);
+
+        int doneLessons = await _context.UserLessons
+            .CountAsync(lp =>
+                lp.UserId == userId &&
+                lp.IsCompleted &&
+                lp.Lesson.CourseId == courseId);
+
+        if (doneLessons == totalLessons)
+        {
+
+            await GenerateCertificateIfNotExists(userId, courseId);
+        }
+
+        return Json(new { success = true });
     }
 
     [HttpPost]
@@ -110,6 +200,83 @@ public class LessonsController : Controller
 
         return Json(new { success = true });
     }
+
+
+    [HttpPost]
+    public async Task<IActionResult> CheckBlocks([FromBody] CodeRequest request)
+    {
+        if (request == null || request.LessonId <= 0)
+            return Json(new { success = false, message = "Date invalide!" });
+
+        var lesson = await _context.Lessons
+            .Include(l => l.Course)
+            .FirstOrDefaultAsync(l => l.IdLesson == request.LessonId);
+
+        if (lesson == null)
+            return Json(new { success = false, message = "Lecția nu există!" });
+
+        LessonContent content;
+        try
+        {
+            content = JsonConvert.DeserializeObject<LessonContent>(lesson.ContentJson);
+        }
+        catch
+        {
+            return Json(new { success = false, message = "JSON lecție invalid!" });
+        }
+
+        string Normalize(string s)
+        {
+            if (string.IsNullOrWhiteSpace(s)) return "";
+
+            s = s.Replace(" ", "")
+                 .Replace("\n", "")
+                 .Replace("\r", "")
+                 .TrimEnd(';');
+
+            if (s.StartsWith("start{") && s.EndsWith("}"))
+                s = s.Substring(6, s.Length - 7);
+
+            return s.ToLower();
+        }
+
+        string generated = Normalize(request.Code);
+        string expected = Normalize(content.Exercise.ExpectedOutput);
+
+        if (generated != expected)
+        {
+            return Json(new
+            {
+                success = false,
+                message = $"❌ Cod incorect!\nAi generat: {generated}\nSe aștepta: {expected}"
+            });
+        }
+
+        int userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
+
+   
+        await _lessonProgressService.MarkLessonCompletedAsync(userId, lesson.IdLesson);
+
+    
+        int courseId = lesson.CourseId;
+
+        int totalLessons = await _context.Lessons
+            .CountAsync(l => l.CourseId == courseId);
+
+        int doneLessons = await _context.UserLessons
+            .CountAsync(ul =>
+                ul.UserId == userId &&
+                ul.IsCompleted &&
+                ul.Lesson.CourseId == courseId);
+
+        if (doneLessons == totalLessons)
+            await GenerateCertificateIfNotExists(userId, courseId);
+
+        return Json(new { success = true });
+    }
+
+
+
     private async Task GenerateCertificateIfNotExists(int userId, int courseId)
     {
         var exists = await _context.Certificates

@@ -1363,4 +1363,10 @@ C:\Users\Deea\Documents\GitHub\ProiectIII-TinyLogic\TinyLogic_ok\TinyLogic_ok\bi
 C:\Users\Deea\Documents\GitHub\ProiectIII-TinyLogic\TinyLogic_ok\TinyLogic_ok\bin\Debug\net9.0\runtimes\win-x86\native\libwinpthread-1.dll
 C:\Users\Deea\Documents\GitHub\ProiectIII-TinyLogic\TinyLogic_ok\TinyLogic_ok\bin\Debug\net9.0\runtimes\win-x86\native\qpdf.dll
 C:\Users\Deea\Documents\GitHub\ProiectIII-TinyLogic\TinyLogic_ok\TinyLogic_ok\bin\Debug\net9.0\runtimes\win-x86\native\zlib1.dll
-C:\Users\Deea\Documents\GitHub\ProiectIII-TinyLogic\TinyLogic_ok\TinyLogic_ok\obj\Debug\net9.0\compressed\j1itirzopt-8vfqhder35.gz
+C:\Users\Deea\Documents\GitHub\ProiectIII-TinyLogic\TinyLogic_ok\TinyLogic_ok\obj\Debug\net9.0\compressed\j1itirzopt-srtecaw9wv.gz
+C:\Users\Deea\Documents\GitHub\ProiectIII-TinyLogic\TinyLogic_ok\TinyLogic_ok\bin\Debug\net9.0\Data\c_lessons.json
+C:\Users\Deea\Documents\GitHub\ProiectIII-TinyLogic\TinyLogic_ok\TinyLogic_ok\bin\Debug\net9.0\Data\c_tests.json
+C:\Users\Deea\Documents\GitHub\ProiectIII-TinyLogic\TinyLogic_ok\TinyLogic_ok\bin\Debug\net9.0\Data\blocks_lessons.json
+C:\Users\Deea\Documents\GitHub\ProiectIII-TinyLogic\TinyLogic_ok\TinyLogic_ok\obj\Debug\net9.0\compressed\wamy50y19v-z00z1s5wax.gz
+C:\Users\Deea\Documents\GitHub\ProiectIII-TinyLogic\TinyLogic_ok\TinyLogic_ok\obj\Debug\net9.0\compressed\w5fc4d2g5f-wowjgr788y.gz
+C:\Users\Deea\Documents\GitHub\ProiectIII-TinyLogic\TinyLogic_ok\TinyLogic_ok\bin\Debug\net9.0\Data\blockly_test.json

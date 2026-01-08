@@ -88,6 +88,23 @@
                         </label>
                     </div>
                 }
+                else if (question.QuestionType == "BlocksTheory")
+                {
+                    <div class="space-y-2">
+                        @foreach (var option in question.Options)
+                        {
+                            <label class="flex cursor-pointer items-center rounded-lg border p-3 hover:bg-gray-50">
+                                <input type="radio"
+                                       name="question_@question.QuestionNumber"
+                                       value="@option"
+                                       class="mr-3 h-4 w-4 text-indigo-600"
+                                       required />
+                                <span>@option</span>
+                            </label>
+                        }
+                    </div>
+                }
+
             </div>
         }
 
