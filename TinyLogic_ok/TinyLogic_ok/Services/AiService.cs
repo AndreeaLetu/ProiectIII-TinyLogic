@@ -6,12 +6,15 @@ namespace TinyLogic_ok.Services
     public class AiService : IAiService
     {
         private readonly HttpClient _client;
-        private readonly string _apiKey = "******************************************************";
+        private readonly string _apiKey;
 
-        public AiService()
+        public AiService(IConfiguration configuration)
         {
+            _apiKey = configuration["ChatbotApiKey"];
+
             _client = new HttpClient();
             _client.BaseAddress = new Uri("https://openrouter.ai/api/");
+
             _client.DefaultRequestHeaders.Authorization =
                 new AuthenticationHeaderValue("Bearer", _apiKey);
         }

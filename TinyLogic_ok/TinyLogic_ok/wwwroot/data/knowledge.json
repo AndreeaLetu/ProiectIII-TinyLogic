@@ -1,317 +1,102 @@
 ﻿[
   {
-    "id": 1,
-    "lesson": 1,
-    "type": "concept",
-    "question": "Ce este Python?",
-    "aliases": [ "ce inseamna python", "definitie python", "python ce este", "limbaj python" ],
-    "keywords": [ "python", "limbaj", "programare", "incepatori", "ai", "automatizare", "web" ],
-    "answer": "Python este un limbaj de programare puternic, simplu și ușor de învățat, folosit în AI, automatizări, web și multe altele."
+    "Id": 1,
+    "Question": "Ce este Python?",
+    "Answer": "Python este un limbaj de programare de nivel înalt, interpretat și ușor de învățat. Este ideal pentru începători datorită sintaxei sale simple și clare. Python se folosește în dezvoltarea web, analiză de date, inteligență artificială și multe alte domenii."
   },
   {
-    "id": 2,
-    "lesson": 1,
-    "type": "concept",
-    "question": "De ce este Python ușor de învățat?",
-    "aliases": [ "de ce python", "python usor", "avantaje python" ],
-    "keywords": [ "python", "usor", "sintaxa", "incepatori" ],
-    "answer": "Python are o sintaxă clară, apropiată de limba engleză, ceea ce îl face ideal pentru începători."
+    "Id": 2,
+    "Question": "Cum declar o variabilă în Python?",
+    "Answer": "În Python, declari o variabilă astfel: nume_variabila = valoare. De exemplu: varsta = 10 sau nume = 'Andrei'. Python determină automat tipul variabilei în funcție de valoarea atribuită."
   },
   {
-    "id": 3,
-    "lesson": 1,
-    "type": "exemplu",
-    "question": "Care este primul program în Python?",
-    "aliases": [ "primul program python", "hello world python", "salut lume python" ],
-    "keywords": [ "print", "hello world", "salut lume" ],
-    "answer": "print(\"Salut lume!\")"
+    "Id": 3,
+    "Question": "Ce sunt tipurile de date în Python?",
+    "Answer": "Python are mai multe tipuri de date: int (numere întregi), float (numere zecimale), str (text/șiruri de caractere), bool (True/False), list (liste), tuple (tupluri), dict (dicționare). De exemplu: numar = 5 (int), pret = 9.99 (float), nume = 'Ana' (str)."
   },
   {
-    "id": 4,
-    "lesson": 1,
-    "type": "exercitiu",
-    "question": "Exercițiul lecției 1",
-    "aliases": [ "tema lectia 1", "primul exercitiu", "exercitiu python 1" ],
-    "keywords": [ "lectia 1", "exercitiu", "print", "afisare" ],
-    "answer": "Afișează exact textul: \"Am terminat Lecția 1!\""
+    "Id": 4,
+    "Question": "Cum funcționează instrucțiunea if în Python?",
+    "Answer": "Instrucțiunea if permite executarea condițională a codului. Sintaxa: if conditie: cod_indentare. Exemplu: if varsta >= 18: print('Major'). Poți adăuga else pentru alternativă și elif pentru condiții multiple."
   },
   {
-    "id": 5,
-    "lesson": 2,
-    "type": "concept",
-    "question": "Ce tipuri de numere există în Python?",
-    "aliases": [ "tipuri numere python", "numere python" ],
-    "keywords": [ "int", "float", "complex", "numere" ],
-    "answer": "int (întregi), float (zecimale) și complex (numere complexe)."
+    "Id": 5,
+    "Question": "Ce este o buclă for în Python?",
+    "Answer": "Bucla for permite iterarea printr-o secvență (listă, șir, range). Sintaxa: for element in secventa: cod. Exemplu: for i in range(5): print(i) - afișează numerele de la 0 la 4."
   },
   {
-    "id": 6,
-    "lesson": 2,
-    "type": "concept",
-    "question": "Ce operații matematice suportă Python?",
-    "aliases": [ "operatori python", "operatii matematice python" ],
-    "keywords": [ "+", "-", "*", "/", "//", "%", "**", "operatori" ],
-    "answer": "+, -, *, /, //, %, **"
+    "Id": 6,
+    "Question": "Ce este o buclă while în Python?",
+    "Answer": "Bucla while repetă codul atâta timp cât condiția este adevărată. Sintaxa: while conditie: cod. Exemplu: i = 0; while i < 5: print(i); i += 1. Atenție la buclele infinite!"
   },
   {
-    "id": 7,
-    "lesson": 2,
-    "type": "concept",
-    "question": "Ce regulă folosește Python pentru ordinea operațiilor?",
-    "aliases": [ "ordine operatii", "prioritate operatii" ],
-    "keywords": [ "pemdas", "ordine", "operatii" ],
-    "answer": "Regula PEMDAS."
+    "Id": 7,
+    "Question": "Cum creez o listă în Python?",
+    "Answer": "O listă se creează cu paranteze pătrate: lista = [1, 2, 3, 4, 5] sau lista = ['mere', 'pere', 'prune']. Poți accesa elemente cu index: lista[0] returnează primul element. Listele sunt modificabile."
   },
   {
-    "id": 8,
-    "lesson": 2,
-    "type": "exercitiu",
-    "question": "Exercițiul lecției 2",
-    "aliases": [ "tema lectia 2", "exercitiu operatii" ],
-    "keywords": [ "lectia 2", "calcul", "operatii" ],
-    "answer": "Calculează și afișează rezultatul expresiei: 3 + 4 * 2 (răspuns: 11)."
+    "Id": 8,
+    "Question": "Ce este o funcție în Python?",
+    "Answer": "O funcție este un bloc de cod reutilizabil care efectuează o sarcină specifică. Se definește cu def: def nume_functie(parametri): cod; return rezultat. Exemplu: def aduna(a, b): return a + b."
   },
   {
-    "id": 9,
-    "lesson": 3,
-    "type": "concept",
-    "question": "Ce este o variabilă în Python?",
-    "aliases": [ "variabila python", "ce este variabila" ],
-    "keywords": [ "variabila", "memorie", "stocare" ],
-    "answer": "O variabilă este o cutie în memorie în care poți stoca valori."
+    "Id": 9,
+    "Question": "Cum citesc input de la utilizator în Python?",
+    "Answer": "Folosești funcția input(): nume = input('Introdu numele: '). Funcția input() returnează întotdeauna un string. Pentru numere, convertește: varsta = int(input('Varsta: '))."
   },
   {
-    "id": 10,
-    "lesson": 3,
-    "type": "concept",
-    "question": "Cum atribui valori în Python?",
-    "aliases": [ "atribuire valori", "asignare python" ],
-    "keywords": [ "=", "atribuire", "variabila" ],
-    "answer": "x = 5, nume = \"Ana\", temperatura = 22.5"
+    "Id": 10,
+    "Question": "Ce este limbajul C?",
+    "Answer": "C este un limbaj de programare de nivel mediu, compilat, foarte rapid și eficient. Este fundamental în programarea de sisteme, sisteme de operare și aplicații embedded. Necesită gestionare manuală a memoriei și compilare."
   },
   {
-    "id": 11,
-    "lesson": 3,
-    "type": "concept",
-    "question": "Ce tipuri de date de bază există în Python?",
-    "aliases": [ "tipuri date python", "date python" ],
-    "keywords": [ "int", "float", "str", "bool" ],
-    "answer": "int, float, str, bool."
+    "Id": 11,
+    "Question": "Cum declar o variabilă în C?",
+    "Answer": "În C, declari o variabilă specificând tipul: tip nume_variabila = valoare; Exemple: int varsta = 10; float pret = 9.99; char litera = 'A'; Trebuie să declari tipul explicit înaintea utilizării."
   },
   {
-    "id": 12,
-    "lesson": 3,
-    "type": "exercitiu",
-    "question": "Exercițiul lecției 3",
-    "aliases": [ "tema lectia 3", "exercitiu variabile" ],
-    "keywords": [ "lectia 3", "variabila", "afisare" ],
-    "answer": "Creează o variabilă 'mesaj' și afișează 'Python e simplu!'."
+    "Id": 12,
+    "Question": "Ce sunt pointerele în C?",
+    "Answer": "Pointerii sunt variabile care stochează adrese de memorie. Se declară cu *: int *p; Pentru a obține adresa unei variabile: &variabila. Pentru a accesa valoarea: *pointer. Sunt fundamentale în C pentru gestionarea memoriei."
   },
   {
-    "id": 13,
-    "lesson": 4,
-    "type": "concept",
-    "question": "Ce este un string în Python?",
-    "aliases": [ "string python", "text python" ],
-    "keywords": [ "string", "text", "caractere" ],
-    "answer": "Un string este o secvență de caractere."
+    "Id": 13,
+    "Question": "Cum funcționează printf în C?",
+    "Answer": "printf() afișează text formatat. Sintaxa: printf('format', variabile). Exemple: printf('Buna!'); printf('Varsta: %d', varsta); Specificatori: %d (int), %f (float), %c (char), %s (string)."
   },
   {
-    "id": 14,
-    "lesson": 4,
-    "type": "concept",
-    "question": "Cum se face concatenarea stringurilor?",
-    "aliases": [ "concatenare string", "lipire texte" ],
-    "keywords": [ "+", "concatenare", "string" ],
-    "answer": "\"Salut\" + \" lume\""
+    "Id": 14,
+    "Question": "Cum citesc input în C?",
+    "Answer": "Folosești scanf(): scanf('%d', &variabila); Ampersand-ul (&) este obligatoriu pentru a transmite adresa. Exemple: scanf('%d', &numar); scanf('%f', &pret); scanf('%s', text); pentru string nu trebuie &."
   },
   {
-    "id": 15,
-    "lesson": 4,
-    "type": "concept",
-    "question": "Ce funcții utile există pentru stringuri?",
-    "aliases": [ "functii string", "metode string" ],
-    "keywords": [ "len", "upper", "lower", "replace" ],
-    "answer": "len(), upper(), lower(), replace()."
+    "Id": 15,
+    "Question": "Ce este programarea vizuală?",
+    "Answer": "Programarea vizuală folosește blocuri grafice în loc de cod text. Este ideală pentru începători să învețe concepte de programare (secvențe, condiții, bucle) fără sintaxă complicată. Blockly este un exemplu popular."
   },
   {
-    "id": 16,
-    "lesson": 4,
-    "type": "exercitiu",
-    "question": "Exercițiul lecției 4",
-    "aliases": [ "tema lectia 4", "exercitiu string" ],
-    "keywords": [ "lectia 4", "string", "upper" ],
-    "answer": "Afișează textul 'STRINGURI ÎN PYTHON' folosind upper()."
+    "Id": 16,
+    "Question": "Ce sunt blocurile de control în programare vizuală?",
+    "Answer": "Blocurile de control gestionează fluxul programului: blocuri IF (condiții), bucle REPEAT/WHILE (repetare), START/STOP (început/sfârșit). Se conectează vizual pentru a crea logica programului."
   },
   {
-    "id": 17,
-    "lesson": 5,
-    "type": "concept",
-    "question": "Ce este o listă în Python?",
-    "aliases": [ "lista python", "array python" ],
-    "keywords": [ "lista", "colectie", "elemente" ],
-    "answer": "O listă stochează mai multe valori într-o singură variabilă."
+    "Id": 17,
+    "Question": "Cum functioneaza exercitiile?",
+    "Answer": "Fiecare lecție conține un exercițiu practic. Citește cerința cu atenție, scrie codul în editorul furnizat, apoi apasă butonul 'Verifică'. Sistemul compară output-ul tău cu răspunsul așteptat. Dacă este corect, lecția este marcată ca finalizată."
   },
   {
-    "id": 18,
-    "lesson": 5,
-    "type": "concept",
-    "question": "Cum se indexează listele?",
-    "aliases": [ "index lista", "acces element lista" ],
-    "keywords": [ "index", "lista" ],
-    "answer": "fructe[0], fructe[1]."
+    "Id": 18,
+    "Question": "Ce fac dacă exercițiul nu trece?",
+    "Answer": "Verifică: 1) Ai scris exact ce cere problema? 2) Output-ul tău se potrivește cu exemplul dat? 3) Ai respectat literele mari/mici și spațiile? Poți cere ajutor chat-ului sau să revezi teoria din lecție."
   },
   {
-    "id": 19,
-    "lesson": 5,
-    "type": "concept",
-    "question": "Ce metode utile au listele?",
-    "aliases": [ "metode lista", "functii lista" ],
-    "keywords": [ "append", "remove", "sort" ],
-    "answer": "append(), remove(), sort()."
+    "Id": 19,
+    "Question": "Cum obțin certificatul?",
+    "Answer": "Certificatul se generează automat când finalizezi toate lecțiile unui curs. Vei vedea un buton de download în pagina cursului. Certificatul include numele tău, cursul completat și un cod unic de verificare."
   },
   {
-    "id": 20,
-    "lesson": 5,
-    "type": "exercitiu",
-    "question": "Exercițiul lecției 5",
-    "aliases": [ "tema lectia 5", "exercitiu lista" ],
-    "keywords": [ "lectia 5", "lista", "suma" ],
-    "answer": "Creează o listă cu 3 numere și afișează suma lor (6)."
-  },
-  {
-    "id": 21,
-    "lesson": 6,
-    "type": "concept",
-    "question": "Cum funcționează o structură if în Python?",
-    "aliases": [ "if python", "conditie python" ],
-    "keywords": [ "if", "conditie" ],
-    "answer": "if condiție: execută codul."
-  },
-  {
-    "id": 22,
-    "lesson": 6,
-    "type": "concept",
-    "question": "Ce face else?",
-    "aliases": [ "else python" ],
-    "keywords": [ "else", "conditie" ],
-    "answer": "Se execută când condiția din if este falsă."
-  },
-  {
-    "id": 23,
-    "lesson": 6,
-    "type": "concept",
-    "question": "Ce face elif?",
-    "aliases": [ "elif python" ],
-    "keywords": [ "elif", "conditie" ],
-    "answer": "Adaugă condiții suplimentare."
-  },
-  {
-    "id": 24,
-    "lesson": 6,
-    "type": "exercitiu",
-    "question": "Exercițiul lecției 6",
-    "aliases": [ "tema lectia 6", "exercitiu if" ],
-    "keywords": [ "lectia 6", "if", "conditie" ],
-    "answer": "Dacă x = 10, afișează 'Număr mare'."
-  },
-  {
-    "id": 25,
-    "lesson": 7,
-    "type": "concept",
-    "question": "Ce face bucla for în Python?",
-    "aliases": [ "for python", "bucla for" ],
-    "keywords": [ "for", "bucla", "iteratie" ],
-    "answer": "Iterează peste elemente sau range-uri."
-  },
-  {
-    "id": 26,
-    "lesson": 7,
-    "type": "concept",
-    "question": "Cum parcurgi o listă cu for?",
-    "aliases": [ "for lista", "parcurgere lista" ],
-    "keywords": [ "for", "lista" ],
-    "answer": "for fruct in fructe: print(fruct)"
-  },
-  {
-    "id": 27,
-    "lesson": 7,
-    "type": "exercitiu",
-    "question": "Exercițiul lecției 7",
-    "aliases": [ "tema lectia 7", "exercitiu for" ],
-    "keywords": [ "lectia 7", "for", "numere" ],
-    "answer": "Afișează numerele de la 1 la 5 cu for."
-  },
-  {
-    "id": 28,
-    "lesson": 8,
-    "type": "concept",
-    "question": "Ce este bucla while în Python?",
-    "aliases": [ "while python", "bucla while" ],
-    "keywords": [ "while", "bucla", "repetare" ],
-    "answer": "Rulează cât timp condiția este adevărată."
-  },
-  {
-    "id": 29,
-    "lesson": 8,
-    "type": "exemplu",
-    "question": "Exemplu de while",
-    "aliases": [ "while exemplu", "exemplu bucla while" ],
-    "keywords": [ "while", "exemplu" ],
-    "answer": "i = 1; while i <= 3: print(i); i += 1"
-  },
-  {
-    "id": 30,
-    "lesson": 8,
-    "type": "exercitiu",
-    "question": "Exercițiul lecției 8",
-    "aliases": [ "tema lectia 8", "exercitiu while" ],
-    "keywords": [ "lectia 8", "while" ],
-    "answer": "Afișează de 3 ori textul 'Python!'."
-  },
-  {
-    "id": 31,
-    "lesson": 9,
-    "type": "concept",
-    "question": "Ce este o funcție în Python?",
-    "aliases": [ "functie python", "def python" ],
-    "keywords": [ "functie", "def", "return" ],
-    "answer": "O funcție este un bloc de cod reutilizabil, definit cu def."
-  },
-  {
-    "id": 32,
-    "lesson": 9,
-    "type": "concept",
-    "question": "Cum se definesc argumentele?",
-    "aliases": [ "argumente functie", "parametri functie" ],
-    "keywords": [ "functie", "argumente" ],
-    "answer": "def adunare(a, b): return a + b"
-  },
-  {
-    "id": 33,
-    "lesson": 9,
-    "type": "exercitiu",
-    "question": "Exercițiul lecției 9",
-    "aliases": [ "tema lectia 9", "exercitiu functie" ],
-    "keywords": [ "lectia 9", "functie" ],
-    "answer": "Creează o funcție care întoarce 100."
-  },
-  {
-    "id": 34,
-    "lesson": 10,
-    "type": "concept",
-    "question": "Ce conține mini-proiectul final?",
-    "aliases": [ "proiect final", "mini proiect" ],
-    "keywords": [ "proiect", "final" ],
-    "answer": "Un program care folosește variabile, condiții și funcții."
-  },
-  {
-    "id": 35,
-    "lesson": 10,
-    "type": "exercitiu",
-    "question": "Exercițiul lecției 10",
-    "aliases": [ "tema finala la cursul de python", "exercitiu final", "am terminat cursul" ],
-    "keywords": [ "lectia 10", "final", "python" ],
-    "answer": "Afișează exact textul: „Am terminat cursul Python!”."
+    "Id": 20,
+    "Question": "Pot descărca materialele cursului?",
+    "Answer": "Da! În pagina fiecărui curs există un buton 'Descarcă PDF' care îți permite să descarci toate lecțiile într-un singur document PDF pentru studiu offline."
   }
 ]
