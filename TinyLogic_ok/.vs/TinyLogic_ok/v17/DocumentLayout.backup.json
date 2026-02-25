@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Deea\\Documents\\GitHub\\ProiectIII-TinyLogic\\TinyLogic_ok\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiectiii-tinylogic\\tinylogic_ok\\tinylogic_ok\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiectiii-tinylogic\\tinylogic_ok\\tinylogic_ok\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -77,10 +81,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiectiii-tinylogic\\tinylogic_ok\\tinylogic_ok\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiectiii-tinylogic\\tinylogic_ok\\tinylogic_ok\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|solutionrelative:tinylogic_ok\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{03147FC0-ACA2-4A45-B9C9-7B275A165705}|TinyLogic_ok\\TinyLogic_ok.csproj|c:\\users\\deea\\documents\\github\\proiectiii-tinylogic\\tinylogic_ok\\tinylogic_ok\\views\\tests\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -194,35 +194,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "RagService.cs",
-              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\ProiectIII-TinyLogic\\TinyLogic_ok\\TinyLogic_ok\\Services\\RagService.cs",
-              "RelativeDocumentMoniker": "TinyLogic_ok\\Services\\RagService.cs",
-              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\ProiectIII-TinyLogic\\TinyLogic_ok\\TinyLogic_ok\\Services\\RagService.cs",
-              "RelativeToolTip": "TinyLogic_ok\\Services\\RagService.cs",
-              "ViewState": "AgIAALwAAAAAAAAAAAAqwA4AAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T09:22:42.078Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "knowledge.json",
-              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\ProiectIII-TinyLogic\\TinyLogic_ok\\TinyLogic_ok\\wwwroot\\data\\knowledge.json",
-              "RelativeDocumentMoniker": "TinyLogic_ok\\wwwroot\\data\\knowledge.json",
-              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\ProiectIII-TinyLogic\\TinyLogic_ok\\TinyLogic_ok\\wwwroot\\data\\knowledge.json",
-              "RelativeToolTip": "TinyLogic_ok\\wwwroot\\data\\knowledge.json",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAGUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-04T09:29:56.115Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "blockly_test.json",
               "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\ProiectIII-TinyLogic\\TinyLogic_ok\\TinyLogic_ok\\Data\\blockly_test.json",
               "RelativeDocumentMoniker": "TinyLogic_ok\\Data\\blockly_test.json",
@@ -234,7 +210,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "blocks_lessons.json",
               "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\ProiectIII-TinyLogic\\TinyLogic_ok\\TinyLogic_ok\\Data\\blocks_lessons.json",
               "RelativeDocumentMoniker": "TinyLogic_ok\\Data\\blocks_lessons.json",
@@ -246,7 +222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "c_lessons.json",
               "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\ProiectIII-TinyLogic\\TinyLogic_ok\\TinyLogic_ok\\Data\\c_lessons.json",
               "RelativeDocumentMoniker": "TinyLogic_ok\\Data\\c_lessons.json",
@@ -258,7 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "c_tests.json",
               "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\ProiectIII-TinyLogic\\TinyLogic_ok\\TinyLogic_ok\\Data\\c_tests.json",
               "RelativeDocumentMoniker": "TinyLogic_ok\\Data\\c_tests.json",
@@ -270,7 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "courses.json",
               "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\ProiectIII-TinyLogic\\TinyLogic_ok\\TinyLogic_ok\\Data\\courses.json",
               "RelativeDocumentMoniker": "TinyLogic_ok\\Data\\courses.json",
@@ -282,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "python_lessons.json",
               "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\ProiectIII-TinyLogic\\TinyLogic_ok\\TinyLogic_ok\\Data\\python_lessons.json",
               "RelativeDocumentMoniker": "TinyLogic_ok\\Data\\python_lessons.json",
@@ -294,7 +270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "python_tests.json",
               "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\ProiectIII-TinyLogic\\TinyLogic_ok\\TinyLogic_ok\\Data\\python_tests.json",
               "RelativeDocumentMoniker": "TinyLogic_ok\\Data\\python_tests.json",
@@ -302,12 +278,11 @@
               "RelativeToolTip": "TinyLogic_ok\\Data\\python_tests.json",
               "ViewState": "AgIAACEAAAAAAAAAAAAAAPcAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-04T13:12:39.622Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-04T13:12:39.622Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AiService.cs",
               "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\ProiectIII-TinyLogic\\TinyLogic_ok\\TinyLogic_ok\\Services\\AiService.cs",
               "RelativeDocumentMoniker": "TinyLogic_ok\\Services\\AiService.cs",
@@ -315,25 +290,61 @@
               "RelativeToolTip": "TinyLogic_ok\\Services\\AiService.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAA1wCkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T10:15:39.403Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T10:15:39.403Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\ProiectIII-TinyLogic\\TinyLogic_ok\\TinyLogic_ok\\Program.cs",
               "RelativeDocumentMoniker": "TinyLogic_ok\\Program.cs",
               "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\ProiectIII-TinyLogic\\TinyLogic_ok\\TinyLogic_ok\\Program.cs",
               "RelativeToolTip": "TinyLogic_ok\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAiwEUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-04T08:08:17.921Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\ProiectIII-TinyLogic\\TinyLogic_ok\\TinyLogic_ok\\appsettings.json",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\appsettings.json",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\ProiectIII-TinyLogic\\TinyLogic_ok\\TinyLogic_ok\\appsettings.json",
+              "RelativeToolTip": "TinyLogic_ok\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-03T16:18:30.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "knowledge.json",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\ProiectIII-TinyLogic\\TinyLogic_ok\\TinyLogic_ok\\wwwroot\\data\\knowledge.json",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\wwwroot\\data\\knowledge.json",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\ProiectIII-TinyLogic\\TinyLogic_ok\\TinyLogic_ok\\wwwroot\\data\\knowledge.json",
+              "RelativeToolTip": "TinyLogic_ok\\wwwroot\\data\\knowledge.json",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAGUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-04T09:29:56.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RagService.cs",
+              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\ProiectIII-TinyLogic\\TinyLogic_ok\\TinyLogic_ok\\Services\\RagService.cs",
+              "RelativeDocumentMoniker": "TinyLogic_ok\\Services\\RagService.cs",
+              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\ProiectIII-TinyLogic\\TinyLogic_ok\\TinyLogic_ok\\Services\\RagService.cs",
+              "RelativeToolTip": "TinyLogic_ok\\Services\\RagService.cs",
+              "ViewState": "AgIAALwAAAAAAAAAAAAqwA4AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T09:22:42.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "DataSeeder.cs",
               "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\ProiectIII-TinyLogic\\TinyLogic_ok\\TinyLogic_ok\\Services\\DataSeeder.cs",
               "RelativeDocumentMoniker": "TinyLogic_ok\\Services\\DataSeeder.cs",
@@ -345,7 +356,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "LessonController.cs",
               "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\ProiectIII-TinyLogic\\TinyLogic_ok\\TinyLogic_ok\\Controllers\\LessonController.cs",
               "RelativeDocumentMoniker": "TinyLogic_ok\\Controllers\\LessonController.cs",
@@ -357,7 +368,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "ChatController.cs",
               "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\ProiectIII-TinyLogic\\TinyLogic_ok\\TinyLogic_ok\\Controllers\\ChatController.cs",
               "RelativeDocumentMoniker": "TinyLogic_ok\\Controllers\\ChatController.cs",
@@ -369,7 +380,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "IAiService.cs",
               "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\ProiectIII-TinyLogic\\TinyLogic_ok\\TinyLogic_ok\\Services\\IAiService.cs",
               "RelativeDocumentMoniker": "TinyLogic_ok\\Services\\IAiService.cs",
@@ -381,7 +392,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "TinyLogic_ok.csproj",
               "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\ProiectIII-TinyLogic\\TinyLogic_ok\\TinyLogic_ok\\TinyLogic_ok.csproj",
               "RelativeDocumentMoniker": "TinyLogic_ok\\TinyLogic_ok.csproj",
@@ -393,7 +404,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "TinyLogicDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\ProiectIII-TinyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\TinyLogicDbContext.cs",
               "RelativeDocumentMoniker": "TinyLogic_ok\\Models\\TinyLogicDbContext.cs",
@@ -405,7 +416,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "CoursesController.cs",
               "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\ProiectIII-TinyLogic\\TinyLogic_ok\\TinyLogic_ok\\Controllers\\CoursesController.cs",
               "RelativeDocumentMoniker": "TinyLogic_ok\\Controllers\\CoursesController.cs",
@@ -417,7 +428,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Courses.cs",
               "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\ProiectIII-TinyLogic\\TinyLogic_ok\\TinyLogic_ok\\Models\\CourseModels\\Courses.cs",
               "RelativeDocumentMoniker": "TinyLogic_ok\\Models\\CourseModels\\Courses.cs",
@@ -426,18 +437,6 @@
               "ViewState": "AgIAAAMAAAAAAAAAAAASwBcAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-04T12:10:05.845Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Deea\\Documents\\GitHub\\ProiectIII-TinyLogic\\TinyLogic_ok\\TinyLogic_ok\\appsettings.json",
-              "RelativeDocumentMoniker": "TinyLogic_ok\\appsettings.json",
-              "ToolTip": "C:\\Users\\Deea\\Documents\\GitHub\\ProiectIII-TinyLogic\\TinyLogic_ok\\TinyLogic_ok\\appsettings.json",
-              "RelativeToolTip": "TinyLogic_ok\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-03T16:18:30.818Z"
             },
             {
               "$type": "Document",
